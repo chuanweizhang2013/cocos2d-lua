@@ -35,8 +35,8 @@ extern "C" {
 #include "LuaBasicConversions.h"
 #include "LuaScriptHandlerMgr.h"
 #include "CCLuaValue.h"
-#include "spine.h"
-#include "spine-cocos2dx.h"
+#include "spine/spine.h"
+#include "spine/spine-cocos2dx.h"
 #include "LuaSkeletonAnimation.h"
 
 using namespace spine;

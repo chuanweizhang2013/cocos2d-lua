@@ -35,7 +35,7 @@ extern "C" {
 #include "LuaBasicConversions.h"
 #include "LuaScriptHandlerMgr.h"
 #include "CCLuaValue.h"
-#include "CocosGUI.h"
+#include "gui/CocosGUI.h"
 #include "CCLuaEngine.h"
 
 using namespace gui;

@@ -35,7 +35,7 @@ extern "C" {
 #include "LuaBasicConversions.h"
 #include "LuaScriptHandlerMgr.h"
 #include "CCLuaValue.h"
-#include "CocoStudio.h"
+#include "cocostudio/CocoStudio.h"
 #include "CCLuaEngine.h"
 
 using namespace cocostudio;
