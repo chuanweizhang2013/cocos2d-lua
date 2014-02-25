@@ -1,4 +1,4 @@
-require "luaScript/TransitionsTest/TransitionsName"
+require "scripts/TransitionsTest/TransitionsName"
 
 
 local SceneIdx = -1

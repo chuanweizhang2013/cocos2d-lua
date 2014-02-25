@@ -1,4 +1,4 @@
-require "luaScript/EffectsTest/EffectsName"
+require "scripts/EffectsTest/EffectsName"
 
 
 local ActionIdx = -1

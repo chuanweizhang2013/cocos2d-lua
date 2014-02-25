@@ -1,7 +1,7 @@
-require "luaScript/testResource"
-require "luaScript/TouchesTest/Ball"
-require "luaScript/TouchesTest/Paddle"
-require "luaScript/VisibleRect"
+require "scripts/testResource"
+require "scripts/TouchesTest/Ball"
+require "scripts/TouchesTest/Paddle"
+require "scripts/VisibleRect"
 
 local kHighPlayer = 0
 local kLowPlayer = 1

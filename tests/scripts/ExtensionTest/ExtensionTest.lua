@@ -1,5 +1,5 @@
-require "luaScript/ExtensionTest/CocosBuilderTest"
-require "luaScript/ExtensionTest/WebProxyTest"
+require "scripts/ExtensionTest/CocosBuilderTest"
+require "scripts/ExtensionTest/WebProxyTest"
 
 local LINE_SPACE = 40
 local kItemTagBasic = 1000
