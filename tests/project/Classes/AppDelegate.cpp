@@ -58,11 +58,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     register_assetsmanager_test_sample(stack->getLuaState());
 #endif
     
-    std::string resPrefix;
-    
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
-    resPrefix = "res/";
-#endif
+    std::string resPrefix("res/");
     
     std::vector<std::string> searchPaths = pFileUtils->getSearchPaths();
     searchPaths.insert(searchPaths.begin(), resPrefix);
