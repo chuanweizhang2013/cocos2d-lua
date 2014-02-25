@@ -1,7 +1,7 @@
 
 require "extern"
-require "luaScript/VisibleRect"
-require "luaScript/TouchesTest/Paddle"
+require "scripts/VisibleRect"
+require "scripts/TouchesTest/Paddle"
 
 Ball = class("Ball", function(texture)
     return cc.Sprite:createWithTexture(texture)

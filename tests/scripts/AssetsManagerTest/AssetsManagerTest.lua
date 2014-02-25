@@ -102,7 +102,7 @@ local function updateLayer()
             addSearchPath(pathToSave,true)
         end
 
-        assetsManagerModule = reloadModule("luaScript/AssetsManagerTest/AssetsManagerModule")
+        assetsManagerModule = reloadModule("scripts/AssetsManagerTest/AssetsManagerModule")
 
         assetsManagerModule.newScene(AssetsManagerTestMain)
     end

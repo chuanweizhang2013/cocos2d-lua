@@ -58,43 +58,49 @@ bool AppDelegate::applicationDidFinishLaunching()
     register_assetsmanager_test_sample(stack->getLuaState());
 #endif
     
+    std::string resPrefix;
+    
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
+    resPrefix = "res/";
+#endif
+    
     std::vector<std::string> searchPaths = pFileUtils->getSearchPaths();
-    searchPaths.insert(searchPaths.begin(), "Images");
-    searchPaths.insert(searchPaths.begin(), "cocosbuilderRes");
+    searchPaths.insert(searchPaths.begin(), resPrefix);
+    searchPaths.insert(searchPaths.begin(), resPrefix + "Images");
+    searchPaths.insert(searchPaths.begin(), resPrefix + "cocosbuilderRes");
     if (screenSize.height > 320)
     {
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/ArmatureComponentTest");
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/AttributeComponentTest");
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/BackgroundComponentTest");
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/EffectComponentTest");
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/LoadSceneEdtiorFileTest");
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/ParticleComponentTest");
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/SpriteComponentTest");
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/TmxMapComponentTest");
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/UIComponentTest");
-        searchPaths.insert(searchPaths.begin(), "hd/scenetest/TriggerTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/Images");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/ArmatureComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/AttributeComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/BackgroundComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/EffectComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/LoadSceneEdtiorFileTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/ParticleComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/SpriteComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/TmxMapComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/UIComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "hd/scenetest/TriggerTest");
     }
     else
     {
-        searchPaths.insert(searchPaths.begin(), "scenetest/ArmatureComponentTest");
-        searchPaths.insert(searchPaths.begin(), "scenetest/AttributeComponentTest");
-        searchPaths.insert(searchPaths.begin(), "scenetest/BackgroundComponentTest");
-        searchPaths.insert(searchPaths.begin(), "scenetest/EffectComponentTest");
-        searchPaths.insert(searchPaths.begin(), "scenetest/LoadSceneEdtiorFileTest");
-        searchPaths.insert(searchPaths.begin(), "scenetest/ParticleComponentTest");
-        searchPaths.insert(searchPaths.begin(), "scenetest/SpriteComponentTest");
-        searchPaths.insert(searchPaths.begin(), "scenetest/TmxMapComponentTest");
-        searchPaths.insert(searchPaths.begin(), "scenetest/UIComponentTest");
-        searchPaths.insert(searchPaths.begin(), "scenetest/TriggerTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/ArmatureComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/AttributeComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/BackgroundComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/EffectComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/LoadSceneEdtiorFileTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/ParticleComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/SpriteComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/TmxMapComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/UIComponentTest");
+        searchPaths.insert(searchPaths.begin(), resPrefix + "scenetest/TriggerTest");
     }
 
-#if CC_TARGET_PLATFORM == CC_PLATFORM_BLACKBERRY
-    searchPaths.push_back("TestCppResources");
-    searchPaths.push_back("script");
-#endif
+
     FileUtils::getInstance()->setSearchPaths(searchPaths);
 
-    pEngine->executeScriptFile("luaScript/controller.lua");
+    pEngine->executeScriptFile("scripts/controller.lua");
     
     return true;
 }

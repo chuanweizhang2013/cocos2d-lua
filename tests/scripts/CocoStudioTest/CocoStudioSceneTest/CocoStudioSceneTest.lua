@@ -1,6 +1,6 @@
-require "luaScript/CocoStudioTest/CocoStudioSceneTest/TriggerCode/acts"
-require "luaScript/CocoStudioTest/CocoStudioSceneTest/TriggerCode/cons"
-require "luaScript/CocoStudioTest/CocoStudioSceneTest/TriggerCode/eventDef"
+require "scripts/CocoStudioTest/CocoStudioSceneTest/TriggerCode/acts"
+require "scripts/CocoStudioTest/CocoStudioSceneTest/TriggerCode/cons"
+require "scripts/CocoStudioTest/CocoStudioSceneTest/TriggerCode/eventDef"
 
 local itemTagBasic = 1000
 

@@ -5,9 +5,9 @@
 extern "C" {
 #endif
 // socket
-#include "socket/luasocket.h"
-#include "socket/mime.h"
-#include "socket/socket_scripts.h"
+#include "luasocket/luasocket.h"
+#include "luasocket/mime.h"
+#include "luasocket/socket_scripts.h"
 
 static luaL_Reg luax_exts[] = {
     {"socket.core", luaopen_socket_core},
