@@ -90,8 +90,9 @@ def main():
         print 'path: %s or path: %s are not valid! ' % (x86_llvm_path, x64_llvm_path)
         sys.exit(1)
 
-    cocos_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-    cxx_generator_root = os.path.abspath(os.path.join(cocos_root, 'tools/bindings-generator'))
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+    cocos_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '../lib/cocos2d-x'))
+    cxx_generator_root = os.path.abspath(os.path.join(project_root, 'tools/bindings-generator'))
 
     # save config to file
     config = ConfigParser.ConfigParser()
@@ -122,8 +123,8 @@ def main():
 
     try:
 
-        tolua_root = '%s/tools/tolua' % cocos_root
-        output_dir = '%s/cocos/scripting/auto-generated/lua-bindings' % cocos_root
+        tolua_root = '%s/tools/tolua' % project_root
+        output_dir = '%s/lib/bindings/auto' % project_root
 
         cmd_args = {'cocos2dx.ini' : ('cocos2d-x', 'lua_cocos2dx_auto'), \
                     'cocos2dx_extension.ini' : ('cocos2dx_extension', 'lua_cocos2dx_extension_auto'), \
