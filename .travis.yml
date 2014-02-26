@@ -6,6 +6,7 @@ before_install:
 - ./tools/travis-scripts/before-install.sh
 env:
   matrix:
+  - PLATFORM=GEN_LUA
   - PLATFORM=android
   global:
   - secure: RAGbX7GJiCbI/GGlF8dphCb2btYWCwzLiVBQ4qx5/BObfUbbCWylBLxNbj3VV659V6jLWdlzqTyXpFmQW6sR81E0Fv8LfJzLrCsB3sgTiwyV97U3nAC/Vn0OClwJR9FKm6RKPCtrHXeKmwcBF93vrg71z1I10ap36bBk6JYMElI=

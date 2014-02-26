@@ -33,7 +33,7 @@ if [ "$GEN_COCOS_FILES"x = "YES"x ]; then
 
     cd $PROJECT_ROOT/tools/travis-scripts
     ./generate-cocosfiles.sh
-elif [ "$GEN_JSB"x = "YES"x ]; then
+elif [ "$GEN_LUA"x = "YES"x ]; then
     # Re-generation of the javascript bindings can perform push of the new
     # version back to github.  We don't do this for pull requests, or if
     # GH_USER/GH_EMAIL/GH_PASSWORD environment variables are not set correctly

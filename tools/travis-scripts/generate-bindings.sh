@@ -48,7 +48,7 @@ generate_bindings_glue_codes()
     popd
 }
 
-if [ "$GEN_JSB"x != "YES"x ]; then
+if [ "$GEN_LUA"x != "YES"x ]; then
     generate_bindings_glue_codes
     exit 0
 fi
