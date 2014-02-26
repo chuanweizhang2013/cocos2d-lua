@@ -20,15 +20,15 @@ if [ "$GEN_COCOS_FILES"x = "YES"x ]; then
     fi
     if [ -z "${GH_EMAIL}" ]; then
         echo "GH_EMAIL not set"
-        exit 0
+        exit 1
     fi
     if [ -z "${GH_USER}" ]; then
         echo "GH_USER not set"
-        exit 0
+        exit 1
     fi
     if [ -z "${GH_PASSWORD}" ]; then
         echo "GH_USER not set"
-        exit 0
+        exit 1
     fi
 
     cd $PROJECT_ROOT/tools/travis-scripts
@@ -44,15 +44,15 @@ elif [ "$GEN_LUA"x = "YES"x ]; then
     fi
     if [ -z "${GH_EMAIL}" ]; then
         echo "GH_EMAIL not set"
-        exit 0
+        exit 1
     fi
     if [ -z "${GH_USER}" ]; then
         echo "GH_USER not set"
-        exit 0
+        exit 1
     fi
     if [ -z "${GH_PASSWORD}" ]; then
         echo "GH_USER not set"
-        exit 0
+        exit 1
     fi
 
     cd $PROJECT_ROOT/tools/travis-scripts

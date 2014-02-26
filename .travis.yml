@@ -9,8 +9,9 @@ env:
   - GEN_LUA=YES
   - PLATFORM=android
   global:
-  - secure: RAGbX7GJiCbI/GGlF8dphCb2btYWCwzLiVBQ4qx5/BObfUbbCWylBLxNbj3VV659V6jLWdlzqTyXpFmQW6sR81E0Fv8LfJzLrCsB3sgTiwyV97U3nAC/Vn0OClwJR9FKm6RKPCtrHXeKmwcBF93vrg71z1I10ap36bBk6JYMElI=
-  - secure: jBZAjzAowzCzBjg7nBN9SgJZ8u8658IQFUDkiyDrMfbkoYjYAF+RZt50hOswJ0W+niTMlC8L5ipFURfg43QA4nMSlv7ExwefjlX7zEFmoPXsH97OfcyH2n+OPUQRf6Cz0nBvl4OBsibdz86xtHL4uYMFLUhoEflkf2CxqeNvL74=
+  - secure: OGa02D+rEO8a3+UqkQbhyyse+7EWtoXJHQiWnf5nd2LQB4cFGFY5B3UjLUsi4NOkg9ummNwqEeaDkLdHLyrtN22w1vP14ERfR17l8YukGL8cv600O3hzHNTAGZ0dBH0u6TCIZ6jDjTiTQ5MMeRgXxCSBjUdT7rotITfXlB1HPXQ=
+  - secure: Nim7rHipAlLu6TzwCwJxkPDdZgbGqHtImwtmIfhJfcO7Kk/4GOokCrfaUEa5boXx9a+YG2B9APGjuZ84NMFz/pLJDuIFWdH+i3tQSuKR+DPoAYQ4TqG+1l+sQM28ogef7SAzNHKB6LfcM+v5MRn+rvI50mmixvQXkq1h1rg0Eqg=
+  - secure: dM4ecCO+w6ZNH0Gc3xNS8YmmxNtiNslpD9xkQVKRubj4Dlycjg2yBgX+pqxn4/YHGYBWSaY5CwxctWr2El0bx+i6kyHV+0WrfnMoyAygcE5S9Qe+JjA8j+Ecz/r2dE626XHz/eGN/sm9iMTUsyziJIXvJXaVJPglPrzYXL/xLHg=
 branches:
   only:
   - master
