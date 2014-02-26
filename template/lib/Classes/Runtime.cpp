@@ -23,6 +23,7 @@ THE SOFTWARE.
 ****************************************************************************/
 
 #include "Runtime.h"
+#include "lua_debugger.h"
 #include "CCLuaEngine.h"
 #include "cocos2d.h"
 
@@ -45,14 +46,12 @@ void startScript(string strDebugArg)
 {
     // register lua engine
     auto engine = LuaEngine::getInstance();
-    ScriptEngineManager::getInstance()->setScriptEngine(engine);
-    
 	if (!strDebugArg.empty())
 	{
 		engine->executeString(strDebugArg.c_str());
 	}
 	cocos2d::log("debug args = %s",strDebugArg.c_str());
-    engine->executeScriptFile("cocos2d-lua.lua");
+    engine->executeScriptFile("src/main.lua");
 }
 
 void reloadScript()
@@ -180,7 +179,7 @@ public:
     
     void playerCallback(Object* sender)
     {
-        startScript();
+        startScript("");
     }
 
 };
@@ -371,7 +370,7 @@ bool FileServer::recv_file(int fd)
     string file(fullfilename);
 	file=replace_all(file,"\\","/");
 	sprintf(fullfilename, "%s", file.c_str());
-	cocos2d::log("recv fullfilename = %s%s ",fullfilename,buffer);
+	cocos2d::log("recv fullfilename = %s",fullfilename);
     CreateDir(file.substr(0,file.find_last_of("/")).c_str());
 	FILE *fp =fopen(fullfilename, "w");
 	int length =0;
@@ -434,7 +433,6 @@ void FileServer::loop()
 		}
 		else
 		{
-			cocos2d::log("new client");
 			/* new client */
 			if(FD_ISSET(_listenfd, &copy_set)) {
 				addClient();
@@ -529,27 +527,25 @@ private:
 
 void startRuntime()
 {
-    static ConsoleCustomCommand s_customCommand;
+	auto engine = LuaEngine::getInstance();
+	ScriptEngineManager::getInstance()->setScriptEngine(engine);
+	luaopen_debugger(engine->getLuaStack()->getLuaState());
+	static ConsoleCustomCommand s_customCommand;
 	vector<string> searchPathArray;
-    searchPathArray=FileUtils::getInstance()->getSearchPaths();
-    vector<string> writePathArray;
-    writePathArray.push_back(FileUtils::getInstance()->getWritablePath());
-    FileUtils::getInstance()->setSearchPaths(writePathArray);
+	searchPathArray=FileUtils::getInstance()->getSearchPaths();
+	vector<string> writePathArray;
+	writePathArray.push_back(FileUtils::getInstance()->getWritablePath());
+	FileUtils::getInstance()->setSearchPaths(writePathArray);
 	for (unsigned i = 0; i < searchPathArray.size(); i++)
 	{
 		FileUtils::getInstance()->addSearchPath(searchPathArray[i]);
 	}
-
-#ifdef COCOS2D_DEBUG
     auto scene = Scene::create();
     auto layer = new ConnectWaitLayer();
     layer->autorelease();
     auto director = Director::getInstance();
     scene->addChild(layer);
     director->runWithScene(scene);
-#else
-	startScript();
-#endif
 }
 
 

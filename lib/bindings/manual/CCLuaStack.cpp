@@ -24,7 +24,7 @@
  ****************************************************************************/
 
 #include "CCLuaStack.h"
-#include "lua_debugger.h"
+
 extern "C" {
 #include "lua.h"
 #include "tolua++.h"
@@ -189,7 +189,6 @@ bool LuaStack::init(void)
     
     tolua_script_handler_mgr_open(_state);
 
-    luaopen_debugger(_state);
     // add cocos2dx loader
     addLuaLoader(cocos2dx_lua_loader);
 
