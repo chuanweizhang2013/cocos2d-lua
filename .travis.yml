@@ -1,4 +1,4 @@
-language: objective-c
+language: cpp
 script:
  - export PYTHON_BIN=/usr/bin/python
  - ./tools/travis-scripts/run-script.sh
