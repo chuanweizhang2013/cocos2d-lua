@@ -55,9 +55,8 @@ elif [ "$GEN_LUA"x = "YES"x ]; then
         exit 0
     fi
 
-    echo "We need to generate bindings here."
-    # cd $PROJECT_ROOT/tools/travis-scripts
-    # ./generate-bindings.sh
+    cd $PROJECT_ROOT/tools/travis-scripts
+    ./generate-bindings.sh
 elif [ "$PLATFORM"x = "android"x ]; then
     export NDK_ROOT=$HOME/bin/android-ndk
 
