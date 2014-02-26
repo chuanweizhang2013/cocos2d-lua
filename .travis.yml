@@ -1,13 +1,16 @@
 language: cpp
 script:
- - export PYTHON_BIN=/usr/bin/python
- - ./tools/travis-scripts/run-script.sh
+- export PYTHON_BIN=/usr/bin/python
+- ./tools/travis-scripts/run-script.sh
 before_install:
- - ./tools/travis-scripts/before-install.sh
+- ./tools/travis-scripts/before-install.sh
 env:
   matrix:
   - PLATFORM=android
+  global:
+  - secure: RAGbX7GJiCbI/GGlF8dphCb2btYWCwzLiVBQ4qx5/BObfUbbCWylBLxNbj3VV659V6jLWdlzqTyXpFmQW6sR81E0Fv8LfJzLrCsB3sgTiwyV97U3nAC/Vn0OClwJR9FKm6RKPCtrHXeKmwcBF93vrg71z1I10ap36bBk6JYMElI=
+  - secure: jBZAjzAowzCzBjg7nBN9SgJZ8u8658IQFUDkiyDrMfbkoYjYAF+RZt50hOswJ0W+niTMlC8L5ipFURfg43QA4nMSlv7ExwefjlX7zEFmoPXsH97OfcyH2n+OPUQRf6Cz0nBvl4OBsibdz86xtHL4uYMFLUhoEflkf2CxqeNvL74=
 branches:
   only:
-    - master
-    - develop
+  - master
+  - develop
