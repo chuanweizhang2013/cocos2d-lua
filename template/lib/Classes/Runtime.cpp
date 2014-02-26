@@ -41,31 +41,23 @@ using namespace cocos2d;
 extern string getIPAddress();
 extern string getProjSearchPath();
 
-char g_szDebugArg[512]={0};
-void startScript()
+void startScript(string strDebugArg)
 {
     // register lua engine
     auto engine = LuaEngine::getInstance();
     ScriptEngineManager::getInstance()->setScriptEngine(engine);
     
-	//engine->executeString("require('debugger')('192.168.16.209')");
-	//engine->executeString("require('debugger')()");
-    //#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    engine->executeString(g_szDebugArg);
-    //#else
-    //    engine->executeString("require('debugger')('10.10.30.55','10000','luaidekey',nil,nil,'/E:/work/workspaces/runtime-luabinding_on_ldt/luagame/')");
-    //#endif
-    
-    //std::string path = FileUtils::getInstance()->fullPathForFilename("cocos2d-lua.lua");
-    //engine->executeScriptFile(path.c_str());
-    engine->executeScriptFile("src/main.lua");
+	if (!strDebugArg.empty())
+	{
+		engine->executeString(strDebugArg.c_str());
+	}
+	cocos2d::log("debug args = %s",strDebugArg.c_str());
+    engine->executeScriptFile("cocos2d-lua.lua");
 }
 
 void reloadScript()
 {
-    auto engine = LuaEngine::getInstance();
-    ScriptEngineManager::getInstance()->setScriptEngine(engine);
-    engine->executeScriptFile("reload.lua");
+    
 }
 
 
@@ -218,6 +210,7 @@ public:
         _listenfd = -1;
         _running = false;
         _endThread = false;
+		_writepath = FileUtils::getInstance()->getWritablePath();
     }
     
 	bool listenOnTCP(int port);
@@ -236,6 +229,7 @@ private:
     fd_set _read_set;
     bool _running;
     bool _endThread;
+	std::string _writepath;
 };
 
 bool FileServer::listenOnTCP(int port)
@@ -315,6 +309,18 @@ void FileServer::stop()
 	}
 }
 
+string& replace_all(string& str,const string& old_value,const string& new_value)
+{
+	while(true)
+	{
+		int pos=0;
+		if((pos=str.find(old_value,0))!=string::npos)
+			str.replace(pos,old_value.length(),new_value);
+		else break;
+	}
+	return str;
+}
+
 bool CreateDir(const char *sPathName)
 {
 	char   DirName[256]={0};
@@ -361,11 +367,13 @@ bool FileServer::recv_file(int fd)
 	}
     
     char fullfilename[1024]={0};
-    sprintf(fullfilename, "%s/%s", FileUtils::getInstance()->getWritablePath().c_str(),buffer);
+	sprintf(fullfilename,"%s%s",_writepath.c_str(),buffer);
     string file(fullfilename);
+	file=replace_all(file,"\\","/");
+	sprintf(fullfilename, "%s", file.c_str());
+	cocos2d::log("recv fullfilename = %s%s ",fullfilename,buffer);
     CreateDir(file.substr(0,file.find_last_of("/")).c_str());
 	FILE *fp =fopen(fullfilename, "w");
-	
 	int length =0;
 	while ((length=read(fd, fullfilename, sizeof(fullfilename))) > 0) {
 		fwrite(fullfilename, sizeof(char), length,fp);
@@ -426,6 +434,7 @@ void FileServer::loop()
 		}
 		else
 		{
+			cocos2d::log("new client");
 			/* new client */
 			if(FD_ISSET(_listenfd, &copy_set)) {
 				addClient();
@@ -471,9 +480,8 @@ public:
         cocos2d::Console *_console = Director::getInstance()->getConsole();
         static struct Console::Command commands[] = {
             {"shutdownapp","exit runtime app",std::bind(&ConsoleCustomCommand::onShutDownApp, this, std::placeholders::_1, std::placeholders::_2)},
-            {"start-logic","run game logic script",std::bind(&ConsoleCustomCommand::onRunLogicScript, this, std::placeholders::_1, std::placeholders::_2)},
+            {"start-logic","run game logic script.Arg:[debugArg]",std::bind(&ConsoleCustomCommand::onRunLogicScript, this, std::placeholders::_1, std::placeholders::_2)},
             {"reload","reload script.Args:[filepath]",std::bind(&ConsoleCustomCommand::onReloadScriptFile, this, std::placeholders::_1, std::placeholders::_2)},
-            {"setdebug","debug args information.Args:debugArgs",std::bind(&ConsoleCustomCommand::onSetDebugArgsInfo, this, std::placeholders::_1, std::placeholders::_2)},
         };
         for (int i=0;i< sizeof(commands)/sizeof(Console::Command);i++) {
             _console->addCommand(commands[i]);
@@ -492,16 +500,13 @@ public:
         }
     }
     
-    void onSetDebugArgsInfo(int fd, const std::string &args)
-    {
-        sprintf(g_szDebugArg, "require('debugger')(%s,'%s')",args.c_str(),FileUtils::getInstance()->getWritablePath().c_str());
-    }
-    
     void onRunLogicScript(int fd, const std::string &args)
     {
-        Director::getInstance()->getScheduler()->performFunctionInCocosThread([](){
-            startScript();
-        });
+		Director::getInstance()->getScheduler()->performFunctionInCocosThread([&args](){
+			char szDebugArg[1024]={0};
+			sprintf(szDebugArg, "require('debugger')(%s,'%s')",args.c_str(),FileUtils::getInstance()->getWritablePath().c_str());
+			startScript(szDebugArg);
+		});
     }
     
     void onReloadScriptFile(int fd,const std::string &args)
@@ -528,13 +533,13 @@ void startRuntime()
 	vector<string> searchPathArray;
     searchPathArray=FileUtils::getInstance()->getSearchPaths();
     vector<string> writePathArray;
-    //CCLOG(FileUtils::getInstance()->getWritablePath().c_str());
     writePathArray.push_back(FileUtils::getInstance()->getWritablePath());
     FileUtils::getInstance()->setSearchPaths(writePathArray);
 	for (unsigned i = 0; i < searchPathArray.size(); i++)
 	{
 		FileUtils::getInstance()->addSearchPath(searchPathArray[i]);
 	}
+
 #ifdef COCOS2D_DEBUG
     auto scene = Scene::create();
     auto layer = new ConnectWaitLayer();
