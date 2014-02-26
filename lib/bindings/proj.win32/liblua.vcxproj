@@ -53,6 +53,7 @@
     <ClCompile Include="..\manual\lua_cocos2dx_manual.cpp" />
     <ClCompile Include="..\manual\lua_cocos2dx_physics_manual.cpp" />
     <ClCompile Include="..\manual\lua_cocos2dx_spine_manual.cpp" />
+    <ClCompile Include="..\manual\lua_debugger.c" />
     <ClCompile Include="..\manual\lua_extensions.c" />
     <ClCompile Include="..\manual\Lua_web_socket.cpp" />
     <ClCompile Include="..\manual\lua_xml_http_request.cpp" />
@@ -103,6 +104,7 @@
     <ClInclude Include="..\manual\lua_cocos2dx_manual.hpp" />
     <ClInclude Include="..\manual\lua_cocos2dx_physics_manual.hpp" />
     <ClInclude Include="..\manual\lua_cocos2dx_spine_manual.hpp" />
+    <ClInclude Include="..\manual\lua_debugger.h" />
     <ClInclude Include="..\manual\lua_extensions.h" />
     <ClInclude Include="..\manual\Lua_web_socket.h" />
     <ClInclude Include="..\manual\lua_xml_http_request.h" />

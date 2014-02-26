@@ -188,7 +188,7 @@ bool LuaStack::init(void)
     register_xml_http_request(_state);
     
     tolua_script_handler_mgr_open(_state);
-    
+
     // add cocos2dx loader
     addLuaLoader(cocos2dx_lua_loader);
 

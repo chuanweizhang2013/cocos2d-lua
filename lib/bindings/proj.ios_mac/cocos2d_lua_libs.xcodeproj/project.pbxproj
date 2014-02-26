@@ -207,6 +207,10 @@
 		1AACE91018BC478400215002 /* tolua_to.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AACE90218BC478400215002 /* tolua_to.c */; };
 		1AACE91318BC574800215002 /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AACE88E18BC475800215002 /* libluajit.a */; };
 		1AACE91418BC587C00215002 /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AACE89118BC476000215002 /* libluajit.a */; };
+		C0FEF4D618BE0E70001F446C /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = C0FEF4D418BE0E70001F446C /* lua_debugger.c */; };
+		C0FEF4D718BE0E70001F446C /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = C0FEF4D418BE0E70001F446C /* lua_debugger.c */; };
+		C0FEF4D818BE0E70001F446C /* lua_debugger.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FEF4D518BE0E70001F446C /* lua_debugger.h */; };
+		C0FEF4D918BE0E70001F446C /* lua_debugger.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FEF4D518BE0E70001F446C /* lua_debugger.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -313,6 +317,8 @@
 		1AACE90018BC478400215002 /* tolua_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tolua_map.c; sourceTree = "<group>"; };
 		1AACE90118BC478400215002 /* tolua_push.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tolua_push.c; sourceTree = "<group>"; };
 		1AACE90218BC478400215002 /* tolua_to.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tolua_to.c; sourceTree = "<group>"; };
+		C0FEF4D418BE0E70001F446C /* lua_debugger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_debugger.c; sourceTree = "<group>"; };
+		C0FEF4D518BE0E70001F446C /* lua_debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_debugger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +376,8 @@
 			isa = PBXGroup;
 			children = (
 				1AACE75E18BC45C200215002 /* CCBProxy.cpp */,
+				C0FEF4D418BE0E70001F446C /* lua_debugger.c */,
+				C0FEF4D518BE0E70001F446C /* lua_debugger.h */,
 				1AACE75F18BC45C200215002 /* CCBProxy.h */,
 				1AACE76018BC45C200215002 /* CCLuaBridge.cpp */,
 				1AACE76118BC45C200215002 /* CCLuaBridge.h */,
@@ -555,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AACE7E018BC45C200215002 /* CCLuaBridge.h in Headers */,
+				C0FEF4D918BE0E70001F446C /* lua_debugger.h in Headers */,
 				1AACE7B818BC45C200215002 /* lua_cocos2dx_auto.hpp in Headers */,
 				1AACE7E418BC45C200215002 /* CCLuaEngine.h in Headers */,
 				1AACE8F518BC477500215002 /* usocket.h in Headers */,
@@ -612,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AACE7DF18BC45C200215002 /* CCLuaBridge.h in Headers */,
+				C0FEF4D818BE0E70001F446C /* lua_debugger.h in Headers */,
 				1AACE7B718BC45C200215002 /* lua_cocos2dx_auto.hpp in Headers */,
 				1AACE7E318BC45C200215002 /* CCLuaEngine.h in Headers */,
 				1AACE8F418BC477500215002 /* usocket.h in Headers */,
@@ -774,6 +784,7 @@
 				1AACE7FA18BC45C200215002 /* lua_cocos2dx_extension_manual.cpp in Sources */,
 				1AACE7DE18BC45C200215002 /* CCLuaBridge.cpp in Sources */,
 				1AACE8C318BC477500215002 /* luasocket.c in Sources */,
+				C0FEF4D718BE0E70001F446C /* lua_debugger.c in Sources */,
 				1AACE7E618BC45C200215002 /* CCLuaStack.cpp in Sources */,
 				1AACE90C18BC478400215002 /* tolua_map.c in Sources */,
 				1AACE80618BC45C200215002 /* lua_cocos2dx_physics_manual.cpp in Sources */,
@@ -830,6 +841,7 @@
 				1AACE7F918BC45C200215002 /* lua_cocos2dx_extension_manual.cpp in Sources */,
 				1AACE7DD18BC45C200215002 /* CCLuaBridge.cpp in Sources */,
 				1AACE8C218BC477500215002 /* luasocket.c in Sources */,
+				C0FEF4D618BE0E70001F446C /* lua_debugger.c in Sources */,
 				1AACE7E518BC45C200215002 /* CCLuaStack.cpp in Sources */,
 				1AACE90B18BC478400215002 /* tolua_map.c in Sources */,
 				1AACE80518BC45C200215002 /* lua_cocos2dx_physics_manual.cpp in Sources */,
