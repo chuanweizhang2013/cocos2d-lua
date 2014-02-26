@@ -6,7 +6,7 @@ before_install:
  - ./tools/travis-scripts/before-install.sh
 env:
   matrix:
-  - PLATFORM=ios
+  - PLATFORM=android
 branches:
   only:
     - master

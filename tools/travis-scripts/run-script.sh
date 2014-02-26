@@ -63,31 +63,12 @@ elif [ "$PLATFORM"x = "android"x ]; then
 
     # Generate binding glue codes
     echo "Generating bindings glue codes ..."
-    cd $PROJECT_ROOT/tools/travis-scripts
-    ./generate-jsbindings.sh
-    ./generate-cocosfiles.sh
+    # cd $PROJECT_ROOT/tools/travis-scripts
+    # ./generate-jsbindings.sh
+    # ./generate-cocosfiles.sh
 
-    cd $PROJECT_ROOT
-
-    # Create a directory for temporary objects
-    mkdir android_build_objs
-
-    PROJECTS=("test-cpp" "test-javascript" "test-lua")
-    for i in ${PROJECTS[*]}; do
-        ln -s $PROJECT_ROOT/android_build_objs $PROJECT_ROOT/tests/$i/proj.android/obj
-    done
-
-    # Build all samples
-    echo "Building all samples ..."
-    cd $PROJECT_ROOT/build
-    ./android-build.py -n "NDK_BUG=0 -j10" all
-
-    # Build template
-    # echo "Building template ..."
-    # cd $PROJECT_ROOT/template
-    # build_android multi-platform-cpp
-    # build_android multi-platform-js
-    # build_android multi-platform-lua
+    cd $PROJECT_ROOT/tests/project/proj.android
+    ./build_native.py -n "-j8"
 
 elif [ "$PLATFORM"x = "nacl"x ]; then
     export NACL_SDK_ROOT=$HOME/bin/nacl_sdk/pepper_canary
