@@ -57,14 +57,14 @@ elif [ "$GEN_JSB"x = "YES"x ]; then
 
     echo "We need to generate bindings here."
     # cd $PROJECT_ROOT/tools/travis-scripts
-    # ./generate-jsbindings.sh
+    # ./generate-bindings.sh
 elif [ "$PLATFORM"x = "android"x ]; then
     export NDK_ROOT=$HOME/bin/android-ndk
 
     # Generate binding glue codes
     echo "Generating bindings glue codes ..."
-    # cd $PROJECT_ROOT/tools/travis-scripts
-    # ./generate-jsbindings.sh
+    cd $PROJECT_ROOT/tools/travis-scripts
+    ./generate-bindings.sh
     # ./generate-cocosfiles.sh
 
     cd $PROJECT_ROOT/tests/project/proj.android
@@ -80,7 +80,7 @@ elif [ "$PLATFORM"x = "linux"x ]; then
     # Generate binding glue codes
     echo "Generating bindings glue codes ..."
     cd $PROJECT_ROOT/tools/travis-scripts
-    ./generate-jsbindings.sh
+    ./generate-bindings.sh
     ./generate-cocosfiles.sh
 
     echo "Building cocos2d-x"
@@ -117,7 +117,7 @@ elif [ "$PLATFORM"x = "emscripten"x ]; then
     # Generate binding glue codes
     echo "Generating bindings glue codes ..."
     cd $PROJECT_ROOT/tools/travis-scripts
-    ./generate-jsbindings.sh
+    ./generate-bindings.sh
     ./generate-cocosfiles.sh
 
     cd $PROJECT_ROOT/build
@@ -127,7 +127,7 @@ elif [ "$PLATFORM"x = "emscripten"x ]; then
     EMCC_DEBUG=1 make PLATFORM=emscripten -j 8
 elif [ "$PLATFORM"x = "ios"x ]; then
     cd $PROJECT_ROOT/tools/travis-scripts
-    # ./generate-jsbindings.sh
+    # ./generate-bindings.sh
     # ./generate-cocosfiles.sh
 
     cd $PROJECT_ROOT/tests/project/proj.ios_mac
