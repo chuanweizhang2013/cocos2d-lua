@@ -162,6 +162,9 @@
     <ClCompile Include="..\..\external\tolua\tolua_to.c">
       <Filter>external\tolua</Filter>
     </ClCompile>
+    <ClCompile Include="..\manual\lua_debugger.c">
+      <Filter>manual</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\auto\lua_cocos2dx_auto.hpp">
@@ -307,6 +310,9 @@
     </ClInclude>
     <ClInclude Include="..\..\external\luajit\include\lualib.h">
       <Filter>external\luajit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manual\lua_debugger.h">
+      <Filter>manual</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
