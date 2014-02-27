@@ -12228,8 +12228,8 @@ int lua_cocos2dx_studio_GUIReader_widgetFromJsonFile(lua_State* tolua_S)
         std::string arg0_tmp; ok &= luaval_to_std_string(tolua_S, 2, &arg0_tmp); arg0 = arg0_tmp.c_str();
         if(!ok)
             return 0;
-        cocos2d::gui::Widget* ret = cobj->widgetFromJsonFile(arg0);
-        object_to_luaval<cocos2d::gui::Widget>(tolua_S, "ccui.Widget",(cocos2d::gui::Widget*)ret);
+        cocos2d::ui::Widget* ret = cobj->widgetFromJsonFile(arg0);
+        object_to_luaval<cocos2d::ui::Widget>(tolua_S, "cc.ui::Widget",(cocos2d::ui::Widget*)ret);
         return 1;
     }
     CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "widgetFromJsonFile",argc, 1);
