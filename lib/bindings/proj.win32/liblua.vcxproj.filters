@@ -102,7 +102,7 @@
     <ClCompile Include="..\manual\LuaSkeletonAnimation.cpp">
       <Filter>manual</Filter>
     </ClCompile>
-    <ClCompile Include="..\manual\tolua_fix.c">
+    <ClCompile Include="..\manual\tolua_fix.cpp">
       <Filter>manual</Filter>
     </ClCompile>
     <ClCompile Include="..\..\external\luasocket\auxiliar.c">
