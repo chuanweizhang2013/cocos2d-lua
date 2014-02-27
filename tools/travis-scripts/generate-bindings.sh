@@ -17,7 +17,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$DIR"/../..
 TOLUA_ROOT=$PROJECT_ROOT/tools/tolua
-GENERATED_WORKTREE="$PROJECT_ROOT"/lib/bindings/auto
+GENERATED_WORKTREE="$PROJECT_ROOT"/frameworks/lua-bindings/bindings/auto
 COMMITTAG="[AUTO]"
 
 # Exit on error
@@ -48,7 +48,7 @@ generate_bindings_glue_codes()
     popd
 }
 
-if [ "$GEN_LUA"x != "YES"x ]; then
+if [ "$GEN_BINDING"x != "YES"x ]; then
     generate_bindings_glue_codes
     exit 0
 fi
@@ -120,7 +120,7 @@ set -e
 
 COCOS_BRANCH=updategeneratedsubmodule_"$ELAPSEDSECS"
 
-git add .
+git add -f "$GENERATED_WORKTREE"
 git checkout -b "$COCOS_BRANCH"
 git commit -m "$COMMITTAG : updating luabinding automatically"
 
