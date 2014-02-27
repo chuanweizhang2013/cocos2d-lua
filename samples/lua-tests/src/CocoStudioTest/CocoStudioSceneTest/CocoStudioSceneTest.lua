@@ -1,6 +1,6 @@
-require "scripts/CocoStudioTest/CocoStudioSceneTest/TriggerCode/acts"
-require "scripts/CocoStudioTest/CocoStudioSceneTest/TriggerCode/cons"
-require "scripts/CocoStudioTest/CocoStudioSceneTest/TriggerCode/eventDef"
+require "src/CocoStudioTest/CocoStudioSceneTest/TriggerCode/acts"
+require "src/CocoStudioTest/CocoStudioSceneTest/TriggerCode/cons"
+require "src/CocoStudioTest/CocoStudioSceneTest/TriggerCode/eventDef"
 
 local itemTagBasic = 1000
 

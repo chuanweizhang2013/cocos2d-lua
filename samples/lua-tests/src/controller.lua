@@ -3,7 +3,7 @@
 collectgarbage("setpause", 100) 
 collectgarbage("setstepmul", 5000)
 	
-require "scripts/mainMenu"
+require "src/mainMenu"
 ----------------
 
 

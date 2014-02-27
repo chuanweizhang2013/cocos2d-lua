@@ -1,4 +1,4 @@
-require "scripts/helper"
+require "src/helper"
 
 Transition_Table =
 {

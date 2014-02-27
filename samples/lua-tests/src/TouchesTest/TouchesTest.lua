@@ -1,7 +1,7 @@
-require "scripts/testResource"
-require "scripts/TouchesTest/Ball"
-require "scripts/TouchesTest/Paddle"
-require "scripts/VisibleRect"
+require "src/testResource"
+require "src/TouchesTest/Ball"
+require "src/TouchesTest/Paddle"
+require "src/VisibleRect"
 
 local kHighPlayer = 0
 local kLowPlayer = 1

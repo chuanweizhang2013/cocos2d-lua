@@ -1,6 +1,6 @@
-require "scripts/CocoStudioTest/CocoStudioGUITest/CocoStudioGUITest"
-require "scripts/CocoStudioTest/CocoStudioSceneTest/CocoStudioSceneTest"
-require "scripts/CocoStudioTest/CocoStudioArmatureTest/CocoStudioArmatureTest"
+require "src/CocoStudioTest/CocoStudioGUITest/CocoStudioGUITest"
+require "src/CocoStudioTest/CocoStudioSceneTest/CocoStudioSceneTest"
+require "src/CocoStudioTest/CocoStudioArmatureTest/CocoStudioArmatureTest"
 
 local LINE_SPACE = 40
 local ITEM_TAG_BASIC = 1000
