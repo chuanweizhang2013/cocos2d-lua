@@ -109,7 +109,7 @@ if exist "$(OutDir)\test-lua-res" rd /s /q "$(OutDir)\test-lua-res"
 mkdir "$(OutDir)\test-lua-res"
 mkdir "$(OutDir)\test-lua-res\src"
 mkdir "$(OutDir)\test-lua-res\res"
-xcopy "$(ProjectDir)..\..\..\..\frameworks\bindings\script" "$(OutDir)\test-lua-res" /e /Y
+xcopy "$(ProjectDir)..\..\..\..\frameworks\lua-bindings\bindings\script" "$(OutDir)\test-lua-res" /e /Y
 xcopy "$(ProjectDir)..\..\src" "$(OutDir)\test-lua-res\src" /e /Y
 xcopy "$(ProjectDir)..\..\res" "$(OutDir)\test-lua-res\res" /e /Y</Command>
       <Message>copy files</Message>
@@ -163,7 +163,7 @@ if exist "$(OutDir)\test-lua-res" rd /s /q "$(OutDir)\test-lua-res"
 mkdir "$(OutDir)\test-lua-res"
 mkdir "$(OutDir)\test-lua-res\src"
 mkdir "$(OutDir)\test-lua-res\res"
-xcopy "$(ProjectDir)..\..\..\..\frameworks\bindings\script" "$(OutDir)\test-lua-res" /e /Y
+xcopy "$(ProjectDir)..\..\..\..\frameworks\lua-bindings\bindings\script" "$(OutDir)\test-lua-res" /e /Y
 xcopy "$(ProjectDir)..\..\src" "$(OutDir)\test-lua-res\src" /e /Y
 xcopy "$(ProjectDir)..\..\res" "$(OutDir)\test-lua-res\res" /e /Y</Command>
       <Message>copy files</Message>
