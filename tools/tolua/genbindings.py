@@ -91,7 +91,7 @@ def main():
         sys.exit(1)
 
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-    cocos_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '../lib/cocos2d-x'))
+    cocos_root = os.path.abspath(os.path.join(project_root, 'frameworks/lua-bindings/cocos2d-x'))
     cxx_generator_root = os.path.abspath(os.path.join(project_root, 'tools/bindings-generator'))
 
     # save config to file
@@ -124,7 +124,7 @@ def main():
     try:
 
         tolua_root = '%s/tools/tolua' % project_root
-        output_dir = '%s/lib/bindings/auto' % project_root
+        output_dir = '%s/frameworks/lua-bindings/bindings/auto' % project_root
 
         cmd_args = {'cocos2dx.ini' : ('cocos2d-x', 'lua_cocos2dx_auto'), \
                     'cocos2dx_extension.ini' : ('cocos2dx_extension', 'lua_cocos2dx_extension_auto'), \
