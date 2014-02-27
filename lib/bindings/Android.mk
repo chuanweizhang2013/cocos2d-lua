@@ -26,7 +26,7 @@ LOCAL_SRC_FILES := manual/CCLuaBridge.cpp \
           manual/lua_xml_http_request.cpp \
           manual/platform/android/CCLuaJavaBridge.cpp \
           manual/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxLuaJavaBridge.cpp \
-          manual/tolua_fix.c \
+          manual/tolua_fix.cpp \
           manual/lua_extensions.c \
           auto/lua_cocos2dx_auto.cpp \
           auto/lua_cocos2dx_extension_auto.cpp \

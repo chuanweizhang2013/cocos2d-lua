@@ -56,7 +56,7 @@
     <ClCompile Include="..\manual\lua_extensions.c" />
     <ClCompile Include="..\manual\Lua_web_socket.cpp" />
     <ClCompile Include="..\manual\lua_xml_http_request.cpp" />
-    <ClCompile Include="..\manual\tolua_fix.c" />
+    <ClCompile Include="..\manual\tolua_fix.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\external\luajit\include\lauxlib.h" />
