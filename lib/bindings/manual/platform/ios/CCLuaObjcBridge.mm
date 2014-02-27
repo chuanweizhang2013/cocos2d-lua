@@ -1,6 +1,5 @@
 
 #include "CCLuaObjcBridge.h"
-#import <Foundation/Foundation.h>
 
 NS_CC_BEGIN
 
