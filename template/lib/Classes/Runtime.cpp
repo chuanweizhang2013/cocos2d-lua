@@ -500,7 +500,7 @@ public:
     
     void onRunLogicScript(int fd, const std::string &args)
     {
-		Director::getInstance()->getScheduler()->performFunctionInCocosThread([&args](){
+		Director::getInstance()->getScheduler()->performFunctionInCocosThread([args](){
 			char szDebugArg[1024]={0};
 			sprintf(szDebugArg, "require('debugger')(%s,'%s')",args.c_str(),FileUtils::getInstance()->getWritablePath().c_str());
 			startScript(szDebugArg);
