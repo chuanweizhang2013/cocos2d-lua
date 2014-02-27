@@ -1,5 +1,5 @@
-[submodule "lib/cocos2d-x"]
-	path = lib/cocos2d-x
+[submodule "frameworks/lua-bindings/cocos2d-x"]
+	path = frameworks/lua-bindings/cocos2d-x
 	url = git://github.com/cocos2d/cocos2d-x.git
 
 [submodule "tools/bindings-generator"]

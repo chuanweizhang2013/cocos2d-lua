@@ -123,18 +123,18 @@ def copy_resources(app_android_root):
     os.mkdir(assets_dir)
 
     assets_res_dir = assets_dir + "/res";
-    assets_scripts_dir = assets_dir + "/scripts";
+    assets_scripts_dir = assets_dir + "/src";
     os.mkdir(assets_res_dir);
     os.mkdir(assets_scripts_dir);
 
     resources_dir = os.path.join(app_android_root, "../../res")
     copy_files(resources_dir, assets_res_dir)
 
-    resources_dir = os.path.join(app_android_root, "../../scripts")
+    resources_dir = os.path.join(app_android_root, "../../src")
     copy_files(resources_dir, assets_scripts_dir)
 
     # lua project should copy lua script
-    resources_dir = os.path.join(app_android_root, "../../../lib/bindings/script")
+    resources_dir = os.path.join(app_android_root, "../../../../frameworks/lua-bindings/bindings/script")
     copy_files(resources_dir, assets_dir)
 
 def build(ndk_build_param,android_platform,build_mode):
@@ -144,9 +144,9 @@ def build(ndk_build_param,android_platform,build_mode):
     select_toolchain_version()
 
     current_dir = os.path.dirname(os.path.realpath(__file__))
-    cocos_root = os.path.join(current_dir, "../lib/cocos2d-x")
+    cocos_root = os.path.join(current_dir, "../frameworks/lua-bindings/cocos2d-x")
 
-    app_android_root = os.path.join(current_dir, "../tests/project/proj.android")
+    app_android_root = os.path.join(current_dir, "../samples/lua-tests/project/proj.android")
     copy_resources(app_android_root)
     
     if android_platform is not None:
