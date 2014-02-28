@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#Twirl] getAmplitudeRate 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Twirl] setAmplitude 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#Twirl] getAmplitude 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Twirl] setPosition 
@@ -29,7 +29,7 @@
 --------------------------------
 -- @function [parent=#Twirl] getPosition 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#Twirl] create 
@@ -39,7 +39,7 @@
 -- @param #point_table point
 -- @param #unsigned int int
 -- @param #float float
--- @return cc.Twirl#cc.Twirl ret
+-- @return Twirl#Twirl ret (return value: cc.Twirl)
         
 --------------------------------
 -- @function [parent=#Twirl] Twirl 

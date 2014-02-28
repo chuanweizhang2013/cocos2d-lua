@@ -5,6 +5,6 @@
 -- @function [parent=#EaseQuadraticActionInOut] create 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
--- @return cc.EaseQuadraticActionInOut#cc.EaseQuadraticActionInOut ret
+-- @return EaseQuadraticActionInOut#EaseQuadraticActionInOut ret (return value: cc.EaseQuadraticActionInOut)
         
 return nil

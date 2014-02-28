@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#PhysicsShapeEdgeSegment] getPointB 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsShapeEdgeSegment] getPointA 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsShapeEdgeSegment] create 
@@ -18,6 +18,6 @@
 -- @param #point_table point
 -- @param #cc.PhysicsMaterial physicsmaterial
 -- @param #float float
--- @return cc.PhysicsShapeEdgeSegment#cc.PhysicsShapeEdgeSegment ret
+-- @return PhysicsShapeEdgeSegment#PhysicsShapeEdgeSegment ret (return value: cc.PhysicsShapeEdgeSegment)
         
 return nil

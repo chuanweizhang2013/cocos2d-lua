@@ -4,32 +4,32 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getStartSizeVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getTexture 
 -- @param self
--- @return cc.Texture2D#cc.Texture2D ret
+-- @return Texture2D#Texture2D ret (return value: cc.Texture2D)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] isFull 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getBatchNode 
 -- @param self
--- @return cc.ParticleBatchNode#cc.ParticleBatchNode ret
+-- @return ParticleBatchNode#ParticleBatchNode ret (return value: cc.ParticleBatchNode)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getStartColor 
 -- @param self
--- @return color4F_object#color4F_object ret
+-- @return color4F_table#color4F_table ret (return value: color4F_table)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getPositionType 
 -- @param self
--- @return cc.ParticleSystem::PositionType#cc.ParticleSystem::PositionType ret
+-- @return ParticleSystem::PositionType#ParticleSystem::PositionType ret (return value: cc.ParticleSystem::PositionType)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setPosVar 
@@ -39,7 +39,7 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getEndSpin 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setRotatePerSecondVar 
@@ -49,17 +49,17 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getStartSpinVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getRadialAccelVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getEndSizeVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setRotation 
@@ -84,7 +84,7 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getRadialAccel 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setStartRadius 
@@ -104,12 +104,12 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getGravity 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getTangentialAccel 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setEndRadius 
@@ -119,17 +119,17 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getSpeed 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getAngle 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setEndColor 
 -- @param self
--- @param #color4F_object color4f
+-- @param #color4F_table color4f
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setStartSpin 
@@ -149,7 +149,7 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getPosVar 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] updateWithNoTime 
@@ -158,12 +158,12 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] isBlendAdditive 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getSpeedVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setPositionType 
@@ -177,7 +177,7 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getSourcePosition 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setLifeVar 
@@ -192,7 +192,7 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] setEndColorVar 
 -- @param self
--- @param #color4F_object color4f
+-- @param #color4F_table color4f
         
 --------------------------------
 -- @function [parent=#ParticleSystem] updateQuadWithParticle 
@@ -203,12 +203,12 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getAtlasIndex 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getStartSize 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setStartSpinVar 
@@ -237,17 +237,17 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getEndRadius 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] isOpacityModifyRGB 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] isActive 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setRadialAccelVar 
@@ -267,12 +267,12 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getStartSpin 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getRotatePerSecond 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] initParticle 
@@ -287,7 +287,7 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getDuration 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setSourcePosition 
@@ -297,7 +297,7 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getEndSpinVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setBlendAdditive 
@@ -337,12 +337,12 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getTangentialAccelVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getEmitterMode 
 -- @param self
--- @return cc.ParticleSystem::Mode#cc.ParticleSystem::Mode ret
+-- @return ParticleSystem::Mode#ParticleSystem::Mode ret (return value: cc.ParticleSystem::Mode)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setEndSpinVar 
@@ -352,27 +352,27 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getAngleVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setStartColor 
 -- @param self
--- @param #color4F_object color4f
+-- @param #color4F_table color4f
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getRotatePerSecondVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getEndSize 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getLife 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setSpeedVar 
@@ -401,12 +401,12 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getEndColorVar 
 -- @param self
--- @return color4F_object#color4F_object ret
+-- @return color4F_table#color4F_table ret (return value: color4F_table)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getRotationIsDir 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setScale 
@@ -416,17 +416,17 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getEmissionRate 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getEndColor 
 -- @param self
--- @return color4F_object#color4F_object ret
+-- @return color4F_table#color4F_table ret (return value: color4F_table)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getLifeVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setStartSizeVar 
@@ -441,27 +441,27 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] addParticle 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getStartRadius 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getParticleCount 
 -- @param self
--- @return unsigned int#unsigned int ret
+-- @return unsigned int#unsigned int ret (return value: unsigned int)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getStartRadiusVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setStartColorVar 
 -- @param self
--- @param #color4F_object color4f
+-- @param #color4F_table color4f
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setEndSpin 
@@ -476,12 +476,12 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] isAutoRemoveOnFinish 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getTotalParticles 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] setStartRadiusVar 
@@ -491,23 +491,23 @@
 --------------------------------
 -- @function [parent=#ParticleSystem] getEndRadiusVar 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] getStartColorVar 
 -- @param self
--- @return color4F_object#color4F_object ret
+-- @return color4F_table#color4F_table ret (return value: color4F_table)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] create 
 -- @param self
 -- @param #string str
--- @return cc.ParticleSystem#cc.ParticleSystem ret
+-- @return ParticleSystem#ParticleSystem ret (return value: cc.ParticleSystem)
         
 --------------------------------
 -- @function [parent=#ParticleSystem] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return cc.ParticleSystem#cc.ParticleSystem ret
+-- @return ParticleSystem#ParticleSystem ret (return value: cc.ParticleSystem)
         
 return nil

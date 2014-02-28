@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#PageView] getCurPageIndex 
 -- @param self
--- @return long#long ret
+-- @return long#long ret (return value: long)
         
 --------------------------------
 -- @function [parent=#PageView] addWidgetToPage 
@@ -17,7 +17,7 @@
 -- @function [parent=#PageView] getPage 
 -- @param self
 -- @param #long long
--- @return ccui.Layout#ccui.Layout ret
+-- @return Layout#Layout ret (return value: ccui.Layout)
         
 --------------------------------
 -- @function [parent=#PageView] removePage 
@@ -43,7 +43,7 @@
 --------------------------------
 -- @function [parent=#PageView] getPages 
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#PageView] removeAllPages 
@@ -57,7 +57,7 @@
 --------------------------------
 -- @function [parent=#PageView] create 
 -- @param self
--- @return ccui.PageView#ccui.PageView ret
+-- @return PageView#PageView ret (return value: ccui.PageView)
         
 --------------------------------
 -- @function [parent=#PageView] PageView 

@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#PhysicsShapeEdgeBox] getPointsCount 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#PhysicsShapeEdgeBox] create 
@@ -13,6 +13,6 @@
 -- @param #cc.PhysicsMaterial physicsmaterial
 -- @param #float float
 -- @param #point_table point
--- @return cc.PhysicsShapeEdgeBox#cc.PhysicsShapeEdgeBox ret
+-- @return PhysicsShapeEdgeBox#PhysicsShapeEdgeBox ret (return value: cc.PhysicsShapeEdgeBox)
         
 return nil

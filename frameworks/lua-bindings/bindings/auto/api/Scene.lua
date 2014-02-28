@@ -4,16 +4,16 @@
 --------------------------------
 -- @function [parent=#Scene] getPhysicsWorld 
 -- @param self
--- @return cc.PhysicsWorld#cc.PhysicsWorld ret
+-- @return PhysicsWorld#PhysicsWorld ret (return value: cc.PhysicsWorld)
         
 --------------------------------
 -- @function [parent=#Scene] create 
 -- @param self
--- @return cc.Scene#cc.Scene ret
+-- @return Scene#Scene ret (return value: cc.Scene)
         
 --------------------------------
 -- @function [parent=#Scene] createWithPhysics 
 -- @param self
--- @return cc.Scene#cc.Scene ret
+-- @return Scene#Scene ret (return value: cc.Scene)
         
 return nil

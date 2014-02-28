@@ -10,17 +10,17 @@
 -- @function [parent=#Layout] hitTest 
 -- @param self
 -- @param #point_table point
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Layout] getBackGroundImageTextureSize 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#Layout] getLayoutType 
 -- @param self
--- @return ccui.LayoutType#ccui.LayoutType ret
+-- @return LayoutType#LayoutType ret (return value: ccui.LayoutType)
         
 --------------------------------
 -- @function [parent=#Layout] setClippingType 
@@ -35,18 +35,18 @@
 --------------------------------
 -- @function [parent=#Layout] setBackGroundImage 
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
--- overload function: setBackGroundColor(color3B_object, color3B_object)
+-- overload function: setBackGroundColor(color3B_table, color3B_table)
 --          
--- overload function: setBackGroundColor(color3B_object)
+-- overload function: setBackGroundColor(color3B_table)
 --          
 -- @function [parent=#Layout] setBackGroundColor
 -- @param self
--- @param #color3B_object color3b
--- @param #color3B_object color3b
+-- @param #color3B_table color3b
+-- @param #color3B_table color3b
 
 --------------------------------
 -- @function [parent=#Layout] requestDoLayout 
@@ -55,7 +55,7 @@
 --------------------------------
 -- @function [parent=#Layout] isClippingEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Layout] setBackGroundColorOpacity 
@@ -89,7 +89,7 @@
 --------------------------------
 -- @function [parent=#Layout] create 
 -- @param self
--- @return ccui.Layout#ccui.Layout ret
+-- @return Layout#Layout ret (return value: ccui.Layout)
         
 --------------------------------
 -- @function [parent=#Layout] Layout 

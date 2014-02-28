@@ -9,12 +9,12 @@
 --------------------------------
 -- @function [parent=#RenderTexture] getClearDepth 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#RenderTexture] getClearStencil 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#RenderTexture] end 
@@ -33,12 +33,12 @@
 --------------------------------
 -- @function [parent=#RenderTexture] getSprite 
 -- @param self
--- @return cc.Sprite#cc.Sprite ret
+-- @return Sprite#Sprite ret (return value: cc.Sprite)
         
 --------------------------------
 -- @function [parent=#RenderTexture] isAutoDraw 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#RenderTexture] setClearFlags 
@@ -58,7 +58,7 @@
 -- @param self
 -- @param #string str
 -- @param #cc.Image::Format format
--- @return bool#bool ret
+-- @return bool#bool ret (retunr value: bool)
 
 --------------------------------
 -- @function [parent=#RenderTexture] setAutoDraw 
@@ -68,7 +68,7 @@
 --------------------------------
 -- @function [parent=#RenderTexture] setClearColor 
 -- @param self
--- @param #color4F_object color4f
+-- @param #color4F_table color4f
         
 --------------------------------
 -- @function [parent=#RenderTexture] endToLua 
@@ -98,7 +98,7 @@
 --------------------------------
 -- @function [parent=#RenderTexture] getClearColor 
 -- @param self
--- @return color4F_object#color4F_object ret
+-- @return color4F_table#color4F_table ret (return value: color4F_table)
         
 --------------------------------
 -- @function [parent=#RenderTexture] clear 
@@ -111,12 +111,12 @@
 --------------------------------
 -- @function [parent=#RenderTexture] getClearFlags 
 -- @param self
--- @return unsigned int#unsigned int ret
+-- @return unsigned int#unsigned int ret (return value: unsigned int)
         
 --------------------------------
 -- @function [parent=#RenderTexture] newImage 
 -- @param self
--- @return cc.Image#cc.Image ret
+-- @return Image#Image ret (return value: cc.Image)
         
 --------------------------------
 -- @function [parent=#RenderTexture] setClearDepth 
@@ -134,7 +134,7 @@
 -- @param #int int
 -- @param #cc.Texture2D::PixelFormat pixelformat
 -- @param #unsigned int int
--- @return bool#bool ret
+-- @return bool#bool ret (retunr value: bool)
 
 --------------------------------
 -- overload function: create(int, int, cc.Texture2D::PixelFormat)
@@ -149,7 +149,7 @@
 -- @param #int int
 -- @param #cc.Texture2D::PixelFormat pixelformat
 -- @param #unsigned int int
--- @return cc.RenderTexture#cc.RenderTexture ret
+-- @return RenderTexture#RenderTexture ret (retunr value: cc.RenderTexture)
 
 --------------------------------
 -- @function [parent=#RenderTexture] RenderTexture 

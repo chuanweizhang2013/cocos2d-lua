@@ -4,11 +4,11 @@
 --------------------------------
 -- @function [parent=#EventListener] clone 
 -- @param self
--- @return cc.EventListener#cc.EventListener ret
+-- @return EventListener#EventListener ret (return value: cc.EventListener)
         
 --------------------------------
 -- @function [parent=#EventListener] checkAvailable 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 return nil

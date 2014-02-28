@@ -13,12 +13,12 @@
 --------------------------------
 -- @function [parent=#TextureCache] getDescription 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#TextureCache] getCachedTextureInfo 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- overload function: addImage(cc.Image, string)
@@ -29,13 +29,13 @@
 -- @param self
 -- @param #cc.Image image
 -- @param #string str
--- @return cc.Texture2D#cc.Texture2D ret
+-- @return Texture2D#Texture2D ret (retunr value: cc.Texture2D)
 
 --------------------------------
 -- @function [parent=#TextureCache] getTextureForKey 
 -- @param self
 -- @param #string str
--- @return cc.Texture2D#cc.Texture2D ret
+-- @return Texture2D#Texture2D ret (return value: cc.Texture2D)
         
 --------------------------------
 -- @function [parent=#TextureCache] removeUnusedTextures 

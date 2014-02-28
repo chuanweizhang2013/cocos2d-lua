@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointGear] getPhase 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointGear] setPhase 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointGear] getRatio 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointGear] construct 
@@ -28,6 +28,6 @@
 -- @param #cc.PhysicsBody physicsbody
 -- @param #float float
 -- @param #float float
--- @return cc.PhysicsJointGear#cc.PhysicsJointGear ret
+-- @return PhysicsJointGear#PhysicsJointGear ret (return value: cc.PhysicsJointGear)
         
 return nil

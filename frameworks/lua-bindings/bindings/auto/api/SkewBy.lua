@@ -7,6 +7,6 @@
 -- @param #float float
 -- @param #float float
 -- @param #float float
--- @return cc.SkewBy#cc.SkewBy ret
+-- @return SkewBy#SkewBy ret (return value: cc.SkewBy)
         
 return nil

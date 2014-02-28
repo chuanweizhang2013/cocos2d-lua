@@ -9,27 +9,27 @@
 --------------------------------
 -- @function [parent=#Slider] loadSlidBallTextureNormal 
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
 -- @function [parent=#Slider] loadBarTexture 
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
 -- @function [parent=#Slider] loadProgressBarTexture 
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
 -- @function [parent=#Slider] loadSlidBallTextures 
 -- @param self
--- @param #char* char
--- @param #char* char
--- @param #char* char
+-- @param #char char
+-- @param #char char
+-- @param #char char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
@@ -55,24 +55,24 @@
 --------------------------------
 -- @function [parent=#Slider] loadSlidBallTexturePressed 
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
 -- @function [parent=#Slider] loadSlidBallTextureDisabled 
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
 -- @function [parent=#Slider] getPercent 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#Slider] create 
 -- @param self
--- @return ccui.Slider#ccui.Slider ret
+-- @return Slider#Slider ret (return value: ccui.Slider)
         
 --------------------------------
 -- @function [parent=#Slider] Slider 

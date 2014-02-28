@@ -5,13 +5,13 @@
 -- @function [parent=#FileUtils] fullPathForFilename 
 -- @param self
 -- @param #string str
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#FileUtils] getStringFromFile 
 -- @param self
 -- @param #string str
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#FileUtils] setFilenameLookupDictionary 
@@ -22,7 +22,7 @@
 -- @function [parent=#FileUtils] isAbsolutePath 
 -- @param self
 -- @param #string str
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#FileUtils] loadFilenameLookupDictionaryFromFile 
@@ -32,26 +32,26 @@
 --------------------------------
 -- @function [parent=#FileUtils] isPopupNotify 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#FileUtils] getValueVectorFromFile 
 -- @param self
 -- @param #string str
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#FileUtils] writeToFile 
 -- @param self
 -- @param #map_table map
 -- @param #string str
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#FileUtils] getValueMapFromFile 
 -- @param self
 -- @param #string str
--- @return map_table#map_table ret
+-- @return map_table#map_table ret (return value: map_table)
         
 --------------------------------
 -- @function [parent=#FileUtils] addSearchResolutionsOrder 
@@ -67,7 +67,7 @@
 -- @function [parent=#FileUtils] isFileExist 
 -- @param self
 -- @param #string str
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#FileUtils] purgeCachedEntries 
@@ -78,7 +78,7 @@
 -- @param self
 -- @param #string str
 -- @param #string str
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#FileUtils] setPopupNotify 
@@ -88,7 +88,7 @@
 --------------------------------
 -- @function [parent=#FileUtils] getWritablePath 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#FileUtils] destroyInstance 
@@ -97,6 +97,6 @@
 --------------------------------
 -- @function [parent=#FileUtils] getInstance 
 -- @param self
--- @return cc.FileUtils#cc.FileUtils ret
+-- @return FileUtils#FileUtils ret (return value: cc.FileUtils)
         
 return nil

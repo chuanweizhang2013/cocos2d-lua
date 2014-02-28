@@ -17,12 +17,12 @@
 --------------------------------
 -- @function [parent=#LabelTTF] getFontSize 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#LabelTTF] getString 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#LabelTTF] setTextDefinition 
@@ -37,14 +37,14 @@
 --------------------------------
 -- @function [parent=#LabelTTF] getHorizontalAlignment 
 -- @param self
--- @return cc.TextHAlignment#cc.TextHAlignment ret
+-- @return TextHAlignment#TextHAlignment ret (return value: cc.TextHAlignment)
         
 --------------------------------
 -- @function [parent=#LabelTTF] initWithStringAndTextDefinition 
 -- @param self
 -- @param #string str
 -- @param #cc.FontDefinition fontdefinition
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#LabelTTF] setString 
@@ -66,30 +66,30 @@
 -- @param #size_table size
 -- @param #cc.TextHAlignment texthalignment
 -- @param #cc.TextVAlignment textvalignment
--- @return bool#bool ret
+-- @return bool#bool ret (retunr value: bool)
 
 --------------------------------
 -- @function [parent=#LabelTTF] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#LabelTTF] setFontFillColor 
 -- @param self
--- @param #color3B_object color3b
+-- @param #color3B_table color3b
 -- @param #bool bool
         
 --------------------------------
 -- @function [parent=#LabelTTF] enableStroke 
 -- @param self
--- @param #color3B_object color3b
+-- @param #color3B_table color3b
 -- @param #float float
 -- @param #bool bool
         
 --------------------------------
 -- @function [parent=#LabelTTF] getDimensions 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#LabelTTF] setVerticalAlignment 
@@ -104,17 +104,17 @@
 --------------------------------
 -- @function [parent=#LabelTTF] getVerticalAlignment 
 -- @param self
--- @return cc.TextVAlignment#cc.TextVAlignment ret
+-- @return TextVAlignment#TextVAlignment ret (return value: cc.TextVAlignment)
         
 --------------------------------
 -- @function [parent=#LabelTTF] getTextDefinition 
 -- @param self
--- @return cc.FontDefinition#cc.FontDefinition ret
+-- @return FontDefinition#FontDefinition ret (return value: cc.FontDefinition)
         
 --------------------------------
 -- @function [parent=#LabelTTF] getFontName 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#LabelTTF] setHorizontalAlignment 
@@ -146,14 +146,14 @@
 -- @param #size_table size
 -- @param #cc.TextHAlignment texthalignment
 -- @param #cc.TextVAlignment textvalignment
--- @return cc.LabelTTF#cc.LabelTTF ret
+-- @return LabelTTF#LabelTTF ret (retunr value: cc.LabelTTF)
 
 --------------------------------
 -- @function [parent=#LabelTTF] createWithFontDefinition 
 -- @param self
 -- @param #string str
 -- @param #cc.FontDefinition fontdefinition
--- @return cc.LabelTTF#cc.LabelTTF ret
+-- @return LabelTTF#LabelTTF ret (return value: cc.LabelTTF)
         
 --------------------------------
 -- @function [parent=#LabelTTF] LabelTTF 

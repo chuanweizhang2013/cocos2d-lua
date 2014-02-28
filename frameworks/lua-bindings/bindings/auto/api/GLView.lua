@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#GLView] isOpenGLReady 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#GLView] createWithRect 
@@ -17,18 +17,18 @@
 -- @param #string str
 -- @param #rect_table rect
 -- @param #float float
--- @return cc.GLView#cc.GLView ret
+-- @return GLView#GLView ret (return value: cc.GLView)
         
 --------------------------------
 -- @function [parent=#GLView] create 
 -- @param self
 -- @param #string str
--- @return cc.GLView#cc.GLView ret
+-- @return GLView#GLView ret (return value: cc.GLView)
         
 --------------------------------
 -- @function [parent=#GLView] createWithFullScreen 
 -- @param self
 -- @param #string str
--- @return cc.GLView#cc.GLView ret
+-- @return GLView#GLView ret (return value: cc.GLView)
         
 return nil

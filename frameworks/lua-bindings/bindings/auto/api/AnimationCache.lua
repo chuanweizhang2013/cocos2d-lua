@@ -5,7 +5,7 @@
 -- @function [parent=#AnimationCache] getAnimation 
 -- @param self
 -- @param #string str
--- @return cc.Animation#cc.Animation ret
+-- @return Animation#Animation ret (return value: cc.Animation)
         
 --------------------------------
 -- @function [parent=#AnimationCache] addAnimation 
@@ -16,7 +16,7 @@
 --------------------------------
 -- @function [parent=#AnimationCache] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#AnimationCache] addAnimationsWithDictionary 
@@ -41,7 +41,7 @@
 --------------------------------
 -- @function [parent=#AnimationCache] getInstance 
 -- @param self
--- @return cc.AnimationCache#cc.AnimationCache ret
+-- @return AnimationCache#AnimationCache ret (return value: cc.AnimationCache)
         
 --------------------------------
 -- @function [parent=#AnimationCache] AnimationCache 

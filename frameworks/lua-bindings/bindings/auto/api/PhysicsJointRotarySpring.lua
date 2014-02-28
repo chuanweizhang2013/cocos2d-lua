@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointRotarySpring] getDamping 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointRotarySpring] setRestAngle 
@@ -14,7 +14,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointRotarySpring] getStiffness 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointRotarySpring] setStiffness 
@@ -29,7 +29,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointRotarySpring] getRestAngle 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointRotarySpring] construct 
@@ -38,6 +38,6 @@
 -- @param #cc.PhysicsBody physicsbody
 -- @param #float float
 -- @param #float float
--- @return cc.PhysicsJointRotarySpring#cc.PhysicsJointRotarySpring ret
+-- @return PhysicsJointRotarySpring#PhysicsJointRotarySpring ret (return value: cc.PhysicsJointRotarySpring)
         
 return nil

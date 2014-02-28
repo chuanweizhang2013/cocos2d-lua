@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return cc.TransitionMoveInT#cc.TransitionMoveInT ret
+-- @return TransitionMoveInT#TransitionMoveInT ret (return value: cc.TransitionMoveInT)
         
 return nil

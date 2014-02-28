@@ -13,7 +13,7 @@
 --------------------------------
 -- @function [parent=#TextAtlas] getStringValue 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#TextAtlas] setStringValue 
@@ -23,7 +23,7 @@
 --------------------------------
 -- @function [parent=#TextAtlas] create 
 -- @param self
--- @return ccui.TextAtlas#ccui.TextAtlas ret
+-- @return TextAtlas#TextAtlas ret (return value: ccui.TextAtlas)
         
 --------------------------------
 -- @function [parent=#TextAtlas] TextAtlas 

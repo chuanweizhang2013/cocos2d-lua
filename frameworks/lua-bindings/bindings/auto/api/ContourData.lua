@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#ContourData] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ContourData] addVertex 
@@ -14,7 +14,7 @@
 --------------------------------
 -- @function [parent=#ContourData] create 
 -- @param self
--- @return ccs.ContourData#ccs.ContourData ret
+-- @return ContourData#ContourData ret (return value: ccs.ContourData)
         
 --------------------------------
 -- @function [parent=#ContourData] ContourData 

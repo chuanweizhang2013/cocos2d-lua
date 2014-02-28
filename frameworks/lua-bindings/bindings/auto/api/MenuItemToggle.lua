@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#MenuItemToggle] getSelectedIndex 
 -- @param self
--- @return unsigned int#unsigned int ret
+-- @return unsigned int#unsigned int ret (return value: unsigned int)
         
 --------------------------------
 -- @function [parent=#MenuItemToggle] addSubItem 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#MenuItemToggle] getSelectedItem 
 -- @param self
--- @return cc.MenuItem#cc.MenuItem ret
+-- @return MenuItem#MenuItem ret (return value: cc.MenuItem)
         
 --------------------------------
 -- @function [parent=#MenuItemToggle] setSelectedIndex 

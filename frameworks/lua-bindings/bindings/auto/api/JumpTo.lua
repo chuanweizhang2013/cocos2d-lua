@@ -8,6 +8,6 @@
 -- @param #point_table point
 -- @param #float float
 -- @param #int int
--- @return cc.JumpTo#cc.JumpTo ret
+-- @return JumpTo#JumpTo ret (return value: cc.JumpTo)
         
 return nil

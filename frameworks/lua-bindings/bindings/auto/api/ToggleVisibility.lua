@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#ToggleVisibility] create 
 -- @param self
--- @return cc.ToggleVisibility#cc.ToggleVisibility ret
+-- @return ToggleVisibility#ToggleVisibility ret (return value: cc.ToggleVisibility)
         
 return nil

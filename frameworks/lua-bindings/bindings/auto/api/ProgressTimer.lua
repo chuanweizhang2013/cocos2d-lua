@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#ProgressTimer] isReverseDirection 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ProgressTimer] setBarChangeRate 
@@ -14,7 +14,7 @@
 --------------------------------
 -- @function [parent=#ProgressTimer] getPercentage 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ProgressTimer] setSprite 
@@ -24,12 +24,12 @@
 --------------------------------
 -- @function [parent=#ProgressTimer] getType 
 -- @param self
--- @return cc.ProgressTimer::Type#cc.ProgressTimer::Type ret
+-- @return ProgressTimer::Type#ProgressTimer::Type ret (return value: cc.ProgressTimer::Type)
         
 --------------------------------
 -- @function [parent=#ProgressTimer] getSprite 
 -- @param self
--- @return cc.Sprite#cc.Sprite ret
+-- @return Sprite#Sprite ret (return value: cc.Sprite)
         
 --------------------------------
 -- @function [parent=#ProgressTimer] setMidpoint 
@@ -39,7 +39,7 @@
 --------------------------------
 -- @function [parent=#ProgressTimer] getBarChangeRate 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- overload function: setReverseDirection(bool)
@@ -53,7 +53,7 @@
 --------------------------------
 -- @function [parent=#ProgressTimer] getMidpoint 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#ProgressTimer] setPercentage 
@@ -69,6 +69,6 @@
 -- @function [parent=#ProgressTimer] create 
 -- @param self
 -- @param #cc.Sprite sprite
--- @return cc.ProgressTimer#cc.ProgressTimer ret
+-- @return ProgressTimer#ProgressTimer ret (return value: cc.ProgressTimer)
         
 return nil

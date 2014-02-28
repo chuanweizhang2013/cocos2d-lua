@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#ParticleDisplayData] create 
 -- @param self
--- @return ccs.ParticleDisplayData#ccs.ParticleDisplayData ret
+-- @return ParticleDisplayData#ParticleDisplayData ret (return value: ccs.ParticleDisplayData)
         
 --------------------------------
 -- @function [parent=#ParticleDisplayData] ParticleDisplayData 

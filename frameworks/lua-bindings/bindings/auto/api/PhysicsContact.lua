@@ -4,21 +4,21 @@
 --------------------------------
 -- @function [parent=#PhysicsContact] getContactData 
 -- @param self
--- @return cc.PhysicsContactData#cc.PhysicsContactData ret
+-- @return PhysicsContactData#PhysicsContactData ret (return value: cc.PhysicsContactData)
         
 --------------------------------
 -- @function [parent=#PhysicsContact] getEventCode 
 -- @param self
--- @return cc.PhysicsContact::EventCode#cc.PhysicsContact::EventCode ret
+-- @return PhysicsContact::EventCode#PhysicsContact::EventCode ret (return value: cc.PhysicsContact::EventCode)
         
 --------------------------------
 -- @function [parent=#PhysicsContact] getShapeA 
 -- @param self
--- @return cc.PhysicsShape#cc.PhysicsShape ret
+-- @return PhysicsShape#PhysicsShape ret (return value: cc.PhysicsShape)
         
 --------------------------------
 -- @function [parent=#PhysicsContact] getShapeB 
 -- @param self
--- @return cc.PhysicsShape#cc.PhysicsShape ret
+-- @return PhysicsShape#PhysicsShape ret (return value: cc.PhysicsShape)
         
 return nil

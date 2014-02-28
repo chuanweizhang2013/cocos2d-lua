@@ -4,13 +4,13 @@
 --------------------------------
 -- @function [parent=#TransitionSlideInB] action 
 -- @param self
--- @return cc.ActionInterval#cc.ActionInterval ret
+-- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
         
 --------------------------------
 -- @function [parent=#TransitionSlideInB] create 
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return cc.TransitionSlideInB#cc.TransitionSlideInB ret
+-- @return TransitionSlideInB#TransitionSlideInB ret (return value: cc.TransitionSlideInB)
         
 return nil

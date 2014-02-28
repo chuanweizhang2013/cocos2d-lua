@@ -5,7 +5,7 @@
 -- @function [parent=#ListView] getIndex 
 -- @param self
 -- @param #ccui.Widget widget
--- @return long#long ret
+-- @return long#long ret (return value: long)
         
 --------------------------------
 -- @function [parent=#ListView] removeAllItems 
@@ -24,7 +24,7 @@
 --------------------------------
 -- @function [parent=#ListView] getItems 
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#ListView] removeItem 
@@ -34,7 +34,7 @@
 --------------------------------
 -- @function [parent=#ListView] getCurSelectedIndex 
 -- @param self
--- @return long#long ret
+-- @return long#long ret (return value: long)
         
 --------------------------------
 -- @function [parent=#ListView] insertDefaultItem 
@@ -54,7 +54,7 @@
 -- @function [parent=#ListView] getItem 
 -- @param self
 -- @param #long long
--- @return ccui.Widget#ccui.Widget ret
+-- @return Widget#Widget ret (return value: ccui.Widget)
         
 --------------------------------
 -- @function [parent=#ListView] setItemModel 
@@ -78,7 +78,7 @@
 --------------------------------
 -- @function [parent=#ListView] create 
 -- @param self
--- @return ccui.ListView#ccui.ListView ret
+-- @return ListView#ListView ret (return value: ccui.ListView)
         
 --------------------------------
 -- @function [parent=#ListView] ListView 
