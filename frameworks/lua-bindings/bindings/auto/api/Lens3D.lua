@@ -19,12 +19,12 @@
 --------------------------------
 -- @function [parent=#Lens3D] getPosition 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Lens3D] getLensEffect 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Lens3D] create 
@@ -33,6 +33,6 @@
 -- @param #size_table size
 -- @param #point_table point
 -- @param #float float
--- @return Lens3D#Lens3D ret (return value: cc.Lens3D)
+-- @return cc.Lens3D#cc.Lens3D ret
         
 return nil

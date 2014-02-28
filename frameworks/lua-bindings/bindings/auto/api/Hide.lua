@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#Hide] create 
 -- @param self
--- @return Hide#Hide ret (return value: cc.Hide)
+-- @return cc.Hide#cc.Hide ret
         
 return nil

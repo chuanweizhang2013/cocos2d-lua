@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#ActionInterval] getAmplitudeRate 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ActionInterval] setAmplitudeRate 
@@ -14,6 +14,6 @@
 --------------------------------
 -- @function [parent=#ActionInterval] getElapsed 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 return nil

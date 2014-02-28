@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#ArmatureDataManager] getAnimationDatas 
 -- @param self
--- @return map_table#map_table ret (return value: map_table)
+-- @return cocos2d::Map<std::basic_string<char>, ccs.AnimationData >#cocos2d::Map<std::basic_string<char>, ccs.AnimationData > ret
         
 --------------------------------
 -- @function [parent=#ArmatureDataManager] removeAnimationData 
@@ -37,25 +37,25 @@
 --------------------------------
 -- @function [parent=#ArmatureDataManager] getTextureDatas 
 -- @param self
--- @return map_table#map_table ret (return value: map_table)
+-- @return cocos2d::Map<std::basic_string<char>, ccs.TextureData >#cocos2d::Map<std::basic_string<char>, ccs.TextureData > ret
         
 --------------------------------
 -- @function [parent=#ArmatureDataManager] getTextureData 
 -- @param self
 -- @param #string str
--- @return TextureData#TextureData ret (return value: ccs.TextureData)
+-- @return ccs.TextureData#ccs.TextureData ret
         
 --------------------------------
 -- @function [parent=#ArmatureDataManager] getArmatureData 
 -- @param self
 -- @param #string str
--- @return ArmatureData#ArmatureData ret (return value: ccs.ArmatureData)
+-- @return ccs.ArmatureData#ccs.ArmatureData ret
         
 --------------------------------
 -- @function [parent=#ArmatureDataManager] getAnimationData 
 -- @param self
 -- @param #string str
--- @return AnimationData#AnimationData ret (return value: ccs.AnimationData)
+-- @return ccs.AnimationData#ccs.AnimationData ret
         
 --------------------------------
 -- @function [parent=#ArmatureDataManager] addAnimationData 
@@ -67,7 +67,7 @@
 --------------------------------
 -- @function [parent=#ArmatureDataManager] init 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ArmatureDataManager] removeArmatureData 
@@ -77,7 +77,7 @@
 --------------------------------
 -- @function [parent=#ArmatureDataManager] getArmatureDatas 
 -- @param self
--- @return map_table#map_table ret (return value: map_table)
+-- @return cocos2d::Map<std::basic_string<char>, ccs.ArmatureData >#cocos2d::Map<std::basic_string<char>, ccs.ArmatureData > ret
         
 --------------------------------
 -- @function [parent=#ArmatureDataManager] removeTextureData 
@@ -94,7 +94,7 @@
 --------------------------------
 -- @function [parent=#ArmatureDataManager] isAutoLoadSpriteFile 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ArmatureDataManager] addSpriteFrameFromFile 
@@ -110,6 +110,6 @@
 --------------------------------
 -- @function [parent=#ArmatureDataManager] getInstance 
 -- @param self
--- @return ArmatureDataManager#ArmatureDataManager ret (return value: ccs.ArmatureDataManager)
+-- @return ccs.ArmatureDataManager#ccs.ArmatureDataManager ret
         
 return nil

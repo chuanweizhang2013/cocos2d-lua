@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#PhysicsWorld] getGravity 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsWorld] getAllBodies 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsWorld] setGravity 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#PhysicsWorld] getSpeed 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- overload function: removeBody(int)
@@ -39,7 +39,7 @@
 --------------------------------
 -- @function [parent=#PhysicsWorld] getUpdateRate 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#PhysicsWorld] setSpeed 
@@ -50,7 +50,7 @@
 -- @function [parent=#PhysicsWorld] getShapes 
 -- @param self
 -- @param #point_table point
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsWorld] removeAllJoints 
@@ -60,7 +60,7 @@
 -- @function [parent=#PhysicsWorld] getShape 
 -- @param self
 -- @param #point_table point
--- @return PhysicsShape#PhysicsShape ret (return value: cc.PhysicsShape)
+-- @return cc.PhysicsShape#cc.PhysicsShape ret
         
 --------------------------------
 -- @function [parent=#PhysicsWorld] removeAllBodies 
@@ -69,7 +69,7 @@
 --------------------------------
 -- @function [parent=#PhysicsWorld] getDebugDrawMask 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#PhysicsWorld] setDebugDrawMask 
@@ -80,7 +80,7 @@
 -- @function [parent=#PhysicsWorld] getBody 
 -- @param self
 -- @param #int int
--- @return PhysicsBody#PhysicsBody ret (return value: cc.PhysicsBody)
+-- @return cc.PhysicsBody#cc.PhysicsBody ret
         
 --------------------------------
 -- @function [parent=#PhysicsWorld] setUpdateRate 

@@ -8,7 +8,7 @@
 --------------------------------
 -- @function [parent=#ComAudio] getEffectsVolume 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ComAudio] stopEffect 
@@ -18,12 +18,12 @@
 --------------------------------
 -- @function [parent=#ComAudio] getBackgroundMusicVolume 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ComAudio] willPlayBackgroundMusic 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ComAudio] setBackgroundMusicVolume 
@@ -50,12 +50,12 @@
 --------------------------------
 -- @function [parent=#ComAudio] isBackgroundMusicPlaying 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ComAudio] isLoop 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ComAudio] resumeAllEffects 
@@ -68,37 +68,37 @@
 --------------------------------
 -- @function [parent=#ComAudio] preloadBackgroundMusic 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
--- overload function: playBackgroundMusic(char)
+-- overload function: playBackgroundMusic(char*)
 --          
--- overload function: playBackgroundMusic(char, bool)
+-- overload function: playBackgroundMusic(char*, bool)
 --          
 -- overload function: playBackgroundMusic()
 --          
 -- @function [parent=#ComAudio] playBackgroundMusic
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #bool bool
 
 --------------------------------
--- overload function: playEffect(char)
+-- overload function: playEffect(char*)
 --          
--- overload function: playEffect(char, bool)
+-- overload function: playEffect(char*, bool)
 --          
 -- overload function: playEffect()
 --          
 -- @function [parent=#ComAudio] playEffect
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #bool bool
--- @return unsigned int#unsigned int ret (retunr value: unsigned int)
+-- @return unsigned int#unsigned int ret
 
 --------------------------------
 -- @function [parent=#ComAudio] preloadEffect 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#ComAudio] setLoop 
@@ -108,7 +108,7 @@
 --------------------------------
 -- @function [parent=#ComAudio] unloadEffect 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#ComAudio] rewindBackgroundMusic 
@@ -126,7 +126,7 @@
 --------------------------------
 -- @function [parent=#ComAudio] setFile 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#ComAudio] setEffectsVolume 
@@ -136,7 +136,7 @@
 --------------------------------
 -- @function [parent=#ComAudio] getFile 
 -- @param self
--- @return char#char ret (return value: char)
+-- @return char*#char* ret
         
 --------------------------------
 -- @function [parent=#ComAudio] resumeEffect 
@@ -146,11 +146,11 @@
 --------------------------------
 -- @function [parent=#ComAudio] create 
 -- @param self
--- @return ComAudio#ComAudio ret (return value: ccs.ComAudio)
+-- @return ccs.ComAudio#ccs.ComAudio ret
         
 --------------------------------
 -- @function [parent=#ComAudio] createInstance 
 -- @param self
--- @return Ref#Ref ret (return value: cc.Ref)
+-- @return cc.Ref#cc.Ref ret
         
 return nil

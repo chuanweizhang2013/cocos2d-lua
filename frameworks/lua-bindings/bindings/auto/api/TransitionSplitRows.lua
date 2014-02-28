@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return TransitionSplitRows#TransitionSplitRows ret (return value: cc.TransitionSplitRows)
+-- @return cc.TransitionSplitRows#cc.TransitionSplitRows ret
         
 return nil

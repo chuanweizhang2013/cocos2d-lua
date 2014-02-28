@@ -16,20 +16,20 @@
 -- @param self
 -- @param #cc.Texture2D texture2d
 -- @param #long long
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#SpriteBatchNode] lowestAtlasIndexInChild 
 -- @param self
 -- @param #cc.Sprite sprite
--- @return long#long ret (return value: long)
+-- @return long#long ret
         
 --------------------------------
 -- @function [parent=#SpriteBatchNode] atlasIndexForChild 
 -- @param self
 -- @param #cc.Sprite sprite
 -- @param #int int
--- @return long#long ret (return value: long)
+-- @return long#long ret
         
 --------------------------------
 -- @function [parent=#SpriteBatchNode] setTextureAtlas 
@@ -41,7 +41,7 @@
 -- @param self
 -- @param #cc.Sprite sprite
 -- @param #long long
--- @return long#long ret (return value: long)
+-- @return long#long ret
         
 --------------------------------
 -- @function [parent=#SpriteBatchNode] increaseAtlasCapacity 
@@ -50,7 +50,7 @@
 --------------------------------
 -- @function [parent=#SpriteBatchNode] getTextureAtlas 
 -- @param self
--- @return TextureAtlas#TextureAtlas ret (return value: cc.TextureAtlas)
+-- @return cc.TextureAtlas#cc.TextureAtlas ret
         
 --------------------------------
 -- @function [parent=#SpriteBatchNode] insertQuadFromSprite 
@@ -67,7 +67,7 @@
 -- @param self
 -- @param #string str
 -- @param #long long
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#SpriteBatchNode] setTexture 
@@ -77,13 +77,13 @@
 --------------------------------
 -- @function [parent=#SpriteBatchNode] getTexture 
 -- @param self
--- @return Texture2D#Texture2D ret (return value: cc.Texture2D)
+-- @return cc.Texture2D#cc.Texture2D ret
         
 --------------------------------
 -- @function [parent=#SpriteBatchNode] highestAtlasIndexInChild 
 -- @param self
 -- @param #cc.Sprite sprite
--- @return long#long ret (return value: long)
+-- @return long#long ret
         
 --------------------------------
 -- @function [parent=#SpriteBatchNode] removeChildAtIndex 
@@ -106,14 +106,14 @@
 -- @param self
 -- @param #string str
 -- @param #long long
--- @return SpriteBatchNode#SpriteBatchNode ret (return value: cc.SpriteBatchNode)
+-- @return cc.SpriteBatchNode#cc.SpriteBatchNode ret
         
 --------------------------------
 -- @function [parent=#SpriteBatchNode] createWithTexture 
 -- @param self
 -- @param #cc.Texture2D texture2d
 -- @param #long long
--- @return SpriteBatchNode#SpriteBatchNode ret (return value: cc.SpriteBatchNode)
+-- @return cc.SpriteBatchNode#cc.SpriteBatchNode ret
         
 --------------------------------
 -- @function [parent=#SpriteBatchNode] SpriteBatchNode 

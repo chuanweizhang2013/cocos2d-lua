@@ -13,6 +13,6 @@
 -- @function [parent=#EaseBezierAction] create 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
--- @return EaseBezierAction#EaseBezierAction ret (return value: cc.EaseBezierAction)
+-- @return cc.EaseBezierAction#cc.EaseBezierAction ret
         
 return nil

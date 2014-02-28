@@ -9,22 +9,22 @@
 --------------------------------
 -- @function [parent=#ComRender] getNode 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
--- overload function: create(cc.Node, char)
+-- overload function: create(cc.Node, char*)
 --          
 -- overload function: create()
 --          
 -- @function [parent=#ComRender] create
 -- @param self
 -- @param #cc.Node node
--- @param #char char
--- @return ComRender#ComRender ret (retunr value: ccs.ComRender)
+-- @param #char* char
+-- @return ccs.ComRender#ccs.ComRender ret
 
 --------------------------------
 -- @function [parent=#ComRender] createInstance 
 -- @param self
--- @return Ref#Ref ret (return value: cc.Ref)
+-- @return cc.Ref#cc.Ref ret
         
 return nil

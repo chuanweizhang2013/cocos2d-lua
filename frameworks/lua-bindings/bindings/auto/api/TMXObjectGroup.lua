@@ -10,18 +10,18 @@
 -- @function [parent=#TMXObjectGroup] getProperty 
 -- @param self
 -- @param #string str
--- @return Value#Value ret (return value: cc.Value)
+-- @return cc.Value#cc.Value ret
         
 --------------------------------
 -- @function [parent=#TMXObjectGroup] getPositionOffset 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#TMXObjectGroup] getObject 
 -- @param self
 -- @param #string str
--- @return map_table#map_table ret (return value: map_table)
+-- @return map_table#map_table ret
         
 --------------------------------
 -- overload function: getObjects()
@@ -30,7 +30,7 @@
 --          
 -- @function [parent=#TMXObjectGroup] getObjects
 -- @param self
--- @return array_table#array_table ret (retunr value: array_table)
+-- @return array_table#array_table ret
 
 --------------------------------
 -- @function [parent=#TMXObjectGroup] setGroupName 
@@ -44,12 +44,12 @@
 --          
 -- @function [parent=#TMXObjectGroup] getProperties
 -- @param self
--- @return map_table#map_table ret (retunr value: map_table)
+-- @return map_table#map_table ret
 
 --------------------------------
 -- @function [parent=#TMXObjectGroup] getGroupName 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#TMXObjectGroup] setProperties 

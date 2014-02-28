@@ -7,6 +7,6 @@
 -- @param #cc.PhysicsBody physicsbody
 -- @param #cc.PhysicsBody physicsbody
 -- @param #point_table point
--- @return PhysicsJointPin#PhysicsJointPin ret (return value: cc.PhysicsJointPin)
+-- @return cc.PhysicsJointPin#cc.PhysicsJointPin ret
         
 return nil

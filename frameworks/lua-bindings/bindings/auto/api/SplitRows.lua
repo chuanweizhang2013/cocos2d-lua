@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #unsigned int int
--- @return SplitRows#SplitRows ret (return value: cc.SplitRows)
+-- @return cc.SplitRows#cc.SplitRows ret
         
 return nil

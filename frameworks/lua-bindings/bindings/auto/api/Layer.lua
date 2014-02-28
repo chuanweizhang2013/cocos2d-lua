@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#Layer] create 
 -- @param self
--- @return Layer#Layer ret (return value: cc.Layer)
+-- @return cc.Layer#cc.Layer ret
         
 return nil

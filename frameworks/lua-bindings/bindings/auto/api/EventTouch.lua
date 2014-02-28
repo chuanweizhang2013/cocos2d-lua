@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#EventTouch] getEventCode 
 -- @param self
--- @return EventTouch::EventCode#EventTouch::EventCode ret (return value: cc.EventTouch::EventCode)
+-- @return cc.EventTouch::EventCode#cc.EventTouch::EventCode ret
         
 --------------------------------
 -- @function [parent=#EventTouch] setEventCode 

@@ -19,13 +19,13 @@
 --------------------------------
 -- @function [parent=#ImageView] loadTexture 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
 -- @function [parent=#ImageView] create 
 -- @param self
--- @return ImageView#ImageView ret (return value: ccui.ImageView)
+-- @return ccui.ImageView#ccui.ImageView ret
         
 --------------------------------
 -- @function [parent=#ImageView] ImageView 

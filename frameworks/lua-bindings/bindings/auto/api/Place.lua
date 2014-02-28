@@ -5,6 +5,6 @@
 -- @function [parent=#Place] create 
 -- @param self
 -- @param #point_table point
--- @return Place#Place ret (return value: cc.Place)
+-- @return cc.Place#cc.Place ret
         
 return nil

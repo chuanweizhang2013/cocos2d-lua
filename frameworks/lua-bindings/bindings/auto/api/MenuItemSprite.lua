@@ -28,17 +28,17 @@
 --------------------------------
 -- @function [parent=#MenuItemSprite] getDisabledImage 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#MenuItemSprite] getSelectedImage 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#MenuItemSprite] getNormalImage 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#MenuItemSprite] unselected 

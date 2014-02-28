@@ -4,17 +4,17 @@
 --------------------------------
 -- @function [parent=#Event] isStopped 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Event] getType 
 -- @param self
--- @return Event::Type#Event::Type ret (return value: cc.Event::Type)
+-- @return cc.Event::Type#cc.Event::Type ret
         
 --------------------------------
 -- @function [parent=#Event] getCurrentTarget 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#Event] stopPropagation 

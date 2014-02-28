@@ -8,6 +8,6 @@
 -- @param #size_table size
 -- @param #int int
 -- @param #bool bool
--- @return ShakyTiles3D#ShakyTiles3D ret (return value: cc.ShakyTiles3D)
+-- @return cc.ShakyTiles3D#cc.ShakyTiles3D ret
         
 return nil

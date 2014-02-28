@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#ArmatureDisplayData] create 
 -- @param self
--- @return ArmatureDisplayData#ArmatureDisplayData ret (return value: ccs.ArmatureDisplayData)
+-- @return ccs.ArmatureDisplayData#ccs.ArmatureDisplayData ret
         
 --------------------------------
 -- @function [parent=#ArmatureDisplayData] ArmatureDisplayData 

@@ -4,22 +4,22 @@
 --------------------------------
 -- @function [parent=#AssetsManager] setStoragePath 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#AssetsManager] setPackageUrl 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#AssetsManager] checkUpdate 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#AssetsManager] getStoragePath 
 -- @param self
--- @return char#char ret (return value: char)
+-- @return char*#char* ret
         
 --------------------------------
 -- @function [parent=#AssetsManager] update 
@@ -33,27 +33,27 @@
 --------------------------------
 -- @function [parent=#AssetsManager] setVersionFileUrl 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#AssetsManager] getPackageUrl 
 -- @param self
--- @return char#char ret (return value: char)
+-- @return char*#char* ret
         
 --------------------------------
 -- @function [parent=#AssetsManager] getConnectionTimeout 
 -- @param self
--- @return unsigned int#unsigned int ret (return value: unsigned int)
+-- @return unsigned int#unsigned int ret
         
 --------------------------------
 -- @function [parent=#AssetsManager] getVersion 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#AssetsManager] getVersionFileUrl 
 -- @param self
--- @return char#char ret (return value: char)
+-- @return char*#char* ret
         
 --------------------------------
 -- @function [parent=#AssetsManager] deleteVersion 
@@ -62,13 +62,13 @@
 --------------------------------
 -- @function [parent=#AssetsManager] create 
 -- @param self
--- @param #char char
--- @param #char char
--- @param #char char
+-- @param #char* char
+-- @param #char* char
+-- @param #char* char
 -- @param #function func
 -- @param #function func
 -- @param #function func
--- @return AssetsManager#AssetsManager ret (return value: cc.AssetsManager)
+-- @return cc.AssetsManager#cc.AssetsManager ret
         
 --------------------------------
 -- @function [parent=#AssetsManager] AssetsManager 

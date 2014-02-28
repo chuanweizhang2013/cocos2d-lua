@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#SpriteFrame] clone 
 -- @param self
--- @return SpriteFrame#SpriteFrame ret (return value: cc.SpriteFrame)
+-- @return cc.SpriteFrame#cc.SpriteFrame ret
         
 --------------------------------
 -- @function [parent=#SpriteFrame] setRotated 
@@ -28,7 +28,7 @@
 -- @param #bool bool
 -- @param #point_table point
 -- @param #size_table size
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#SpriteFrame] setRectInPixels 
@@ -38,12 +38,12 @@
 --------------------------------
 -- @function [parent=#SpriteFrame] getTexture 
 -- @param self
--- @return Texture2D#Texture2D ret (return value: cc.Texture2D)
+-- @return cc.Texture2D#cc.Texture2D ret
         
 --------------------------------
 -- @function [parent=#SpriteFrame] getRect 
 -- @param self
--- @return rect_table#rect_table ret (return value: rect_table)
+-- @return rect_table#rect_table ret
         
 --------------------------------
 -- @function [parent=#SpriteFrame] setOffsetInPixels 
@@ -53,7 +53,7 @@
 --------------------------------
 -- @function [parent=#SpriteFrame] getRectInPixels 
 -- @param self
--- @return rect_table#rect_table ret (return value: rect_table)
+-- @return rect_table#rect_table ret
         
 --------------------------------
 -- @function [parent=#SpriteFrame] setOriginalSize 
@@ -63,7 +63,7 @@
 --------------------------------
 -- @function [parent=#SpriteFrame] getOriginalSizeInPixels 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#SpriteFrame] setOriginalSizeInPixels 
@@ -78,12 +78,12 @@
 --------------------------------
 -- @function [parent=#SpriteFrame] getOffset 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#SpriteFrame] isRotated 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- overload function: initWithTextureFilename(string, rect_table, bool, point_table, size_table)
@@ -97,7 +97,7 @@
 -- @param #bool bool
 -- @param #point_table point
 -- @param #size_table size
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#SpriteFrame] setRect 
@@ -107,12 +107,12 @@
 --------------------------------
 -- @function [parent=#SpriteFrame] getOffsetInPixels 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#SpriteFrame] getOriginalSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- overload function: create(string, rect_table, bool, point_table, size_table)
@@ -126,7 +126,7 @@
 -- @param #bool bool
 -- @param #point_table point
 -- @param #size_table size
--- @return SpriteFrame#SpriteFrame ret (retunr value: cc.SpriteFrame)
+-- @return cc.SpriteFrame#cc.SpriteFrame ret
 
 --------------------------------
 -- overload function: createWithTexture(cc.Texture2D, rect_table, bool, point_table, size_table)
@@ -140,6 +140,6 @@
 -- @param #bool bool
 -- @param #point_table point
 -- @param #size_table size
--- @return SpriteFrame#SpriteFrame ret (retunr value: cc.SpriteFrame)
+-- @return cc.SpriteFrame#cc.SpriteFrame ret
 
 return nil

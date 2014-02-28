@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointRatchet] getAngle 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsJointRatchet] setAngle 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointRatchet] getPhase 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsJointRatchet] setRatchet 
@@ -29,7 +29,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointRatchet] getRatchet 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsJointRatchet] construct 
@@ -38,6 +38,6 @@
 -- @param #cc.PhysicsBody physicsbody
 -- @param #float float
 -- @param #float float
--- @return PhysicsJointRatchet#PhysicsJointRatchet ret (return value: cc.PhysicsJointRatchet)
+-- @return cc.PhysicsJointRatchet#cc.PhysicsJointRatchet ret
         
 return nil

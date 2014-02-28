@@ -11,6 +11,6 @@
 -- @param #float float
 -- @param #float float
 -- @param #float float
--- @return RotateTo#RotateTo ret (retunr value: cc.RotateTo)
+-- @return cc.RotateTo#cc.RotateTo ret
 
 return nil

@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#ParticleFlower] create 
 -- @param self
--- @return ParticleFlower#ParticleFlower ret (return value: cc.ParticleFlower)
+-- @return cc.ParticleFlower#cc.ParticleFlower ret
         
 --------------------------------
 -- @function [parent=#ParticleFlower] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return ParticleFlower#ParticleFlower ret (return value: cc.ParticleFlower)
+-- @return cc.ParticleFlower#cc.ParticleFlower ret
         
 return nil

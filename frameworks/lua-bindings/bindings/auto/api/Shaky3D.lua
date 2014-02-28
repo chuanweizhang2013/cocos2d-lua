@@ -8,7 +8,7 @@
 -- @param #size_table size
 -- @param #int int
 -- @param #bool bool
--- @return Shaky3D#Shaky3D ret (return value: cc.Shaky3D)
+-- @return cc.Shaky3D#cc.Shaky3D ret
         
 --------------------------------
 -- @function [parent=#Shaky3D] Shaky3D 

@@ -5,12 +5,12 @@
 -- @function [parent=#TextureData] getContourData 
 -- @param self
 -- @param #int int
--- @return ContourData#ContourData ret (return value: ccs.ContourData)
+-- @return ccs.ContourData#ccs.ContourData ret
         
 --------------------------------
 -- @function [parent=#TextureData] init 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#TextureData] addContourData 
@@ -20,7 +20,7 @@
 --------------------------------
 -- @function [parent=#TextureData] create 
 -- @param self
--- @return TextureData#TextureData ret (return value: ccs.TextureData)
+-- @return ccs.TextureData#ccs.TextureData ret
         
 --------------------------------
 -- @function [parent=#TextureData] TextureData 

@@ -13,7 +13,7 @@
 --------------------------------
 -- @function [parent=#ActionObject] setName 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#ActionObject] setUnitTime 
@@ -23,12 +23,12 @@
 --------------------------------
 -- @function [parent=#ActionObject] getTotalTime 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ActionObject] getName 
 -- @param self
--- @return char#char ret (return value: char)
+-- @return char*#char* ret
         
 --------------------------------
 -- @function [parent=#ActionObject] stop 
@@ -46,7 +46,7 @@
 --------------------------------
 -- @function [parent=#ActionObject] getCurrentTime 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ActionObject] removeActionNode 
@@ -56,7 +56,7 @@
 --------------------------------
 -- @function [parent=#ActionObject] getLoop 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ActionObject] addActionNode 
@@ -66,12 +66,12 @@
 --------------------------------
 -- @function [parent=#ActionObject] getUnitTime 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ActionObject] isPlaying 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ActionObject] updateToFrameByTime 

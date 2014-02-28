@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return TransitionProgressRadialCCW#TransitionProgressRadialCCW ret (return value: cc.TransitionProgressRadialCCW)
+-- @return cc.TransitionProgressRadialCCW#cc.TransitionProgressRadialCCW ret
         
 return nil

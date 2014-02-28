@@ -5,6 +5,6 @@
 -- @function [parent=#EaseBounceIn] create 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
--- @return EaseBounceIn#EaseBounceIn ret (return value: cc.EaseBounceIn)
+-- @return cc.EaseBounceIn#cc.EaseBounceIn ret
         
 return nil

@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] isGravityEnabled 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] resetForces 
@@ -13,7 +13,7 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] getVelocityLimit 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] setGroup 
@@ -23,22 +23,22 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] getMass 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getCollisionBitmask 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getRotation 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] isResting 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- overload function: applyImpulse(point_table, point_table)
@@ -65,7 +65,7 @@
 -- @param self
 -- @param #cc.PhysicsShape physicsshape
 -- @param #bool bool
--- @return PhysicsShape#PhysicsShape ret (return value: cc.PhysicsShape)
+-- @return cc.PhysicsShape#cc.PhysicsShape ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] applyTorque 
@@ -75,7 +75,7 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] getAngularVelocityLimit 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] setAngularVelocityLimit 
@@ -85,12 +85,12 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] getVelocity 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getLinearDamping 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] removeAllShapes 
@@ -118,17 +118,17 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] getWorld 
 -- @param self
--- @return PhysicsWorld#PhysicsWorld ret (return value: cc.PhysicsWorld)
+-- @return cc.PhysicsWorld#cc.PhysicsWorld ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getAngularVelocity 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getPosition 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] setEnable 
@@ -143,7 +143,7 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] getGroup 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] setMoment 
@@ -153,39 +153,39 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] getTag 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] local2World 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getCategoryBitmask 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getMoment 
 -- @param self
 -- @param #float float
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getFirstShape 
 -- @param self
--- @return PhysicsShape#PhysicsShape ret (return value: cc.PhysicsShape)
+-- @return cc.PhysicsShape#cc.PhysicsShape ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getShapes 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getContactTestBitmask 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] setAngularVelocity 
@@ -196,12 +196,12 @@
 -- @function [parent=#PhysicsBody] world2Local 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] isEnabled 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- overload function: removeShape(int, bool)
@@ -251,18 +251,18 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] getAngularDamping 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getVelocityAtLocalPoint 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] isRotationEnabled 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] addMass 
@@ -273,7 +273,7 @@
 -- @function [parent=#PhysicsBody] getShape 
 -- @param self
 -- @param #int int
--- @return PhysicsShape#PhysicsShape ret (return value: cc.PhysicsShape)
+-- @return cc.PhysicsShape#cc.PhysicsShape ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] setTag 
@@ -284,7 +284,7 @@
 -- @function [parent=#PhysicsBody] getVelocityAtWorldPoint 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] setContactTestBitmask 
@@ -298,12 +298,12 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] isDynamic 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getNode 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] createBox 
@@ -311,7 +311,7 @@
 -- @param #size_table size
 -- @param #cc.PhysicsMaterial physicsmaterial
 -- @param #point_table point
--- @return PhysicsBody#PhysicsBody ret (return value: cc.PhysicsBody)
+-- @return cc.PhysicsBody#cc.PhysicsBody ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] createEdgeSegment 
@@ -320,7 +320,7 @@
 -- @param #point_table point
 -- @param #cc.PhysicsMaterial physicsmaterial
 -- @param #float float
--- @return PhysicsBody#PhysicsBody ret (return value: cc.PhysicsBody)
+-- @return cc.PhysicsBody#cc.PhysicsBody ret
         
 --------------------------------
 -- overload function: create(float)
@@ -333,7 +333,7 @@
 -- @param self
 -- @param #float float
 -- @param #float float
--- @return PhysicsBody#PhysicsBody ret (retunr value: cc.PhysicsBody)
+-- @return cc.PhysicsBody#cc.PhysicsBody ret
 
 --------------------------------
 -- @function [parent=#PhysicsBody] createEdgeBox 
@@ -342,7 +342,7 @@
 -- @param #cc.PhysicsMaterial physicsmaterial
 -- @param #float float
 -- @param #point_table point
--- @return PhysicsBody#PhysicsBody ret (return value: cc.PhysicsBody)
+-- @return cc.PhysicsBody#cc.PhysicsBody ret
         
 --------------------------------
 -- @function [parent=#PhysicsBody] createCircle 
@@ -350,6 +350,6 @@
 -- @param #float float
 -- @param #cc.PhysicsMaterial physicsmaterial
 -- @param #point_table point
--- @return PhysicsBody#PhysicsBody ret (return value: cc.PhysicsBody)
+-- @return cc.PhysicsBody#cc.PhysicsBody ret
         
 return nil

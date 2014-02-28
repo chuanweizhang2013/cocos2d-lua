@@ -4,14 +4,14 @@
 --------------------------------
 -- @function [parent=#GUIReader] widgetFromJsonFile 
 -- @param self
--- @param #char char
--- @return Widget#Widget ret (return value: ccui.Widget)
+-- @param #char* char
+-- @return ccui.Widget#ccui.Widget ret
         
 --------------------------------
 -- @function [parent=#GUIReader] getVersionInteger 
 -- @param self
--- @param #char char
--- @return int#int ret (return value: int)
+-- @param #char* char
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#GUIReader] destroyInstance 
@@ -20,6 +20,6 @@
 --------------------------------
 -- @function [parent=#GUIReader] getInstance 
 -- @param self
--- @return GUIReader#GUIReader ret (return value: ccs.GUIReader)
+-- @return ccs.GUIReader#ccs.GUIReader ret
         
 return nil

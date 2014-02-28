@@ -5,7 +5,7 @@
 -- @function [parent=#Armature] getBone 
 -- @param self
 -- @param #string str
--- @return Bone#Bone ret (return value: ccs.Bone)
+-- @return ccs.Bone#ccs.Bone ret
         
 --------------------------------
 -- @function [parent=#Armature] changeBoneParent 
@@ -23,12 +23,12 @@
 -- @param self
 -- @param #float float
 -- @param #float float
--- @return Bone#Bone ret (return value: ccs.Bone)
+-- @return ccs.Bone#ccs.Bone ret
         
 --------------------------------
 -- @function [parent=#Armature] getArmatureTransformDirty 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Armature] setVersion 
@@ -42,7 +42,7 @@
 --------------------------------
 -- @function [parent=#Armature] getParentBone 
 -- @param self
--- @return Bone#Bone ret (return value: ccs.Bone)
+-- @return ccs.Bone#ccs.Bone ret
         
 --------------------------------
 -- @function [parent=#Armature] setArmatureData 
@@ -58,12 +58,12 @@
 --------------------------------
 -- @function [parent=#Armature] getBatchNode 
 -- @param self
--- @return BatchNode#BatchNode ret (return value: ccs.BatchNode)
+-- @return ccs.BatchNode#ccs.BatchNode ret
         
 --------------------------------
 -- @function [parent=#Armature] getName 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- overload function: init(string)
@@ -76,7 +76,7 @@
 -- @param self
 -- @param #string str
 -- @param #ccs.Bone bone
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#Armature] setParentBone 
@@ -106,22 +106,22 @@
 --------------------------------
 -- @function [parent=#Armature] getArmatureData 
 -- @param self
--- @return ArmatureData#ArmatureData ret (return value: ccs.ArmatureData)
+-- @return ccs.ArmatureData#ccs.ArmatureData ret
         
 --------------------------------
 -- @function [parent=#Armature] getVersion 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Armature] getAnimation 
 -- @param self
--- @return ArmatureAnimation#ArmatureAnimation ret (return value: ccs.ArmatureAnimation)
+-- @return ccs.ArmatureAnimation#ccs.ArmatureAnimation ret
         
 --------------------------------
 -- @function [parent=#Armature] getBoneDic 
 -- @param self
--- @return map_table#map_table ret (return value: map_table)
+-- @return cocos2d::Map<std::basic_string<char>, ccs.Bone >#cocos2d::Map<std::basic_string<char>, ccs.Bone > ret
         
 --------------------------------
 -- overload function: create(string)
@@ -134,7 +134,7 @@
 -- @param self
 -- @param #string str
 -- @param #ccs.Bone bone
--- @return Armature#Armature ret (retunr value: ccs.Armature)
+-- @return ccs.Armature#ccs.Armature ret
 
 --------------------------------
 -- @function [parent=#Armature] Armature 

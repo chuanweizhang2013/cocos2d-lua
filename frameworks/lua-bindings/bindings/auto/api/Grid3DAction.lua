@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#Grid3DAction] getGrid 
 -- @param self
--- @return GridBase#GridBase ret (return value: cc.GridBase)
+-- @return cc.GridBase#cc.GridBase ret
         
 return nil

@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#Waves] getAmplitudeRate 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Waves] setAmplitude 
@@ -14,7 +14,7 @@
 --------------------------------
 -- @function [parent=#Waves] getAmplitude 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Waves] setAmplitudeRate 
@@ -30,7 +30,7 @@
 -- @param #float float
 -- @param #bool bool
 -- @param #bool bool
--- @return Waves#Waves ret (return value: cc.Waves)
+-- @return cc.Waves#cc.Waves ret
         
 --------------------------------
 -- @function [parent=#Waves] Waves 

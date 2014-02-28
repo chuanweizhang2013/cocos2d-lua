@@ -5,19 +5,19 @@
 -- @function [parent=#TransitionFadeTR] easeActionWithAction 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
--- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
+-- @return cc.ActionInterval#cc.ActionInterval ret
         
 --------------------------------
 -- @function [parent=#TransitionFadeTR] actionWithSize 
 -- @param self
 -- @param #size_table size
--- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
+-- @return cc.ActionInterval#cc.ActionInterval ret
         
 --------------------------------
 -- @function [parent=#TransitionFadeTR] create 
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return TransitionFadeTR#TransitionFadeTR ret (return value: cc.TransitionFadeTR)
+-- @return cc.TransitionFadeTR#cc.TransitionFadeTR ret
         
 return nil

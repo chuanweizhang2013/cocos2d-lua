@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#LoadingBar] loadTexture 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
@@ -30,17 +30,17 @@
 --------------------------------
 -- @function [parent=#LoadingBar] getDirection 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#LoadingBar] getPercent 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#LoadingBar] create 
 -- @param self
--- @return LoadingBar#LoadingBar ret (return value: ccui.LoadingBar)
+-- @return ccui.LoadingBar#ccui.LoadingBar ret
         
 --------------------------------
 -- @function [parent=#LoadingBar] LoadingBar 

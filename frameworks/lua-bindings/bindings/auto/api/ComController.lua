@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#ComController] create 
 -- @param self
--- @return ComController#ComController ret (return value: ccs.ComController)
+-- @return ccs.ComController#ccs.ComController ret
         
 --------------------------------
 -- @function [parent=#ComController] createInstance 
 -- @param self
--- @return Ref#Ref ret (return value: cc.Ref)
+-- @return cc.Ref#cc.Ref ret
         
 --------------------------------
 -- @function [parent=#ComController] ComController 

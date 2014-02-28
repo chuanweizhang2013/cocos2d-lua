@@ -15,7 +15,7 @@
 --------------------------------
 -- @function [parent=#ActionCamera] getEye 
 -- @param self
--- @return kmVec3#kmVec3 ret (return value: kmVec3)
+-- @return kmVec3#kmVec3 ret
         
 --------------------------------
 -- @function [parent=#ActionCamera] setUp 
@@ -25,7 +25,7 @@
 --------------------------------
 -- @function [parent=#ActionCamera] getCenter 
 -- @param self
--- @return kmVec3#kmVec3 ret (return value: kmVec3)
+-- @return kmVec3#kmVec3 ret
         
 --------------------------------
 -- @function [parent=#ActionCamera] setCenter 
@@ -35,7 +35,7 @@
 --------------------------------
 -- @function [parent=#ActionCamera] getUp 
 -- @param self
--- @return kmVec3#kmVec3 ret (return value: kmVec3)
+-- @return kmVec3#kmVec3 ret
         
 --------------------------------
 -- @function [parent=#ActionCamera] ActionCamera 

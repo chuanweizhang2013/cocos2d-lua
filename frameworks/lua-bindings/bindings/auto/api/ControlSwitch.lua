@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#ControlSwitch] isOn 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- overload function: initWithMaskSprite(cc.Sprite, cc.Sprite, cc.Sprite, cc.Sprite, cc.LabelTTF, cc.LabelTTF)
@@ -34,18 +34,18 @@
 -- @param #cc.Sprite sprite
 -- @param #cc.LabelTTF labelttf
 -- @param #cc.LabelTTF labelttf
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#ControlSwitch] hasMoved 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ControlSwitch] locationFromTouch 
 -- @param self
 -- @param #cc.Touch touch
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- overload function: create(cc.Sprite, cc.Sprite, cc.Sprite, cc.Sprite)
@@ -60,7 +60,7 @@
 -- @param #cc.Sprite sprite
 -- @param #cc.LabelTTF labelttf
 -- @param #cc.LabelTTF labelttf
--- @return ControlSwitch#ControlSwitch ret (retunr value: cc.ControlSwitch)
+-- @return cc.ControlSwitch#cc.ControlSwitch ret
 
 --------------------------------
 -- @function [parent=#ControlSwitch] ControlSwitch 

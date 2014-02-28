@@ -21,13 +21,13 @@
 --------------------------------
 -- @function [parent=#Skeleton] getBlendFunc 
 -- @param self
--- @return BlendFunc#BlendFunc ret (return value: cc.BlendFunc)
+-- @return cc.BlendFunc#cc.BlendFunc ret
         
 --------------------------------
 -- @function [parent=#Skeleton] setSkin 
 -- @param self
--- @param #char char
--- @return bool#bool ret (return value: bool)
+-- @param #char* char
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Skeleton] setBonesToSetupPose 

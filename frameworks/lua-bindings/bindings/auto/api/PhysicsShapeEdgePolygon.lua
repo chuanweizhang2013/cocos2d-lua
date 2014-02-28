@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#PhysicsShapeEdgePolygon] getPointsCount 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#PhysicsShapeEdgePolygon] create 
@@ -13,6 +13,6 @@
 -- @param #int int
 -- @param #cc.PhysicsMaterial physicsmaterial
 -- @param #float float
--- @return PhysicsShapeEdgePolygon#PhysicsShapeEdgePolygon ret (return value: cc.PhysicsShapeEdgePolygon)
+-- @return cc.PhysicsShapeEdgePolygon#cc.PhysicsShapeEdgePolygon ret
         
 return nil

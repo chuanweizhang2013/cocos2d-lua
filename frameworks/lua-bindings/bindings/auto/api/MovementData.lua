@@ -5,7 +5,7 @@
 -- @function [parent=#MovementData] getMovementBoneData 
 -- @param self
 -- @param #string str
--- @return MovementBoneData#MovementBoneData ret (return value: ccs.MovementBoneData)
+-- @return ccs.MovementBoneData#ccs.MovementBoneData ret
         
 --------------------------------
 -- @function [parent=#MovementData] addMovementBoneData 
@@ -15,7 +15,7 @@
 --------------------------------
 -- @function [parent=#MovementData] create 
 -- @param self
--- @return MovementData#MovementData ret (return value: ccs.MovementData)
+-- @return ccs.MovementData#ccs.MovementData ret
         
 --------------------------------
 -- @function [parent=#MovementData] MovementData 

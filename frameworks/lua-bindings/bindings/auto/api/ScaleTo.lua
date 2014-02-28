@@ -11,6 +11,6 @@
 -- @param #float float
 -- @param #float float
 -- @param #float float
--- @return ScaleTo#ScaleTo ret (retunr value: cc.ScaleTo)
+-- @return cc.ScaleTo#cc.ScaleTo ret
 
 return nil

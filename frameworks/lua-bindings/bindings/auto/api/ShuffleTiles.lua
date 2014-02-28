@@ -10,14 +10,14 @@
 --------------------------------
 -- @function [parent=#ShuffleTiles] shuffle 
 -- @param self
--- @param #unsigned int int
+-- @param #unsigned int* int
 -- @param #unsigned int int
         
 --------------------------------
 -- @function [parent=#ShuffleTiles] getDelta 
 -- @param self
 -- @param #size_table size
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#ShuffleTiles] create 
@@ -25,6 +25,6 @@
 -- @param #float float
 -- @param #size_table size
 -- @param #unsigned int int
--- @return ShuffleTiles#ShuffleTiles ret (return value: cc.ShuffleTiles)
+-- @return cc.ShuffleTiles#cc.ShuffleTiles ret
         
 return nil

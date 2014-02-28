@@ -5,6 +5,6 @@
 -- @function [parent=#FadeIn] create 
 -- @param self
 -- @param #float float
--- @return FadeIn#FadeIn ret (return value: cc.FadeIn)
+-- @return cc.FadeIn#cc.FadeIn ret
         
 return nil

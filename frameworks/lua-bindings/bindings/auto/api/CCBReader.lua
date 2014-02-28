@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#CCBReader] getOwnerCallbackNames 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#CCBReader] addDocumentCallbackControlEvents 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#CCBReader] setCCBRootPath 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#CCBReader] addOwnerOutletNode 
@@ -29,33 +29,33 @@
 --------------------------------
 -- @function [parent=#CCBReader] getOwnerCallbackNodes 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#CCBReader] readSoundKeyframesForSeq 
 -- @param self
 -- @param #cc.CCBSequence ccbsequence
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#CCBReader] getCCBRootPath 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#CCBReader] getOwnerCallbackControlEvents 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#CCBReader] getOwnerOutletNodes 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#CCBReader] readUTF8 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#CCBReader] addOwnerCallbackControlEvents 
@@ -65,7 +65,7 @@
 --------------------------------
 -- @function [parent=#CCBReader] getOwnerOutletNames 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#CCBReader] setAnimationManager 
@@ -76,22 +76,22 @@
 -- @function [parent=#CCBReader] readCallbackKeyframesForSeq 
 -- @param self
 -- @param #cc.CCBSequence ccbsequence
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#CCBReader] getAnimationManagersForNodes 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#CCBReader] getNodesWithAnimationManagers 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#CCBReader] getAnimationManager 
 -- @param self
--- @return CCBAnimationManager#CCBAnimationManager ret (return value: cc.CCBAnimationManager)
+-- @return cc.CCBAnimationManager#cc.CCBAnimationManager ret
         
 --------------------------------
 -- @function [parent=#CCBReader] setResolutionScale 

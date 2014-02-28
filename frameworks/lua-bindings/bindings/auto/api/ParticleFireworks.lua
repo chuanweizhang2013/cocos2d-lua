@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#ParticleFireworks] create 
 -- @param self
--- @return ParticleFireworks#ParticleFireworks ret (return value: cc.ParticleFireworks)
+-- @return cc.ParticleFireworks#cc.ParticleFireworks ret
         
 --------------------------------
 -- @function [parent=#ParticleFireworks] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return ParticleFireworks#ParticleFireworks ret (return value: cc.ParticleFireworks)
+-- @return cc.ParticleFireworks#cc.ParticleFireworks ret
         
 return nil

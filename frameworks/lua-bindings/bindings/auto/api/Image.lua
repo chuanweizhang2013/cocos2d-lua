@@ -4,80 +4,80 @@
 --------------------------------
 -- @function [parent=#Image] hasPremultipliedAlpha 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Image] getDataLen 
 -- @param self
--- @return long#long ret (return value: long)
+-- @return long#long ret
         
 --------------------------------
 -- @function [parent=#Image] saveToFile 
 -- @param self
 -- @param #string str
 -- @param #bool bool
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Image] getBitPerPixel 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#Image] hasAlpha 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Image] isCompressed 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Image] getHeight 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#Image] initWithImageFile 
 -- @param self
 -- @param #string str
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Image] getWidth 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#Image] isPremultipliedAlpha 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Image] getFileType 
 -- @param self
--- @return Image::Format#Image::Format ret (return value: cc.Image::Format)
+-- @return cc.Image::Format#cc.Image::Format ret
         
 --------------------------------
 -- @function [parent=#Image] getNumberOfMipmaps 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#Image] getRenderFormat 
 -- @param self
--- @return Texture2D::PixelFormat#Texture2D::PixelFormat ret (return value: cc.Texture2D::PixelFormat)
+-- @return cc.Texture2D::PixelFormat#cc.Texture2D::PixelFormat ret
         
 --------------------------------
 -- @function [parent=#Image] getData 
 -- @param self
--- @return unsigned char#unsigned char ret (return value: unsigned char)
+-- @return unsigned char*#unsigned char* ret
         
 --------------------------------
 -- @function [parent=#Image] getMipmaps 
 -- @param self
--- @return _MipmapInfo#_MipmapInfo ret (return value: cc._MipmapInfo)
+-- @return cc._MipmapInfo#cc._MipmapInfo ret
         
 --------------------------------
 -- @function [parent=#Image] Image 

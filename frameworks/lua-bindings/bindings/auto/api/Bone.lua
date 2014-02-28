@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#Bone] isTransformDirty 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Bone] isIgnoreMovementBoneData 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Bone] updateZOrder 
@@ -18,12 +18,12 @@
 --------------------------------
 -- @function [parent=#Bone] getDisplayRenderNode 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#Bone] isBlendDirty 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Bone] addChildBone 
@@ -33,17 +33,17 @@
 --------------------------------
 -- @function [parent=#Bone] getWorldInfo 
 -- @param self
--- @return BaseData#BaseData ret (return value: ccs.BaseData)
+-- @return ccs.BaseData#ccs.BaseData ret
         
 --------------------------------
 -- @function [parent=#Bone] getTween 
 -- @param self
--- @return Tween#Tween ret (return value: ccs.Tween)
+-- @return ccs.Tween#ccs.Tween ret
         
 --------------------------------
 -- @function [parent=#Bone] getParentBone 
 -- @param self
--- @return Bone#Bone ret (return value: ccs.Bone)
+-- @return ccs.Bone#ccs.Bone ret
         
 --------------------------------
 -- @function [parent=#Bone] updateColor 
@@ -52,7 +52,7 @@
 --------------------------------
 -- @function [parent=#Bone] getName 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#Bone] setTransformDirty 
@@ -62,7 +62,7 @@
 --------------------------------
 -- @function [parent=#Bone] getDisplayRenderNodeType 
 -- @param self
--- @return DisplayType#DisplayType ret (return value: ccs.DisplayType)
+-- @return ccs.DisplayType#ccs.DisplayType ret
         
 --------------------------------
 -- @function [parent=#Bone] removeDisplay 
@@ -82,7 +82,7 @@
 -- @function [parent=#Bone] init
 -- @param self
 -- @param #string str
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#Bone] setParentBone 
@@ -112,17 +112,17 @@
 --------------------------------
 -- @function [parent=#Bone] getColliderDetector 
 -- @param self
--- @return ColliderDetector#ColliderDetector ret (return value: ccs.ColliderDetector)
+-- @return ccs.ColliderDetector#ccs.ColliderDetector ret
         
 --------------------------------
 -- @function [parent=#Bone] getChildArmature 
 -- @param self
--- @return Armature#Armature ret (return value: ccs.Armature)
+-- @return ccs.Armature#ccs.Armature ret
         
 --------------------------------
 -- @function [parent=#Bone] getTweenData 
 -- @param self
--- @return FrameData#FrameData ret (return value: ccs.FrameData)
+-- @return ccs.FrameData#ccs.FrameData ret
         
 --------------------------------
 -- @function [parent=#Bone] changeDisplayWithIndex 
@@ -160,22 +160,22 @@
 --------------------------------
 -- @function [parent=#Bone] getNodeToArmatureTransform 
 -- @param self
--- @return kmMat4#kmMat4 ret (return value: kmMat4)
+-- @return kmMat4#kmMat4 ret
         
 --------------------------------
 -- @function [parent=#Bone] getDisplayManager 
 -- @param self
--- @return DisplayManager#DisplayManager ret (return value: ccs.DisplayManager)
+-- @return ccs.DisplayManager#ccs.DisplayManager ret
         
 --------------------------------
 -- @function [parent=#Bone] getArmature 
 -- @param self
--- @return Armature#Armature ret (return value: ccs.Armature)
+-- @return ccs.Armature#ccs.Armature ret
         
 --------------------------------
 -- @function [parent=#Bone] getBoneData 
 -- @param self
--- @return BoneData#BoneData ret (return value: ccs.BoneData)
+-- @return ccs.BoneData#ccs.BoneData ret
         
 --------------------------------
 -- overload function: create(string)
@@ -185,7 +185,7 @@
 -- @function [parent=#Bone] create
 -- @param self
 -- @param #string str
--- @return Bone#Bone ret (retunr value: ccs.Bone)
+-- @return ccs.Bone#ccs.Bone ret
 
 --------------------------------
 -- @function [parent=#Bone] Bone 

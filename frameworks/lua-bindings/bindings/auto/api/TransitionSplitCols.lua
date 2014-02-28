@@ -4,19 +4,19 @@
 --------------------------------
 -- @function [parent=#TransitionSplitCols] action 
 -- @param self
--- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
+-- @return cc.ActionInterval#cc.ActionInterval ret
         
 --------------------------------
 -- @function [parent=#TransitionSplitCols] easeActionWithAction 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
--- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
+-- @return cc.ActionInterval#cc.ActionInterval ret
         
 --------------------------------
 -- @function [parent=#TransitionSplitCols] create 
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return TransitionSplitCols#TransitionSplitCols ret (return value: cc.TransitionSplitCols)
+-- @return cc.TransitionSplitCols#cc.TransitionSplitCols ret
         
 return nil

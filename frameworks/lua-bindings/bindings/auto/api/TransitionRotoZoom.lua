@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return TransitionRotoZoom#TransitionRotoZoom ret (return value: cc.TransitionRotoZoom)
+-- @return cc.TransitionRotoZoom#cc.TransitionRotoZoom ret
         
 return nil

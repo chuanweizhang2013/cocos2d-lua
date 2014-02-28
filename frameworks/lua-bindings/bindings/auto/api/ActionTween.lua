@@ -8,7 +8,7 @@
 -- @param #string str
 -- @param #float float
 -- @param #float float
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ActionTween] create 
@@ -17,6 +17,6 @@
 -- @param #string str
 -- @param #float float
 -- @param #float float
--- @return ActionTween#ActionTween ret (return value: cc.ActionTween)
+-- @return cc.ActionTween#cc.ActionTween ret
         
 return nil

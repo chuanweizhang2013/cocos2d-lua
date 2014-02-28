@@ -4,13 +4,13 @@
 --------------------------------
 -- @function [parent=#MovementBoneData] init 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#MovementBoneData] getFrameData 
 -- @param self
 -- @param #int int
--- @return FrameData#FrameData ret (return value: ccs.FrameData)
+-- @return ccs.FrameData#ccs.FrameData ret
         
 --------------------------------
 -- @function [parent=#MovementBoneData] addFrameData 
@@ -20,7 +20,7 @@
 --------------------------------
 -- @function [parent=#MovementBoneData] create 
 -- @param self
--- @return MovementBoneData#MovementBoneData ret (return value: ccs.MovementBoneData)
+-- @return ccs.MovementBoneData#ccs.MovementBoneData ret
         
 --------------------------------
 -- @function [parent=#MovementBoneData] MovementBoneData 

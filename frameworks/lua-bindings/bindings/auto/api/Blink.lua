@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #int int
--- @return Blink#Blink ret (return value: cc.Blink)
+-- @return cc.Blink#cc.Blink ret
         
 return nil

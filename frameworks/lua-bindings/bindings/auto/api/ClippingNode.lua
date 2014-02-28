@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#ClippingNode] isInverted 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ClippingNode] setInverted 
@@ -19,12 +19,12 @@
 --------------------------------
 -- @function [parent=#ClippingNode] getAlphaThreshold 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ClippingNode] getStencil 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#ClippingNode] setAlphaThreshold 
@@ -39,6 +39,6 @@
 -- @function [parent=#ClippingNode] create
 -- @param self
 -- @param #cc.Node node
--- @return ClippingNode#ClippingNode ret (retunr value: cc.ClippingNode)
+-- @return cc.ClippingNode#cc.ClippingNode ret
 
 return nil

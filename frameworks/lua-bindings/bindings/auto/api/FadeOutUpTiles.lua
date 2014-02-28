@@ -12,6 +12,6 @@
 -- @param self
 -- @param #float float
 -- @param #size_table size
--- @return FadeOutUpTiles#FadeOutUpTiles ret (return value: cc.FadeOutUpTiles)
+-- @return cc.FadeOutUpTiles#cc.FadeOutUpTiles ret
         
 return nil

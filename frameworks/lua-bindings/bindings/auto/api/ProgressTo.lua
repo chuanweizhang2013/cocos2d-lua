@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #float float
--- @return ProgressTo#ProgressTo ret (return value: cc.ProgressTo)
+-- @return cc.ProgressTo#cc.ProgressTo ret
         
 return nil

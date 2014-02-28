@@ -4,22 +4,22 @@
 --------------------------------
 -- @function [parent=#TextBMFont] setFntFile 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#TextBMFont] getStringValue 
 -- @param self
--- @return char#char ret (return value: char)
+-- @return char*#char* ret
         
 --------------------------------
 -- @function [parent=#TextBMFont] setText 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#TextBMFont] create 
 -- @param self
--- @return TextBMFont#TextBMFont ret (return value: ccui.TextBMFont)
+-- @return ccui.TextBMFont#ccui.TextBMFont ret
         
 --------------------------------
 -- @function [parent=#TextBMFont] TextBMFont 

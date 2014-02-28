@@ -14,13 +14,13 @@
 --------------------------------
 -- @function [parent=#Component] isEnabled 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Component] serialize 
 -- @param self
--- @param #void void
--- @return bool#bool ret (return value: bool)
+-- @param #void* void
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Component] update 
@@ -30,12 +30,12 @@
 --------------------------------
 -- @function [parent=#Component] getOwner 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#Component] init 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Component] setOwner 
@@ -45,11 +45,11 @@
 --------------------------------
 -- @function [parent=#Component] getName 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#Component] create 
 -- @param self
--- @return Component#Component ret (return value: cc.Component)
+-- @return cc.Component#cc.Component ret
         
 return nil

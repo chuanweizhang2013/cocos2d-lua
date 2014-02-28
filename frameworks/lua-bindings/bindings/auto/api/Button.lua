@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#Button] getTitleText 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#Button] loadTextureNormal 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
@@ -25,7 +25,7 @@
 --------------------------------
 -- @function [parent=#Button] loadTexturePressed 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
@@ -41,23 +41,23 @@
 --------------------------------
 -- @function [parent=#Button] setTitleFontName 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#Button] getTitleColor 
 -- @param self
--- @return color3B_table#color3B_table ret (return value: color3B_table)
+-- @return color3B_object#color3B_object ret
         
 --------------------------------
 -- @function [parent=#Button] loadTextureDisabled 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
 -- @function [parent=#Button] getTitleFontName 
 -- @param self
--- @return char#char ret (return value: char)
+-- @return char*#char* ret
         
 --------------------------------
 -- @function [parent=#Button] setPressedActionEnabled 
@@ -77,15 +77,15 @@
 --------------------------------
 -- @function [parent=#Button] loadTextures 
 -- @param self
--- @param #char char
--- @param #char char
--- @param #char char
+-- @param #char* char
+-- @param #char* char
+-- @param #char* char
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
 -- @function [parent=#Button] getTitleFontSize 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Button] setTitleText 
@@ -95,12 +95,12 @@
 --------------------------------
 -- @function [parent=#Button] setTitleColor 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
         
 --------------------------------
 -- @function [parent=#Button] create 
 -- @param self
--- @return Button#Button ret (return value: ccui.Button)
+-- @return ccui.Button#ccui.Button ret
         
 --------------------------------
 -- @function [parent=#Button] Button 

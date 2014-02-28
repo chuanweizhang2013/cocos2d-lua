@@ -9,12 +9,12 @@
 --------------------------------
 -- @function [parent=#LinearLayoutParameter] getGravity 
 -- @param self
--- @return LinearGravity#LinearGravity ret (return value: ccui.LinearGravity)
+-- @return ccui.LinearGravity#ccui.LinearGravity ret
         
 --------------------------------
 -- @function [parent=#LinearLayoutParameter] create 
 -- @param self
--- @return LinearLayoutParameter#LinearLayoutParameter ret (return value: ccui.LinearLayoutParameter)
+-- @return ccui.LinearLayoutParameter#ccui.LinearLayoutParameter ret
         
 --------------------------------
 -- @function [parent=#LinearLayoutParameter] LinearLayoutParameter 

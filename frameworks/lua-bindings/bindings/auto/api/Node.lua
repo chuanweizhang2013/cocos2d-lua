@@ -18,7 +18,7 @@
 -- @function [parent=#Node] removeComponent 
 -- @param self
 -- @param #string str
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Node] setPhysicsBody 
@@ -32,12 +32,12 @@
 --          
 -- @function [parent=#Node] getShaderProgram
 -- @param self
--- @return GLProgram#GLProgram ret (retunr value: cc.GLProgram)
+-- @return cc.GLProgram#cc.GLProgram ret
 
 --------------------------------
 -- @function [parent=#Node] getDescription 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#Node] setRotationSkewY 
@@ -61,7 +61,7 @@
 --          
 -- @function [parent=#Node] getChildren
 -- @param self
--- @return array_table#array_table ret (retunr value: array_table)
+-- @return array_table#array_table ret
 
 --------------------------------
 -- @function [parent=#Node] pause 
@@ -71,12 +71,12 @@
 -- @function [parent=#Node] convertToWorldSpaceAR 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Node] isIgnoreAnchorPointForPosition 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Node] updateDisplayedOpacity 
@@ -120,22 +120,22 @@
 --------------------------------
 -- @function [parent=#Node] getTag 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#Node] getNodeToWorldAffineTransform 
 -- @param self
--- @return AffineTransform#AffineTransform ret (return value: cc.AffineTransform)
+-- @return cc.AffineTransform#cc.AffineTransform ret
         
 --------------------------------
 -- @function [parent=#Node] getNodeToWorldTransform 
 -- @param self
--- @return kmMat4#kmMat4 ret (return value: kmMat4)
+-- @return kmMat4#kmMat4 ret
         
 --------------------------------
 -- @function [parent=#Node] getPosition3D 
 -- @param self
--- @return Vertex3F#Vertex3F ret (return value: cc.Vertex3F)
+-- @return cc.Vertex3F#cc.Vertex3F ret
         
 --------------------------------
 -- @function [parent=#Node] removeChild 
@@ -147,17 +147,17 @@
 -- @function [parent=#Node] convertToWorldSpace 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Node] getScene 
 -- @param self
--- @return Scene#Scene ret (return value: cc.Scene)
+-- @return cc.Scene#cc.Scene ret
         
 --------------------------------
 -- @function [parent=#Node] getEventDispatcher 
 -- @param self
--- @return EventDispatcher#EventDispatcher ret (return value: cc.EventDispatcher)
+-- @return cc.EventDispatcher#cc.EventDispatcher ret
         
 --------------------------------
 -- @function [parent=#Node] setSkewX 
@@ -172,7 +172,7 @@
 --------------------------------
 -- @function [parent=#Node] getOpacity 
 -- @param self
--- @return unsigned char#unsigned char ret (return value: unsigned char)
+-- @return unsigned char#unsigned char ret
         
 --------------------------------
 -- @function [parent=#Node] setNormalizedPosition 
@@ -183,7 +183,7 @@
 -- @function [parent=#Node] convertTouchToNodeSpace 
 -- @param self
 -- @param #cc.Touch touch
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- overload function: removeAllChildrenWithCleanup(bool)
@@ -197,12 +197,12 @@
 --------------------------------
 -- @function [parent=#Node] getNodeToParentAffineTransform 
 -- @param self
--- @return AffineTransform#AffineTransform ret (return value: cc.AffineTransform)
+-- @return cc.AffineTransform#cc.AffineTransform ret
         
 --------------------------------
 -- @function [parent=#Node] isCascadeOpacityEnabled 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Node] setParent 
@@ -212,24 +212,24 @@
 --------------------------------
 -- @function [parent=#Node] getRotation3D 
 -- @param self
--- @return Vertex3F#Vertex3F ret (return value: cc.Vertex3F)
+-- @return cc.Vertex3F#cc.Vertex3F ret
         
 --------------------------------
 -- @function [parent=#Node] getNodeToParentTransform 
 -- @param self
--- @return kmMat4#kmMat4 ret (return value: kmMat4)
+-- @return kmMat4#kmMat4 ret
         
 --------------------------------
 -- @function [parent=#Node] convertTouchToNodeSpaceAR 
 -- @param self
 -- @param #cc.Touch touch
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Node] convertToNodeSpace 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Node] resume 
@@ -238,7 +238,7 @@
 --------------------------------
 -- @function [parent=#Node] getPhysicsBody 
 -- @param self
--- @return PhysicsBody#PhysicsBody ret (return value: cc.PhysicsBody)
+-- @return cc.PhysicsBody#cc.PhysicsBody ret
         
 --------------------------------
 -- overload function: setPosition(float, float)
@@ -289,12 +289,12 @@
 --------------------------------
 -- @function [parent=#Node] getAnchorPoint 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Node] getNumberOfRunningActions 
 -- @param self
--- @return long#long ret (return value: long)
+-- @return long#long ret
         
 --------------------------------
 -- @function [parent=#Node] updateTransform 
@@ -303,24 +303,24 @@
 --------------------------------
 -- @function [parent=#Node] isVisible 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Node] getChildrenCount 
 -- @param self
--- @return long#long ret (return value: long)
+-- @return long#long ret
         
 --------------------------------
 -- @function [parent=#Node] convertToNodeSpaceAR 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Node] addComponent 
 -- @param self
 -- @param #cc.Component component
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Node] visit 
@@ -334,18 +334,18 @@
 --------------------------------
 -- @function [parent=#Node] getRotation 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] getAnchorPointInPoints 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Node] runAction 
 -- @param self
 -- @param #cc.Action action
--- @return Action#Action ret (return value: cc.Action)
+-- @return cc.Action#cc.Action ret
         
 --------------------------------
 -- @function [parent=#Node] transform 
@@ -363,23 +363,23 @@
 --------------------------------
 -- @function [parent=#Node] getSkewX 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] getSkewY 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] getDisplayedColor 
 -- @param self
--- @return color3B_table#color3B_table ret (return value: color3B_table)
+-- @return color3B_object#color3B_object ret
         
 --------------------------------
 -- @function [parent=#Node] getActionByTag 
 -- @param self
 -- @param #int int
--- @return Action#Action ret (return value: cc.Action)
+-- @return cc.Action#cc.Action ret
         
 --------------------------------
 -- overload function: setAdditionalTransform(kmMat4)
@@ -393,12 +393,12 @@
 --------------------------------
 -- @function [parent=#Node] getDisplayedOpacity 
 -- @param self
--- @return unsigned char#unsigned char ret (return value: unsigned char)
+-- @return unsigned char#unsigned char ret
         
 --------------------------------
 -- @function [parent=#Node] getLocalZOrder 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- overload function: getScheduler()
@@ -407,17 +407,17 @@
 --          
 -- @function [parent=#Node] getScheduler
 -- @param self
--- @return Scheduler#Scheduler ret (retunr value: cc.Scheduler)
+-- @return cc.Scheduler#cc.Scheduler ret
 
 --------------------------------
 -- @function [parent=#Node] getParentToNodeAffineTransform 
 -- @param self
--- @return AffineTransform#AffineTransform ret (return value: cc.AffineTransform)
+-- @return cc.AffineTransform#cc.AffineTransform ret
         
 --------------------------------
 -- @function [parent=#Node] getOrderOfArrival 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#Node] setActionManager 
@@ -427,12 +427,12 @@
 --------------------------------
 -- @function [parent=#Node] setColor 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
         
 --------------------------------
 -- @function [parent=#Node] isRunning 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- overload function: getParent()
@@ -441,22 +441,22 @@
 --          
 -- @function [parent=#Node] getParent
 -- @param self
--- @return Node#Node ret (retunr value: cc.Node)
+-- @return cc.Node#cc.Node ret
 
 --------------------------------
 -- @function [parent=#Node] getPositionZ 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] getPositionY 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] getPositionX 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] removeChildByTag 
@@ -472,7 +472,7 @@
 --------------------------------
 -- @function [parent=#Node] updateDisplayedColor 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
         
 --------------------------------
 -- @function [parent=#Node] setVisible 
@@ -482,7 +482,7 @@
 --------------------------------
 -- @function [parent=#Node] getParentToNodeTransform 
 -- @param self
--- @return kmMat4#kmMat4 ret (return value: kmMat4)
+-- @return kmMat4#kmMat4 ret
         
 --------------------------------
 -- @function [parent=#Node] setGlobalZOrder 
@@ -503,7 +503,7 @@
 -- @function [parent=#Node] getChildByTag 
 -- @param self
 -- @param #int int
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#Node] setOrderOfArrival 
@@ -513,17 +513,17 @@
 --------------------------------
 -- @function [parent=#Node] getScaleZ 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] getScaleY 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] getScaleX 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] setLocalZOrder 
@@ -533,7 +533,7 @@
 --------------------------------
 -- @function [parent=#Node] getWorldToNodeAffineTransform 
 -- @param self
--- @return AffineTransform#AffineTransform ret (return value: cc.AffineTransform)
+-- @return cc.AffineTransform#cc.AffineTransform ret
         
 --------------------------------
 -- @function [parent=#Node] setCascadeColorEnabled 
@@ -553,22 +553,22 @@
 -- @function [parent=#Node] getComponent 
 -- @param self
 -- @param #string str
--- @return Component#Component ret (return value: cc.Component)
+-- @return cc.Component#cc.Component ret
         
 --------------------------------
 -- @function [parent=#Node] getContentSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#Node] getColor 
 -- @param self
--- @return color3B_table#color3B_table ret (return value: color3B_table)
+-- @return color3B_object#color3B_object ret
         
 --------------------------------
 -- @function [parent=#Node] getBoundingBox 
 -- @param self
--- @return rect_table#rect_table ret (return value: rect_table)
+-- @return rect_table#rect_table ret
         
 --------------------------------
 -- @function [parent=#Node] setEventDispatcher 
@@ -578,7 +578,7 @@
 --------------------------------
 -- @function [parent=#Node] getGlobalZOrder 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] draw 
@@ -619,27 +619,27 @@
 --------------------------------
 -- @function [parent=#Node] getWorldToNodeTransform 
 -- @param self
--- @return kmMat4#kmMat4 ret (return value: kmMat4)
+-- @return kmMat4#kmMat4 ret
         
 --------------------------------
 -- @function [parent=#Node] getScale 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] getNormalizedPosition 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Node] getRotationSkewX 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] getRotationSkewY 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Node] setTag 
@@ -649,12 +649,12 @@
 --------------------------------
 -- @function [parent=#Node] isCascadeColorEnabled 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Node] isOpacityModifyRGB 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Node] stopAction 
@@ -668,11 +668,11 @@
 --          
 -- @function [parent=#Node] getActionManager
 -- @param self
--- @return ActionManager#ActionManager ret (retunr value: cc.ActionManager)
+-- @return cc.ActionManager#cc.ActionManager ret
 
 --------------------------------
 -- @function [parent=#Node] create 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 return nil

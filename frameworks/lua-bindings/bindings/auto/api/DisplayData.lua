@@ -10,12 +10,12 @@
 -- @function [parent=#DisplayData] changeDisplayToTexture 
 -- @param self
 -- @param #string str
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#DisplayData] create 
 -- @param self
--- @return DisplayData#DisplayData ret (return value: ccs.DisplayData)
+-- @return ccs.DisplayData#ccs.DisplayData ret
         
 --------------------------------
 -- @function [parent=#DisplayData] DisplayData 

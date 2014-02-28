@@ -13,7 +13,7 @@
 --          
 -- @function [parent=#NodeGrid] getGrid
 -- @param self
--- @return GridBase#GridBase ret (retunr value: cc.GridBase)
+-- @return cc.GridBase#cc.GridBase ret
 
 --------------------------------
 -- @function [parent=#NodeGrid] setGrid 
@@ -23,6 +23,6 @@
 --------------------------------
 -- @function [parent=#NodeGrid] create 
 -- @param self
--- @return NodeGrid#NodeGrid ret (return value: cc.NodeGrid)
+-- @return cc.NodeGrid#cc.NodeGrid ret
         
 return nil

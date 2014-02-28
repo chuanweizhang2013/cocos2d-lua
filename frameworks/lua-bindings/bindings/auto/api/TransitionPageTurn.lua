@@ -5,7 +5,7 @@
 -- @function [parent=#TransitionPageTurn] actionWithSize 
 -- @param self
 -- @param #size_table size
--- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
+-- @return cc.ActionInterval#cc.ActionInterval ret
         
 --------------------------------
 -- @function [parent=#TransitionPageTurn] initWithDuration 
@@ -13,7 +13,7 @@
 -- @param #float float
 -- @param #cc.Scene scene
 -- @param #bool bool
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#TransitionPageTurn] create 
@@ -21,7 +21,7 @@
 -- @param #float float
 -- @param #cc.Scene scene
 -- @param #bool bool
--- @return TransitionPageTurn#TransitionPageTurn ret (return value: cc.TransitionPageTurn)
+-- @return cc.TransitionPageTurn#cc.TransitionPageTurn ret
         
 --------------------------------
 -- @function [parent=#TransitionPageTurn] TransitionPageTurn 

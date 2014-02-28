@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #point_table point
--- @return MoveTo#MoveTo ret (return value: cc.MoveTo)
+-- @return cc.MoveTo#cc.MoveTo ret
         
 return nil

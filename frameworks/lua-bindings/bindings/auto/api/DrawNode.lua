@@ -8,7 +8,7 @@
 -- @param #point_table point
 -- @param #point_table point
 -- @param #unsigned int int
--- @param #color4F_table color4f
+-- @param #color4F_object color4f
         
 --------------------------------
 -- @function [parent=#DrawNode] onDraw 
@@ -24,14 +24,14 @@
 -- @param #point_table point
 -- @param #point_table point
 -- @param #point_table point
--- @param #color4F_table color4f
+-- @param #color4F_object color4f
         
 --------------------------------
 -- @function [parent=#DrawNode] drawDot 
 -- @param self
 -- @param #point_table point
 -- @param #float float
--- @param #color4F_table color4f
+-- @param #color4F_object color4f
         
 --------------------------------
 -- @function [parent=#DrawNode] drawCubicBezier 
@@ -41,7 +41,7 @@
 -- @param #point_table point
 -- @param #point_table point
 -- @param #unsigned int int
--- @param #color4F_table color4f
+-- @param #color4F_object color4f
         
 --------------------------------
 -- @function [parent=#DrawNode] drawSegment 
@@ -49,11 +49,11 @@
 -- @param #point_table point
 -- @param #point_table point
 -- @param #float float
--- @param #color4F_table color4f
+-- @param #color4F_object color4f
         
 --------------------------------
 -- @function [parent=#DrawNode] create 
 -- @param self
--- @return DrawNode#DrawNode ret (return value: cc.DrawNode)
+-- @return cc.DrawNode#cc.DrawNode ret
         
 return nil

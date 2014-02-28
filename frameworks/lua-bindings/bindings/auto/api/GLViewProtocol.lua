@@ -10,7 +10,7 @@
 --------------------------------
 -- @function [parent=#GLViewProtocol] getViewPortRect 
 -- @param self
--- @return rect_table#rect_table ret (return value: rect_table)
+-- @return rect_table#rect_table ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] setIMEKeyboardState 
@@ -28,12 +28,12 @@
 --------------------------------
 -- @function [parent=#GLViewProtocol] getViewName 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] isOpenGLReady 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] end 
@@ -42,27 +42,27 @@
 --------------------------------
 -- @function [parent=#GLViewProtocol] getScaleY 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] getScaleX 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] getVisibleOrigin 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] getFrameSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] getDesignResolutionSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] pollInputEvents 
@@ -82,7 +82,7 @@
 --------------------------------
 -- @function [parent=#GLViewProtocol] getResolutionPolicy 
 -- @param self
--- @return ResolutionPolicy#ResolutionPolicy ret (return value: ResolutionPolicy)
+-- @return ResolutionPolicy#ResolutionPolicy ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] setViewPortInPoints 
@@ -95,7 +95,7 @@
 --------------------------------
 -- @function [parent=#GLViewProtocol] getScissorRect 
 -- @param self
--- @return rect_table#rect_table ret (return value: rect_table)
+-- @return rect_table#rect_table ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] setViewName 
@@ -105,16 +105,16 @@
 --------------------------------
 -- @function [parent=#GLViewProtocol] getVisibleRect 
 -- @param self
--- @return rect_table#rect_table ret (return value: rect_table)
+-- @return rect_table#rect_table ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] getVisibleSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#GLViewProtocol] isScissorEnabled 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 return nil

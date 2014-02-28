@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#FrameData] create 
 -- @param self
--- @return FrameData#FrameData ret (return value: ccs.FrameData)
+-- @return ccs.FrameData#ccs.FrameData ret
         
 --------------------------------
 -- @function [parent=#FrameData] FrameData 

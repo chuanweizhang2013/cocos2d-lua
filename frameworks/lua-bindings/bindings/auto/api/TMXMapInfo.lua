@@ -15,17 +15,17 @@
 -- @function [parent=#TMXMapInfo] initWithTMXFile 
 -- @param self
 -- @param #string str
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] getOrientation 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] isStoringCharacters 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] setLayers 
@@ -36,12 +36,12 @@
 -- @function [parent=#TMXMapInfo] parseXMLFile 
 -- @param self
 -- @param #string str
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] getParentElement 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] setTMXFileName 
@@ -52,7 +52,7 @@
 -- @function [parent=#TMXMapInfo] parseXMLString 
 -- @param self
 -- @param #string str
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- overload function: getLayers()
@@ -61,7 +61,7 @@
 --          
 -- @function [parent=#TMXMapInfo] getLayers
 -- @param self
--- @return array_table#array_table ret (retunr value: array_table)
+-- @return array_table#array_table ret
 
 --------------------------------
 -- overload function: getTilesets()
@@ -70,12 +70,12 @@
 --          
 -- @function [parent=#TMXMapInfo] getTilesets
 -- @param self
--- @return array_table#array_table ret (retunr value: array_table)
+-- @return array_table#array_table ret
 
 --------------------------------
 -- @function [parent=#TMXMapInfo] getParentGID 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] setParentElement 
@@ -87,7 +87,7 @@
 -- @param self
 -- @param #string str
 -- @param #string str
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] setParentGID 
@@ -97,17 +97,17 @@
 --------------------------------
 -- @function [parent=#TMXMapInfo] getLayerAttribs 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] getTileSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] getTileProperties 
 -- @param self
--- @return map_table#map_table ret (return value: map_table)
+-- @return map_table#map_table ret
         
 --------------------------------
 -- overload function: getObjectGroups()
@@ -116,12 +116,12 @@
 --          
 -- @function [parent=#TMXMapInfo] getObjectGroups
 -- @param self
--- @return array_table#array_table ret (retunr value: array_table)
+-- @return array_table#array_table ret
 
 --------------------------------
 -- @function [parent=#TMXMapInfo] getTMXFileName 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] setCurrentString 
@@ -156,7 +156,7 @@
 --------------------------------
 -- @function [parent=#TMXMapInfo] getMapSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] setTilesets 
@@ -170,12 +170,12 @@
 --          
 -- @function [parent=#TMXMapInfo] getProperties
 -- @param self
--- @return map_table#map_table ret (retunr value: map_table)
+-- @return map_table#map_table ret
 
 --------------------------------
 -- @function [parent=#TMXMapInfo] getCurrentString 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] setLayerAttribs 
@@ -186,14 +186,14 @@
 -- @function [parent=#TMXMapInfo] create 
 -- @param self
 -- @param #string str
--- @return TMXMapInfo#TMXMapInfo ret (return value: cc.TMXMapInfo)
+-- @return cc.TMXMapInfo#cc.TMXMapInfo ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] createWithXML 
 -- @param self
 -- @param #string str
 -- @param #string str
--- @return TMXMapInfo#TMXMapInfo ret (return value: cc.TMXMapInfo)
+-- @return cc.TMXMapInfo#cc.TMXMapInfo ret
         
 --------------------------------
 -- @function [parent=#TMXMapInfo] TMXMapInfo 

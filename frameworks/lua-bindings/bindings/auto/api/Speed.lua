@@ -14,18 +14,18 @@
 --------------------------------
 -- @function [parent=#Speed] getInnerAction 
 -- @param self
--- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
+-- @return cc.ActionInterval#cc.ActionInterval ret
         
 --------------------------------
 -- @function [parent=#Speed] getSpeed 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Speed] create 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
 -- @param #float float
--- @return Speed#Speed ret (return value: cc.Speed)
+-- @return cc.Speed#cc.Speed ret
         
 return nil

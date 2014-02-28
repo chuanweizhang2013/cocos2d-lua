@@ -13,12 +13,12 @@
 --------------------------------
 -- @function [parent=#MotionStreak] getTexture 
 -- @param self
--- @return Texture2D#Texture2D ret (return value: cc.Texture2D)
+-- @return cc.Texture2D#cc.Texture2D ret
         
 --------------------------------
 -- @function [parent=#MotionStreak] tintWithColor 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
         
 --------------------------------
 -- @function [parent=#MotionStreak] setStartingPositionInitialized 
@@ -28,12 +28,12 @@
 --------------------------------
 -- @function [parent=#MotionStreak] isStartingPositionInitialized 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#MotionStreak] isFastMode 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#MotionStreak] setFastMode 
@@ -41,17 +41,17 @@
 -- @param #bool bool
         
 --------------------------------
--- overload function: create(float, float, float, color3B_table, cc.Texture2D)
+-- overload function: create(float, float, float, color3B_object, cc.Texture2D)
 --          
--- overload function: create(float, float, float, color3B_table, string)
+-- overload function: create(float, float, float, color3B_object, string)
 --          
 -- @function [parent=#MotionStreak] create
 -- @param self
 -- @param #float float
 -- @param #float float
 -- @param #float float
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
 -- @param #string str
--- @return MotionStreak#MotionStreak ret (retunr value: cc.MotionStreak)
+-- @return cc.MotionStreak#cc.MotionStreak ret
 
 return nil

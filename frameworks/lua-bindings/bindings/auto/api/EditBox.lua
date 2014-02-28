@@ -4,22 +4,22 @@
 --------------------------------
 -- @function [parent=#EditBox] getText 
 -- @param self
--- @return char#char ret (return value: char)
+-- @return char*#char* ret
         
 --------------------------------
 -- @function [parent=#EditBox] setPlaceholderFontName 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#EditBox] getPlaceHolder 
 -- @param self
--- @return char#char ret (return value: char)
+-- @return char*#char* ret
         
 --------------------------------
 -- @function [parent=#EditBox] setFontName 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#EditBox] setPlaceholderFontSize 
@@ -34,17 +34,17 @@
 --------------------------------
 -- @function [parent=#EditBox] setPlaceholderFontColor 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
         
 --------------------------------
 -- @function [parent=#EditBox] setFontColor 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
         
 --------------------------------
 -- @function [parent=#EditBox] setPlaceholderFont 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #int int
         
 --------------------------------
@@ -57,12 +57,12 @@
 -- @param self
 -- @param #size_table size
 -- @param #cc.Scale9Sprite scale9sprite
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#EditBox] setPlaceHolder 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#EditBox] setReturnType 
@@ -77,12 +77,12 @@
 --------------------------------
 -- @function [parent=#EditBox] getMaxLength 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#EditBox] setText 
 -- @param self
--- @param #char char
+-- @param #char* char
         
 --------------------------------
 -- @function [parent=#EditBox] setMaxLength 
@@ -92,7 +92,7 @@
 --------------------------------
 -- @function [parent=#EditBox] setFont 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #int int
         
 --------------------------------
@@ -102,7 +102,7 @@
 -- @param #cc.Scale9Sprite scale9sprite
 -- @param #cc.Scale9Sprite scale9sprite
 -- @param #cc.Scale9Sprite scale9sprite
--- @return EditBox#EditBox ret (return value: cc.EditBox)
+-- @return cc.EditBox#cc.EditBox ret
         
 --------------------------------
 -- @function [parent=#EditBox] EditBox 

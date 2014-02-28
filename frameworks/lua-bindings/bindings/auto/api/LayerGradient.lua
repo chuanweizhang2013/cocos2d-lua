@@ -4,17 +4,17 @@
 --------------------------------
 -- @function [parent=#LayerGradient] getStartColor 
 -- @param self
--- @return color3B_table#color3B_table ret (return value: color3B_table)
+-- @return color3B_object#color3B_object ret
         
 --------------------------------
 -- @function [parent=#LayerGradient] isCompressedInterpolation 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#LayerGradient] getStartOpacity 
 -- @param self
--- @return unsigned char#unsigned char ret (return value: unsigned char)
+-- @return unsigned char#unsigned char ret
         
 --------------------------------
 -- @function [parent=#LayerGradient] setVector 
@@ -39,54 +39,54 @@
 --------------------------------
 -- @function [parent=#LayerGradient] getVector 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
--- overload function: initWithColor(color4B_table, color4B_table)
+-- overload function: initWithColor(color4B_object, color4B_object)
 --          
 -- overload function: initWithColor()
 --          
--- overload function: initWithColor(color4B_table, color4B_table, point_table)
+-- overload function: initWithColor(color4B_object, color4B_object, point_table)
 --          
 -- @function [parent=#LayerGradient] initWithColor
 -- @param self
--- @param #color4B_table color4b
--- @param #color4B_table color4b
+-- @param #color4B_object color4b
+-- @param #color4B_object color4b
 -- @param #point_table point
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#LayerGradient] setEndColor 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
         
 --------------------------------
 -- @function [parent=#LayerGradient] getEndColor 
 -- @param self
--- @return color3B_table#color3B_table ret (return value: color3B_table)
+-- @return color3B_object#color3B_object ret
         
 --------------------------------
 -- @function [parent=#LayerGradient] getEndOpacity 
 -- @param self
--- @return unsigned char#unsigned char ret (return value: unsigned char)
+-- @return unsigned char#unsigned char ret
         
 --------------------------------
 -- @function [parent=#LayerGradient] setStartColor 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
         
 --------------------------------
--- overload function: create(color4B_table, color4B_table)
+-- overload function: create(color4B_object, color4B_object)
 --          
 -- overload function: create()
 --          
--- overload function: create(color4B_table, color4B_table, point_table)
+-- overload function: create(color4B_object, color4B_object, point_table)
 --          
 -- @function [parent=#LayerGradient] create
 -- @param self
--- @param #color4B_table color4b
--- @param #color4B_table color4b
+-- @param #color4B_object color4b
+-- @param #color4B_object color4b
 -- @param #point_table point
--- @return LayerGradient#LayerGradient ret (retunr value: cc.LayerGradient)
+-- @return cc.LayerGradient#cc.LayerGradient ret
 
 return nil

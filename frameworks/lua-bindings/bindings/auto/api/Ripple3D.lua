@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#Ripple3D] getAmplitudeRate 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Ripple3D] setAmplitude 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#Ripple3D] getAmplitude 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Ripple3D] setPosition 
@@ -29,7 +29,7 @@
 --------------------------------
 -- @function [parent=#Ripple3D] getPosition 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Ripple3D] create 
@@ -40,6 +40,6 @@
 -- @param #float float
 -- @param #unsigned int int
 -- @param #float float
--- @return Ripple3D#Ripple3D ret (return value: cc.Ripple3D)
+-- @return cc.Ripple3D#cc.Ripple3D ret
         
 return nil

@@ -22,17 +22,17 @@
 --------------------------------
 -- @function [parent=#GridBase] isTextureFlipped 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#GridBase] getGridSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#GridBase] getStep 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#GridBase] set2DProjection 
@@ -60,7 +60,7 @@
 --------------------------------
 -- @function [parent=#GridBase] getReuseGrid 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- overload function: initWithSize(size_table)
@@ -72,7 +72,7 @@
 -- @param #size_table size
 -- @param #cc.Texture2D texture2d
 -- @param #bool bool
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#GridBase] setReuseGrid 
@@ -82,7 +82,7 @@
 --------------------------------
 -- @function [parent=#GridBase] isActive 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#GridBase] reuse 
@@ -98,6 +98,6 @@
 -- @param #size_table size
 -- @param #cc.Texture2D texture2d
 -- @param #bool bool
--- @return GridBase#GridBase ret (retunr value: cc.GridBase)
+-- @return cc.GridBase#cc.GridBase ret
 
 return nil

@@ -6,13 +6,13 @@
 -- @param self
 -- @param #cc.PhysicsShape physicsshape
 -- @param #cc.PhysicsShape physicsshape
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#EventListenerPhysicsContactWithShapes] create 
 -- @param self
 -- @param #cc.PhysicsShape physicsshape
 -- @param #cc.PhysicsShape physicsshape
--- @return EventListenerPhysicsContactWithShapes#EventListenerPhysicsContactWithShapes ret (return value: cc.EventListenerPhysicsContactWithShapes)
+-- @return cc.EventListenerPhysicsContactWithShapes#cc.EventListenerPhysicsContactWithShapes ret
         
 return nil

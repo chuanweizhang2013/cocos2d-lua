@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#Show] create 
 -- @param self
--- @return Show#Show ret (return value: cc.Show)
+-- @return cc.Show#cc.Show ret
         
 return nil

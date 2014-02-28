@@ -8,7 +8,7 @@
 --          
 -- @function [parent=#ParallaxNode] getParallaxArray
 -- @param self
--- @return _ccArray#_ccArray ret (retunr value: cc._ccArray)
+-- @return cc._ccArray#cc._ccArray ret
 
 --------------------------------
 -- @function [parent=#ParallaxNode] addChild 
@@ -31,6 +31,6 @@
 --------------------------------
 -- @function [parent=#ParallaxNode] create 
 -- @param self
--- @return ParallaxNode#ParallaxNode ret (return value: cc.ParallaxNode)
+-- @return cc.ParallaxNode#cc.ParallaxNode ret
         
 return nil

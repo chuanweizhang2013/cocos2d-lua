@@ -4,58 +4,58 @@
 --------------------------------
 -- @function [parent=#UserDefault] setIntegerForKey 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #int int
         
 --------------------------------
--- overload function: getFloatForKey(char, float)
+-- overload function: getFloatForKey(char*, float)
 --          
--- overload function: getFloatForKey(char)
+-- overload function: getFloatForKey(char*)
 --          
 -- @function [parent=#UserDefault] getFloatForKey
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #float float
--- @return float#float ret (retunr value: float)
+-- @return float#float ret
 
 --------------------------------
--- overload function: getBoolForKey(char, bool)
+-- overload function: getBoolForKey(char*, bool)
 --          
--- overload function: getBoolForKey(char)
+-- overload function: getBoolForKey(char*)
 --          
 -- @function [parent=#UserDefault] getBoolForKey
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #bool bool
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#UserDefault] setDoubleForKey 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #double double
         
 --------------------------------
 -- @function [parent=#UserDefault] setFloatForKey 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #float float
         
 --------------------------------
--- overload function: getStringForKey(char, string)
+-- overload function: getStringForKey(char*, string)
 --          
--- overload function: getStringForKey(char)
+-- overload function: getStringForKey(char*)
 --          
 -- @function [parent=#UserDefault] getStringForKey
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #string str
--- @return string#string ret (retunr value: string)
+-- @return string#string ret
 
 --------------------------------
 -- @function [parent=#UserDefault] setStringForKey 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #string str
         
 --------------------------------
@@ -63,31 +63,31 @@
 -- @param self
         
 --------------------------------
--- overload function: getIntegerForKey(char, int)
+-- overload function: getIntegerForKey(char*, int)
 --          
--- overload function: getIntegerForKey(char)
+-- overload function: getIntegerForKey(char*)
 --          
 -- @function [parent=#UserDefault] getIntegerForKey
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #int int
--- @return int#int ret (retunr value: int)
+-- @return int#int ret
 
 --------------------------------
--- overload function: getDoubleForKey(char, double)
+-- overload function: getDoubleForKey(char*, double)
 --          
--- overload function: getDoubleForKey(char)
+-- overload function: getDoubleForKey(char*)
 --          
 -- @function [parent=#UserDefault] getDoubleForKey
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #double double
--- @return double#double ret (retunr value: double)
+-- @return double#double ret
 
 --------------------------------
 -- @function [parent=#UserDefault] setBoolForKey 
 -- @param self
--- @param #char char
+-- @param #char* char
 -- @param #bool bool
         
 --------------------------------
@@ -97,11 +97,11 @@
 --------------------------------
 -- @function [parent=#UserDefault] getXMLFilePath 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#UserDefault] isXMLFileExist 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 return nil

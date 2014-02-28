@@ -9,13 +9,13 @@
 --------------------------------
 -- @function [parent=#Follow] isBoundarySet 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Follow] create 
 -- @param self
 -- @param #cc.Node node
 -- @param #rect_table rect
--- @return Follow#Follow ret (return value: cc.Follow)
+-- @return cc.Follow#cc.Follow ret
         
 return nil

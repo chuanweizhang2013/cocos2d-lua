@@ -9,23 +9,23 @@
 --------------------------------
 -- @function [parent=#LabelBMFont] getBlendFunc 
 -- @param self
--- @return BlendFunc#BlendFunc ret (return value: cc.BlendFunc)
+-- @return cc.BlendFunc#cc.BlendFunc ret
         
 --------------------------------
 -- @function [parent=#LabelBMFont] isOpacityModifyRGB 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#LabelBMFont] getLetter 
 -- @param self
 -- @param #int int
--- @return Sprite#Sprite ret (return value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
         
 --------------------------------
 -- @function [parent=#LabelBMFont] getString 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#LabelBMFont] setBlendFunc 
@@ -45,7 +45,7 @@
 -- @param #float float
 -- @param #cc.TextHAlignment texthalignment
 -- @param #point_table point
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#LabelBMFont] setOpacityModifyRGB 
@@ -55,7 +55,7 @@
 --------------------------------
 -- @function [parent=#LabelBMFont] getFntFile 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#LabelBMFont] setFntFile 
@@ -85,7 +85,7 @@
 -- @param #float float
 -- @param #cc.TextHAlignment texthalignment
 -- @param #point_table point
--- @return LabelBMFont#LabelBMFont ret (retunr value: cc.LabelBMFont)
+-- @return cc.LabelBMFont#cc.LabelBMFont ret
 
 --------------------------------
 -- @function [parent=#LabelBMFont] LabelBMFont 

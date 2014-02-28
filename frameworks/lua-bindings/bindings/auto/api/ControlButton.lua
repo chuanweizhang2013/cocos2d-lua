@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#ControlButton] isPushed 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ControlButton] setSelected 
@@ -46,13 +46,13 @@
 --------------------------------
 -- @function [parent=#ControlButton] getLabelAnchorPoint 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getTitleTTFSizeForState 
 -- @param self
 -- @param #cc.Control::State state
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ControlButton] setTitleTTFForState 
@@ -79,7 +79,7 @@
 --------------------------------
 -- @function [parent=#ControlButton] getCurrentTitleColor 
 -- @param self
--- @return color3B_table#color3B_table ret (return value: color3B_table)
+-- @return color3B_object#color3B_object ret
         
 --------------------------------
 -- @function [parent=#ControlButton] setEnabled 
@@ -90,12 +90,12 @@
 -- @function [parent=#ControlButton] getBackgroundSpriteForState 
 -- @param self
 -- @param #cc.Control::State state
--- @return Scale9Sprite#Scale9Sprite ret (return value: cc.Scale9Sprite)
+-- @return cc.Scale9Sprite#cc.Scale9Sprite ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getHorizontalOrigin 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#ControlButton] needsLayout 
@@ -108,40 +108,40 @@
 --          
 -- @function [parent=#ControlButton] getCurrentTitle
 -- @param self
--- @return string#string ret (retunr value: string)
+-- @return string#string ret
 
 --------------------------------
 -- @function [parent=#ControlButton] getScaleRatio 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getTitleTTFForState 
 -- @param self
 -- @param #cc.Control::State state
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getBackgroundSprite 
 -- @param self
--- @return Scale9Sprite#Scale9Sprite ret (return value: cc.Scale9Sprite)
+-- @return cc.Scale9Sprite#cc.Scale9Sprite ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getTitleColorForState 
 -- @param self
 -- @param #cc.Control::State state
--- @return color3B_table#color3B_table ret (return value: color3B_table)
+-- @return color3B_object#color3B_object ret
         
 --------------------------------
 -- @function [parent=#ControlButton] setTitleColorForState 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
 -- @param #cc.Control::State state
         
 --------------------------------
 -- @function [parent=#ControlButton] doesAdjustBackgroundImage 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ControlButton] setBackgroundSpriteFrameForState 
@@ -168,23 +168,23 @@
 --------------------------------
 -- @function [parent=#ControlButton] getTitleLabel 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getPreferredSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getVerticalMargin 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getTitleLabelForState 
 -- @param self
 -- @param #cc.Control::State state
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#ControlButton] setMargins 
@@ -202,18 +202,18 @@
 -- @function [parent=#ControlButton] getTitleBMFontForState 
 -- @param self
 -- @param #cc.Control::State state
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getZoomOnTouchDown 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ControlButton] getTitleForState 
 -- @param self
 -- @param #cc.Control::State state
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- overload function: create(cc.Scale9Sprite)
@@ -229,6 +229,6 @@
 -- @param #string str
 -- @param #string str
 -- @param #float float
--- @return ControlButton#ControlButton ret (retunr value: cc.ControlButton)
+-- @return cc.ControlButton#cc.ControlButton ret
 
 return nil

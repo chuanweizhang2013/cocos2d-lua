@@ -8,7 +8,7 @@
 --------------------------------
 -- @function [parent=#CallFunc] getTargetCallback 
 -- @param self
--- @return Ref#Ref ret (return value: cc.Ref)
+-- @return cc.Ref#cc.Ref ret
         
 --------------------------------
 -- @function [parent=#CallFunc] setTargetCallback 

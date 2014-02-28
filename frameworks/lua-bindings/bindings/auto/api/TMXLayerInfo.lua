@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#TMXLayerInfo] getProperties 
 -- @param self
--- @return map_table#map_table ret (return value: map_table)
+-- @return map_table#map_table ret
         
 --------------------------------
 -- @function [parent=#TMXLayerInfo] TMXLayerInfo 

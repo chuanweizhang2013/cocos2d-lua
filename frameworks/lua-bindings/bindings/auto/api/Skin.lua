@@ -4,23 +4,23 @@
 --------------------------------
 -- @function [parent=#Skin] getBone 
 -- @param self
--- @return Bone#Bone ret (return value: ccs.Bone)
+-- @return ccs.Bone#ccs.Bone ret
         
 --------------------------------
 -- @function [parent=#Skin] getNodeToWorldTransformAR 
 -- @param self
--- @return kmMat4#kmMat4 ret (return value: kmMat4)
+-- @return kmMat4#kmMat4 ret
         
 --------------------------------
 -- @function [parent=#Skin] initWithFile 
 -- @param self
 -- @param #string str
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Skin] getDisplayName 
 -- @param self
--- @return string#string ret (return value: string)
+-- @return string#string ret
         
 --------------------------------
 -- @function [parent=#Skin] updateArmatureTransform 
@@ -30,7 +30,7 @@
 -- @function [parent=#Skin] initWithSpriteFrameName 
 -- @param self
 -- @param #string str
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Skin] setBone 
@@ -45,13 +45,13 @@
 -- @function [parent=#Skin] create
 -- @param self
 -- @param #string str
--- @return Skin#Skin ret (retunr value: ccs.Skin)
+-- @return ccs.Skin#ccs.Skin ret
 
 --------------------------------
 -- @function [parent=#Skin] createWithSpriteFrameName 
 -- @param self
 -- @param #string str
--- @return Skin#Skin ret (return value: ccs.Skin)
+-- @return ccs.Skin#ccs.Skin ret
         
 --------------------------------
 -- @function [parent=#Skin] Skin 

@@ -9,6 +9,6 @@
 --------------------------------
 -- @function [parent=#EaseRateAction] getRate 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 return nil

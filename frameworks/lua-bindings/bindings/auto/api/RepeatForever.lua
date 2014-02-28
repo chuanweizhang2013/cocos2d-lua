@@ -9,12 +9,12 @@
 --------------------------------
 -- @function [parent=#RepeatForever] getInnerAction 
 -- @param self
--- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
+-- @return cc.ActionInterval#cc.ActionInterval ret
         
 --------------------------------
 -- @function [parent=#RepeatForever] create 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
--- @return RepeatForever#RepeatForever ret (return value: cc.RepeatForever)
+-- @return cc.RepeatForever#cc.RepeatForever ret
         
 return nil

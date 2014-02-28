@@ -4,13 +4,13 @@
 --------------------------------
 -- @function [parent=#PhysicsShapePolygon] getPointsCount 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#PhysicsShapePolygon] getPoint 
 -- @param self
 -- @param #int int
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsShapePolygon] create 
@@ -19,14 +19,14 @@
 -- @param #int int
 -- @param #cc.PhysicsMaterial physicsmaterial
 -- @param #point_table point
--- @return PhysicsShapePolygon#PhysicsShapePolygon ret (return value: cc.PhysicsShapePolygon)
+-- @return cc.PhysicsShapePolygon#cc.PhysicsShapePolygon ret
         
 --------------------------------
 -- @function [parent=#PhysicsShapePolygon] calculateArea 
 -- @param self
 -- @param #point_table point
 -- @param #int int
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsShapePolygon] calculateMoment 
@@ -35,6 +35,6 @@
 -- @param #point_table point
 -- @param #int int
 -- @param #point_table point
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 return nil

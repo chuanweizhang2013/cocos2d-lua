@@ -13,17 +13,17 @@
 --------------------------------
 -- @function [parent=#Director] getContentScaleFactor 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Director] getWinSizeInPixels 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#Director] getDeltaTime 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Director] setGLDefaultValues 
@@ -46,27 +46,27 @@
 --------------------------------
 -- @function [parent=#Director] getNotificationNode 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#Director] getWinSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#Director] getTextureCache 
 -- @param self
--- @return TextureCache#TextureCache ret (return value: cc.TextureCache)
+-- @return cc.TextureCache#cc.TextureCache ret
         
 --------------------------------
 -- @function [parent=#Director] isSendCleanupToScene 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Director] getVisibleOrigin 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Director] mainLoop 
@@ -80,18 +80,18 @@
 --------------------------------
 -- @function [parent=#Director] getFrameRate 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Director] getSecondsPerFrame 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Director] convertToUI 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Director] setDefaultValues 
@@ -100,7 +100,7 @@
 --------------------------------
 -- @function [parent=#Director] init 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Director] setScheduler 
@@ -114,7 +114,7 @@
 --------------------------------
 -- @function [parent=#Director] getRunningScene 
 -- @param self
--- @return Scene#Scene ret (return value: cc.Scene)
+-- @return cc.Scene#cc.Scene ret
         
 --------------------------------
 -- @function [parent=#Director] setViewport 
@@ -136,7 +136,7 @@
 --------------------------------
 -- @function [parent=#Director] isNextDeltaTimeZero 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Director] end 
@@ -151,7 +151,7 @@
 -- @function [parent=#Director] convertToGL 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Director] purgeCachedData 
@@ -160,7 +160,7 @@
 --------------------------------
 -- @function [parent=#Director] getTotalFrames 
 -- @param self
--- @return unsigned int#unsigned int ret (return value: unsigned int)
+-- @return unsigned int#unsigned int ret
         
 --------------------------------
 -- @function [parent=#Director] runWithScene 
@@ -183,7 +183,7 @@
 --------------------------------
 -- @function [parent=#Director] isDisplayStats 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Director] setProjection 
@@ -193,12 +193,12 @@
 --------------------------------
 -- @function [parent=#Director] getConsole 
 -- @param self
--- @return Console#Console ret (return value: cc.Console)
+-- @return cc.Console#cc.Console ret
         
 --------------------------------
 -- @function [parent=#Director] getZEye 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Director] setNextDeltaTimeZero 
@@ -208,12 +208,12 @@
 --------------------------------
 -- @function [parent=#Director] getVisibleSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#Director] getScheduler 
 -- @param self
--- @return Scheduler#Scheduler ret (return value: cc.Scheduler)
+-- @return cc.Scheduler#cc.Scheduler ret
         
 --------------------------------
 -- @function [parent=#Director] pushScene 
@@ -223,12 +223,12 @@
 --------------------------------
 -- @function [parent=#Director] getAnimationInterval 
 -- @param self
--- @return double#double ret (return value: double)
+-- @return double#double ret
         
 --------------------------------
 -- @function [parent=#Director] isPaused 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Director] setDisplayStats 
@@ -248,11 +248,11 @@
 --------------------------------
 -- @function [parent=#Director] getActionManager 
 -- @param self
--- @return ActionManager#ActionManager ret (return value: cc.ActionManager)
+-- @return cc.ActionManager#cc.ActionManager ret
         
 --------------------------------
 -- @function [parent=#Director] getInstance 
 -- @param self
--- @return Director#Director ret (return value: cc.Director)
+-- @return cc.Director#cc.Director ret
         
 return nil

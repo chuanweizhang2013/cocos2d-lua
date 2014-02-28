@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#ControlStepper] getMinusLabel 
 -- @param self
--- @return LabelTTF#LabelTTF ret (return value: cc.LabelTTF)
+-- @return cc.LabelTTF#cc.LabelTTF ret
         
 --------------------------------
 -- @function [parent=#ControlStepper] setWraps 
@@ -19,12 +19,12 @@
 --------------------------------
 -- @function [parent=#ControlStepper] isContinuous 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ControlStepper] getMinusSprite 
 -- @param self
--- @return Sprite#Sprite ret (return value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
         
 --------------------------------
 -- @function [parent=#ControlStepper] updateLayoutUsingTouchLocation 
@@ -40,7 +40,7 @@
 --------------------------------
 -- @function [parent=#ControlStepper] getPlusLabel 
 -- @param self
--- @return LabelTTF#LabelTTF ret (return value: cc.LabelTTF)
+-- @return cc.LabelTTF#cc.LabelTTF ret
         
 --------------------------------
 -- @function [parent=#ControlStepper] stopAutorepeat 
@@ -54,7 +54,7 @@
 --------------------------------
 -- @function [parent=#ControlStepper] getPlusSprite 
 -- @param self
--- @return Sprite#Sprite ret (return value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
         
 --------------------------------
 -- @function [parent=#ControlStepper] setPlusSprite 
@@ -95,12 +95,12 @@
 -- @param self
 -- @param #cc.Sprite sprite
 -- @param #cc.Sprite sprite
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ControlStepper] getValue 
 -- @param self
--- @return double#double ret (return value: double)
+-- @return double#double ret
         
 --------------------------------
 -- @function [parent=#ControlStepper] setPlusLabel 
@@ -112,7 +112,7 @@
 -- @param self
 -- @param #cc.Sprite sprite
 -- @param #cc.Sprite sprite
--- @return ControlStepper#ControlStepper ret (return value: cc.ControlStepper)
+-- @return cc.ControlStepper#cc.ControlStepper ret
         
 --------------------------------
 -- @function [parent=#ControlStepper] ControlStepper 

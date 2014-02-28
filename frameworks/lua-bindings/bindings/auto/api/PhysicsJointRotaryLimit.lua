@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointRotaryLimit] getMax 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#PhysicsJointRotaryLimit] setMin 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointRotaryLimit] getMin 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- overload function: construct(cc.PhysicsBody, cc.PhysicsBody)
@@ -32,6 +32,6 @@
 -- @param #cc.PhysicsBody physicsbody
 -- @param #float float
 -- @param #float float
--- @return PhysicsJointRotaryLimit#PhysicsJointRotaryLimit ret (retunr value: cc.PhysicsJointRotaryLimit)
+-- @return cc.PhysicsJointRotaryLimit#cc.PhysicsJointRotaryLimit ret
 
 return nil

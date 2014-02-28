@@ -9,13 +9,13 @@
 --------------------------------
 -- @function [parent=#Repeat] getInnerAction 
 -- @param self
--- @return FiniteTimeAction#FiniteTimeAction ret (return value: cc.FiniteTimeAction)
+-- @return cc.FiniteTimeAction#cc.FiniteTimeAction ret
         
 --------------------------------
 -- @function [parent=#Repeat] create 
 -- @param self
 -- @param #cc.FiniteTimeAction finitetimeaction
 -- @param #unsigned int int
--- @return Repeat#Repeat ret (return value: cc.Repeat)
+-- @return cc.Repeat#cc.Repeat ret
         
 return nil

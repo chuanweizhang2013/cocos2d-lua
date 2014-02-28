@@ -19,17 +19,17 @@
 --------------------------------
 -- @function [parent=#PhysicsJointGroove] getGrooveA 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsJointGroove] getGrooveB 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsJointGroove] getAnchr2 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#PhysicsJointGroove] construct 
@@ -39,6 +39,6 @@
 -- @param #point_table point
 -- @param #point_table point
 -- @param #point_table point
--- @return PhysicsJointGroove#PhysicsJointGroove ret (return value: cc.PhysicsJointGroove)
+-- @return cc.PhysicsJointGroove#cc.PhysicsJointGroove ret
         
 return nil

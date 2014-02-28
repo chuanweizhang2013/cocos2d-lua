@@ -8,6 +8,6 @@
 -- @param #unsigned char char
 -- @param #unsigned char char
 -- @param #unsigned char char
--- @return TintTo#TintTo ret (return value: cc.TintTo)
+-- @return cc.TintTo#cc.TintTo ret
         
 return nil

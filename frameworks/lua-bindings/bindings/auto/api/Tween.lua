@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#Tween] getAnimation 
 -- @param self
--- @return ArmatureAnimation#ArmatureAnimation ret (return value: ccs.ArmatureAnimation)
+-- @return ccs.ArmatureAnimation#ccs.ArmatureAnimation ret
         
 --------------------------------
 -- @function [parent=#Tween] gotoAndPause 
@@ -29,7 +29,7 @@
 -- @function [parent=#Tween] init 
 -- @param self
 -- @param #ccs.Bone bone
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Tween] setAnimation 
@@ -40,7 +40,7 @@
 -- @function [parent=#Tween] create 
 -- @param self
 -- @param #ccs.Bone bone
--- @return Tween#Tween ret (return value: ccs.Tween)
+-- @return ccs.Tween#ccs.Tween ret
         
 --------------------------------
 -- @function [parent=#Tween] Tween 

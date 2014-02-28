@@ -22,7 +22,7 @@
 --------------------------------
 -- @function [parent=#Sprite] getTexture 
 -- @param self
--- @return Texture2D#Texture2D ret (return value: cc.Texture2D)
+-- @return cc.Texture2D#cc.Texture2D ret
         
 --------------------------------
 -- @function [parent=#Sprite] setFlippedY 
@@ -37,12 +37,12 @@
 --------------------------------
 -- @function [parent=#Sprite] getBatchNode 
 -- @param self
--- @return SpriteBatchNode#SpriteBatchNode ret (return value: cc.SpriteBatchNode)
+-- @return cc.SpriteBatchNode#cc.SpriteBatchNode ret
         
 --------------------------------
 -- @function [parent=#Sprite] getOffsetPosition 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Sprite] removeAllChildrenWithCleanup 
@@ -68,12 +68,12 @@
 -- @function [parent=#Sprite] isFrameDisplayed 
 -- @param self
 -- @param #cc.SpriteFrame spriteframe
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Sprite] getAtlasIndex 
 -- @param self
--- @return long#long ret (return value: long)
+-- @return long#long ret
         
 --------------------------------
 -- @function [parent=#Sprite] setBatchNode 
@@ -94,12 +94,12 @@
 --------------------------------
 -- @function [parent=#Sprite] getSpriteFrame 
 -- @param self
--- @return SpriteFrame#SpriteFrame ret (return value: cc.SpriteFrame)
+-- @return cc.SpriteFrame#cc.SpriteFrame ret
         
 --------------------------------
 -- @function [parent=#Sprite] isDirty 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Sprite] setAtlasIndex 
@@ -114,27 +114,27 @@
 --------------------------------
 -- @function [parent=#Sprite] isTextureRectRotated 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Sprite] getTextureRect 
 -- @param self
--- @return rect_table#rect_table ret (return value: rect_table)
+-- @return rect_table#rect_table ret
         
 --------------------------------
 -- @function [parent=#Sprite] getTextureAtlas 
 -- @param self
--- @return TextureAtlas#TextureAtlas ret (return value: cc.TextureAtlas)
+-- @return cc.TextureAtlas#cc.TextureAtlas ret
         
 --------------------------------
 -- @function [parent=#Sprite] isFlippedX 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Sprite] isFlippedY 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Sprite] setVertexRect 
@@ -152,7 +152,7 @@
 -- @param self
 -- @param #string str
 -- @param #rect_table rect
--- @return Sprite#Sprite ret (retunr value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
 
 --------------------------------
 -- overload function: createWithTexture(cc.Texture2D, rect_table, bool)
@@ -164,18 +164,18 @@
 -- @param #cc.Texture2D texture2d
 -- @param #rect_table rect
 -- @param #bool bool
--- @return Sprite#Sprite ret (retunr value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
 
 --------------------------------
 -- @function [parent=#Sprite] createWithSpriteFrameName 
 -- @param self
 -- @param #string str
--- @return Sprite#Sprite ret (return value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
         
 --------------------------------
 -- @function [parent=#Sprite] createWithSpriteFrame 
 -- @param self
 -- @param #cc.SpriteFrame spriteframe
--- @return Sprite#Sprite ret (return value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
         
 return nil

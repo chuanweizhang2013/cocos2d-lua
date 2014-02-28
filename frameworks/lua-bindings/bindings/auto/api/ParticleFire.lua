@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#ParticleFire] create 
 -- @param self
--- @return ParticleFire#ParticleFire ret (return value: cc.ParticleFire)
+-- @return cc.ParticleFire#cc.ParticleFire ret
         
 --------------------------------
 -- @function [parent=#ParticleFire] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return ParticleFire#ParticleFire ret (return value: cc.ParticleFire)
+-- @return cc.ParticleFire#cc.ParticleFire ret
         
 return nil

@@ -2,23 +2,23 @@
 --------------------------------
 -- @module ActionManagerEx
 --------------------------------
--- overload function: playActionByName(char, char, cc.CallFunc)
+-- overload function: playActionByName(char*, char*, cc.CallFunc)
 --          
--- overload function: playActionByName(char, char)
+-- overload function: playActionByName(char*, char*)
 --          
 -- @function [parent=#ActionManagerEx] playActionByName
 -- @param self
--- @param #char char
--- @param #char char
+-- @param #char* char
+-- @param #char* char
 -- @param #cc.CallFunc callfunc
--- @return ActionObject#ActionObject ret (retunr value: ccs.ActionObject)
+-- @return ccs.ActionObject#ccs.ActionObject ret
 
 --------------------------------
 -- @function [parent=#ActionManagerEx] getActionByName 
 -- @param self
--- @param #char char
--- @param #char char
--- @return ActionObject#ActionObject ret (return value: ccs.ActionObject)
+-- @param #char* char
+-- @param #char* char
+-- @return ccs.ActionObject#ccs.ActionObject ret
         
 --------------------------------
 -- @function [parent=#ActionManagerEx] releaseActions 
@@ -31,6 +31,6 @@
 --------------------------------
 -- @function [parent=#ActionManagerEx] getInstance 
 -- @param self
--- @return ActionManagerEx#ActionManagerEx ret (return value: ccs.ActionManagerEx)
+-- @return ccs.ActionManagerEx#ccs.ActionManagerEx ret
         
 return nil

@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#Animation] getLoops 
 -- @param self
--- @return unsigned int#unsigned int ret (return value: unsigned int)
+-- @return unsigned int#unsigned int ret
         
 --------------------------------
 -- @function [parent=#Animation] addSpriteFrame 
@@ -19,12 +19,12 @@
 --------------------------------
 -- @function [parent=#Animation] clone 
 -- @param self
--- @return Animation#Animation ret (return value: cc.Animation)
+-- @return cc.Animation#cc.Animation ret
         
 --------------------------------
 -- @function [parent=#Animation] getDuration 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Animation] setFrames 
@@ -34,7 +34,7 @@
 --------------------------------
 -- @function [parent=#Animation] getFrames 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#Animation] setLoops 
@@ -54,17 +54,17 @@
 --------------------------------
 -- @function [parent=#Animation] getTotalDelayUnits 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Animation] getDelayPerUnit 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#Animation] getRestoreOriginalFrame 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Animation] addSpriteFrameWithTexture 
@@ -82,13 +82,13 @@
 -- @param #array_table array
 -- @param #float float
 -- @param #unsigned int int
--- @return Animation#Animation ret (retunr value: cc.Animation)
+-- @return cc.Animation#cc.Animation ret
 
 --------------------------------
 -- @function [parent=#Animation] createWithSpriteFrames 
 -- @param self
 -- @param #array_table array
 -- @param #float float
--- @return Animation#Animation ret (return value: cc.Animation)
+-- @return cc.Animation#cc.Animation ret
         
 return nil

@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#MenuItemLabel] getDisabledColor 
 -- @param self
--- @return color3B_table#color3B_table ret (return value: color3B_table)
+-- @return color3B_object#color3B_object ret
         
 --------------------------------
 -- @function [parent=#MenuItemLabel] setString 
@@ -19,11 +19,11 @@
 --------------------------------
 -- @function [parent=#MenuItemLabel] setDisabledColor 
 -- @param self
--- @param #color3B_table color3b
+-- @param #color3B_object color3b
         
 --------------------------------
 -- @function [parent=#MenuItemLabel] getLabel 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 return nil

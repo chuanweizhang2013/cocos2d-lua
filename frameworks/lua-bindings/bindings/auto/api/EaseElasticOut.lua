@@ -10,6 +10,6 @@
 -- @param self
 -- @param #cc.ActionInterval actioninterval
 -- @param #float float
--- @return EaseElasticOut#EaseElasticOut ret (retunr value: cc.EaseElasticOut)
+-- @return cc.EaseElasticOut#cc.EaseElasticOut ret
 
 return nil

@@ -4,13 +4,13 @@
 --------------------------------
 -- @function [parent=#ControlSlider] getSelectedThumbSprite 
 -- @param self
--- @return Sprite#Sprite ret (return value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] locationFromTouch 
 -- @param self
 -- @param #cc.Touch touch
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] setSelectedThumbSprite 
@@ -25,17 +25,17 @@
 --------------------------------
 -- @function [parent=#ControlSlider] getMaximumAllowedValue 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] getMinimumAllowedValue 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] getMinimumValue 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] setThumbSprite 
@@ -74,7 +74,7 @@
 --------------------------------
 -- @function [parent=#ControlSlider] getBackgroundSprite 
 -- @param self
--- @return Sprite#Sprite ret (return value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
         
 --------------------------------
 -- overload function: initWithSprites(cc.Sprite, cc.Sprite, cc.Sprite, cc.Sprite)
@@ -87,33 +87,33 @@
 -- @param #cc.Sprite sprite
 -- @param #cc.Sprite sprite
 -- @param #cc.Sprite sprite
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#ControlSlider] getMaximumValue 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] isTouchInside 
 -- @param self
 -- @param #cc.Touch touch
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] getValue 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return float#float ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] getThumbSprite 
 -- @param self
--- @return Sprite#Sprite ret (return value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] getProgressSprite 
 -- @param self
--- @return Sprite#Sprite ret (return value: cc.Sprite)
+-- @return cc.Sprite#cc.Sprite ret
         
 --------------------------------
 -- @function [parent=#ControlSlider] setBackgroundSprite 
@@ -128,9 +128,9 @@
 --------------------------------
 -- overload function: create(cc.Sprite, cc.Sprite, cc.Sprite)
 --          
--- overload function: create(char, char, char)
+-- overload function: create(char*, char*, char*)
 --          
--- overload function: create(char, char, char, char)
+-- overload function: create(char*, char*, char*, char*)
 --          
 -- overload function: create(cc.Sprite, cc.Sprite, cc.Sprite, cc.Sprite)
 --          
@@ -140,7 +140,7 @@
 -- @param #cc.Sprite sprite
 -- @param #cc.Sprite sprite
 -- @param #cc.Sprite sprite
--- @return ControlSlider#ControlSlider ret (retunr value: cc.ControlSlider)
+-- @return cc.ControlSlider#cc.ControlSlider ret
 
 --------------------------------
 -- @function [parent=#ControlSlider] ControlSlider 

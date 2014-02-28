@@ -15,7 +15,7 @@
 --------------------------------
 -- @function [parent=#Control] getState 
 -- @param self
--- @return Control::State#Control::State ret (return value: cc.Control::State)
+-- @return cc.Control::State#cc.Control::State ret
         
 --------------------------------
 -- @function [parent=#Control] onTouchEnded 
@@ -36,7 +36,7 @@
 --------------------------------
 -- @function [parent=#Control] isEnabled 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Control] onTouchCancelled 
@@ -53,23 +53,23 @@
 -- @param self
 -- @param #cc.Touch touch
 -- @param #cc.Event event
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Control] hasVisibleParents 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Control] isSelected 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Control] isTouchInside 
 -- @param self
 -- @param #cc.Touch touch
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Control] setHighlighted 
@@ -80,16 +80,16 @@
 -- @function [parent=#Control] getTouchLocation 
 -- @param self
 -- @param #cc.Touch touch
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#Control] isHighlighted 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#Control] create 
 -- @param self
--- @return Control#Control ret (return value: cc.Control)
+-- @return cc.Control#cc.Control ret
         
 return nil

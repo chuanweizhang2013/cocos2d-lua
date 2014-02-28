@@ -4,17 +4,17 @@
 --------------------------------
 -- @function [parent=#DisplayManager] getDisplayRenderNode 
 -- @param self
--- @return Node#Node ret (return value: cc.Node)
+-- @return cc.Node#cc.Node ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] getAnchorPointInPoints 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] getDisplayRenderNodeType 
 -- @param self
--- @return DisplayType#DisplayType ret (return value: ccs.DisplayType)
+-- @return ccs.DisplayType#ccs.DisplayType ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] removeDisplay 
@@ -30,17 +30,17 @@
 -- @function [parent=#DisplayManager] init 
 -- @param self
 -- @param #ccs.Bone bone
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] getContentSize 
 -- @param self
--- @return size_table#size_table ret (return value: size_table)
+-- @return size_table#size_table ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] getBoundingBox 
 -- @param self
--- @return rect_table#rect_table ret (return value: rect_table)
+-- @return rect_table#rect_table ret
         
 --------------------------------
 -- overload function: addDisplay(cc.Node, int)
@@ -61,7 +61,7 @@
 -- @param self
 -- @param #float float
 -- @param #float float
--- @return bool#bool ret (retunr value: bool)
+-- @return bool#bool ret
 
 --------------------------------
 -- @function [parent=#DisplayManager] changeDisplayWithIndex 
@@ -78,27 +78,27 @@
 --------------------------------
 -- @function [parent=#DisplayManager] isForceChangeDisplay 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] getCurrentDisplayIndex 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return int#int ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] getAnchorPoint 
 -- @param self
--- @return point_table#point_table ret (return value: point_table)
+-- @return point_table#point_table ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] getDecorativeDisplayList 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] isVisible 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return bool#bool ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] setVisible 
@@ -109,7 +109,7 @@
 -- @function [parent=#DisplayManager] create 
 -- @param self
 -- @param #ccs.Bone bone
--- @return DisplayManager#DisplayManager ret (return value: ccs.DisplayManager)
+-- @return ccs.DisplayManager#ccs.DisplayManager ret
         
 --------------------------------
 -- @function [parent=#DisplayManager] DisplayManager 

@@ -6,7 +6,7 @@
 -- @param self
 -- @param #int int
 -- @param #cc.Node node
--- @return Action#Action ret (return value: cc.Action)
+-- @return cc.Action#cc.Action ret
         
 --------------------------------
 -- @function [parent=#ActionManager] removeActionByTag 
@@ -39,7 +39,7 @@
 -- @function [parent=#ActionManager] getNumberOfRunningActionsInTarget 
 -- @param self
 -- @param #cc.Node node
--- @return long#long ret (return value: long)
+-- @return long#long ret
         
 --------------------------------
 -- @function [parent=#ActionManager] removeAllActionsFromTarget 
@@ -64,7 +64,7 @@
 --------------------------------
 -- @function [parent=#ActionManager] pauseAllRunningActions 
 -- @param self
--- @return array_table#array_table ret (return value: array_table)
+-- @return array_table#array_table ret
         
 --------------------------------
 -- @function [parent=#ActionManager] ActionManager 
