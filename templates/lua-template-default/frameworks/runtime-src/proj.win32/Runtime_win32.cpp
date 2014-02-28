@@ -44,7 +44,7 @@ string getIPAddress()
 			if((hostinfo = gethostbyname(name)) != NULL)   
 			{ 
 				ip = inet_ntoa (*(struct in_addr *)*hostinfo->h_addr_list);
-				//printf(" IP��ַ: %s/n",ip);
+				//printf(" IPµØÖ·: %s/n",ip);
 			}   
 		}   
 		WSACleanup( );
