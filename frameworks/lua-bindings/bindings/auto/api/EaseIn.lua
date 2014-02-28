@@ -6,6 +6,6 @@
 -- @param self
 -- @param #cc.ActionInterval actioninterval
 -- @param #float float
--- @return cc.EaseIn#cc.EaseIn ret
+-- @return EaseIn#EaseIn ret (return value: cc.EaseIn)
         
 return nil

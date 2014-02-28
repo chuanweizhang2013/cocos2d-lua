@@ -9,33 +9,33 @@
 --------------------------------
 -- @function [parent=#Label] getStringNumLines 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#Label] getLetter 
 -- @param self
 -- @param #int int
--- @return cc.Sprite#cc.Sprite ret
+-- @return Sprite#Sprite ret (return value: cc.Sprite)
         
 --------------------------------
 -- @function [parent=#Label] getScaleY 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Label] getScaleX 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Label] getStringLenght 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#Label] getTextAlignment 
 -- @param self
--- @return cc.TextHAlignment#cc.TextHAlignment ret
+-- @return TextHAlignment#TextHAlignment ret (return value: cc.TextHAlignment)
         
 --------------------------------
 -- @function [parent=#Label] setString 
@@ -59,45 +59,45 @@
 -- @param #int int
 -- @param #int int
 -- @param #int int
--- @return bool#bool ret
+-- @return bool#bool ret (retunr value: bool)
 
 --------------------------------
 -- @function [parent=#Label] setLabelEffect 
 -- @param self
 -- @param #cc.LabelEffect labeleffect
--- @param #color3B_object color3b
+-- @param #color3B_table color3b
         
 --------------------------------
 -- @function [parent=#Label] getMaxLineWidth 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Label] setBMFontFilePath 
 -- @param self
 -- @param #string str
 -- @param #point_table point
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Label] getCommonLineHeight 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#Label] getFontAtlas 
 -- @param self
--- @return cc.FontAtlas#cc.FontAtlas ret
+-- @return FontAtlas#FontAtlas ret (return value: cc.FontAtlas)
         
 --------------------------------
 -- @function [parent=#Label] getString 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#Label] breakLineWithoutSpace 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Label] setMaxLineWidth 
@@ -117,12 +117,12 @@
 -- @param #cc.TextHAlignment texthalignment
 -- @param #int int
 -- @param #point_table point
--- @return cc.Label#cc.Label ret
+-- @return Label#Label ret (return value: cc.Label)
         
 --------------------------------
 -- @function [parent=#Label] create 
 -- @param self
--- @return cc.Label#cc.Label ret
+-- @return Label#Label ret (return value: cc.Label)
         
 --------------------------------
 -- overload function: createWithCharMap(cc.Texture2D, int, int, int)
@@ -137,6 +137,6 @@
 -- @param #int int
 -- @param #int int
 -- @param #int int
--- @return cc.Label#cc.Label ret
+-- @return Label#Label ret (retunr value: cc.Label)
 
 return nil

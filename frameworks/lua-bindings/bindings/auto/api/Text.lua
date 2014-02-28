@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#Text] getStringLength 
 -- @param self
--- @return long#long ret
+-- @return long#long ret (return value: long)
         
 --------------------------------
 -- @function [parent=#Text] setFontName 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#Text] getStringValue 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#Text] setText 
@@ -39,7 +39,7 @@
 --------------------------------
 -- @function [parent=#Text] isTouchScaleChangeEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Text] setTextHorizontalAlignment 
@@ -54,7 +54,7 @@
 --------------------------------
 -- @function [parent=#Text] create 
 -- @param self
--- @return ccui.Text#ccui.Text ret
+-- @return Text#Text ret (return value: ccui.Text)
         
 --------------------------------
 -- @function [parent=#Text] Text 

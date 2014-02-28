@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return cc.TransitionProgressInOut#cc.TransitionProgressInOut ret
+-- @return TransitionProgressInOut#TransitionProgressInOut ret (return value: cc.TransitionProgressInOut)
         
 return nil

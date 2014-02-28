@@ -8,6 +8,6 @@
 -- @param #size_table size
 -- @param #int int
 -- @param #bool bool
--- @return cc.ShatteredTiles3D#cc.ShatteredTiles3D ret
+-- @return ShatteredTiles3D#ShatteredTiles3D ret (return value: cc.ShatteredTiles3D)
         
 return nil

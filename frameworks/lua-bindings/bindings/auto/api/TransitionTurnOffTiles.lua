@@ -5,13 +5,13 @@
 -- @function [parent=#TransitionTurnOffTiles] easeActionWithAction 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
--- @return cc.ActionInterval#cc.ActionInterval ret
+-- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
         
 --------------------------------
 -- @function [parent=#TransitionTurnOffTiles] create 
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return cc.TransitionTurnOffTiles#cc.TransitionTurnOffTiles ret
+-- @return TransitionTurnOffTiles#TransitionTurnOffTiles ret (return value: cc.TransitionTurnOffTiles)
         
 return nil

@@ -12,6 +12,6 @@
 --------------------------------
 -- @function [parent=#Ref] getReferenceCount 
 -- @param self
--- @return unsigned int#unsigned int ret
+-- @return unsigned int#unsigned int ret (return value: unsigned int)
         
 return nil

@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#ParticleSnow] create 
 -- @param self
--- @return cc.ParticleSnow#cc.ParticleSnow ret
+-- @return ParticleSnow#ParticleSnow ret (return value: cc.ParticleSnow)
         
 --------------------------------
 -- @function [parent=#ParticleSnow] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return cc.ParticleSnow#cc.ParticleSnow ret
+-- @return ParticleSnow#ParticleSnow ret (return value: cc.ParticleSnow)
         
 return nil

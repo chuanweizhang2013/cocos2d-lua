@@ -8,7 +8,7 @@
 --------------------------------
 -- @function [parent=#TableViewCell] getIdx 
 -- @param self
--- @return long#long ret
+-- @return long#long ret (return value: long)
         
 --------------------------------
 -- @function [parent=#TableViewCell] setIdx 
@@ -18,7 +18,7 @@
 --------------------------------
 -- @function [parent=#TableViewCell] create 
 -- @param self
--- @return cc.TableViewCell#cc.TableViewCell ret
+-- @return TableViewCell#TableViewCell ret (return value: cc.TableViewCell)
         
 --------------------------------
 -- @function [parent=#TableViewCell] TableViewCell 

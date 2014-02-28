@@ -5,7 +5,7 @@
 -- @function [parent=#Scale9Sprite] resizableSpriteWithCapInsets 
 -- @param self
 -- @param #rect_table rect
--- @return cc.Scale9Sprite#cc.Scale9Sprite ret
+-- @return Scale9Sprite#Scale9Sprite ret (return value: cc.Scale9Sprite)
         
 --------------------------------
 -- @function [parent=#Scale9Sprite] setInsetBottom 
@@ -13,15 +13,15 @@
 -- @param #float float
         
 --------------------------------
--- overload function: initWithSpriteFrameName(char*)
+-- overload function: initWithSpriteFrameName(char)
 --          
--- overload function: initWithSpriteFrameName(char*, rect_table)
+-- overload function: initWithSpriteFrameName(char, rect_table)
 --          
 -- @function [parent=#Scale9Sprite] initWithSpriteFrameName
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #rect_table rect
--- @return bool#bool ret
+-- @return bool#bool ret (retunr value: bool)
 
 --------------------------------
 -- @function [parent=#Scale9Sprite] setInsetTop 
@@ -31,7 +31,7 @@
 --------------------------------
 -- @function [parent=#Scale9Sprite] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Scale9Sprite] setPreferredSize 
@@ -54,17 +54,17 @@
 -- @param #rect_table rect
 -- @param #bool bool
 -- @param #rect_table rect
--- @return bool#bool ret
+-- @return bool#bool ret (retunr value: bool)
 
 --------------------------------
 -- @function [parent=#Scale9Sprite] getInsetBottom 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Scale9Sprite] getCapInsets 
 -- @param self
--- @return rect_table#rect_table ret
+-- @return rect_table#rect_table ret (return value: rect_table)
         
 --------------------------------
 -- @function [parent=#Scale9Sprite] updateWithBatchNode 
@@ -73,38 +73,38 @@
 -- @param #rect_table rect
 -- @param #bool bool
 -- @param #rect_table rect
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Scale9Sprite] getInsetRight 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Scale9Sprite] getOriginalSize 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
--- overload function: initWithFile(char*, rect_table)
+-- overload function: initWithFile(char, rect_table)
 --          
--- overload function: initWithFile(char*, rect_table, rect_table)
+-- overload function: initWithFile(char, rect_table, rect_table)
 --          
--- overload function: initWithFile(rect_table, char*)
+-- overload function: initWithFile(rect_table, char)
 --          
--- overload function: initWithFile(char*)
+-- overload function: initWithFile(char)
 --          
 -- @function [parent=#Scale9Sprite] initWithFile
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #rect_table rect
 -- @param #rect_table rect
--- @return bool#bool ret
+-- @return bool#bool ret (retunr value: bool)
 
 --------------------------------
 -- @function [parent=#Scale9Sprite] getInsetTop 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Scale9Sprite] setInsetLeft 
@@ -120,12 +120,12 @@
 -- @param self
 -- @param #cc.SpriteFrame spriteframe
 -- @param #rect_table rect
--- @return bool#bool ret
+-- @return bool#bool ret (retunr value: bool)
 
 --------------------------------
 -- @function [parent=#Scale9Sprite] getPreferredSize 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#Scale9Sprite] setCapInsets 
@@ -135,7 +135,7 @@
 --------------------------------
 -- @function [parent=#Scale9Sprite] getInsetLeft 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Scale9Sprite] setInsetRight 
@@ -143,33 +143,33 @@
 -- @param #float float
         
 --------------------------------
--- overload function: create(char*, rect_table, rect_table)
+-- overload function: create(char, rect_table, rect_table)
 --          
 -- overload function: create()
 --          
--- overload function: create(rect_table, char*)
+-- overload function: create(rect_table, char)
 --          
--- overload function: create(char*, rect_table)
+-- overload function: create(char, rect_table)
 --          
--- overload function: create(char*)
+-- overload function: create(char)
 --          
 -- @function [parent=#Scale9Sprite] create
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #rect_table rect
 -- @param #rect_table rect
--- @return cc.Scale9Sprite#cc.Scale9Sprite ret
+-- @return Scale9Sprite#Scale9Sprite ret (retunr value: cc.Scale9Sprite)
 
 --------------------------------
--- overload function: createWithSpriteFrameName(char*, rect_table)
+-- overload function: createWithSpriteFrameName(char, rect_table)
 --          
--- overload function: createWithSpriteFrameName(char*)
+-- overload function: createWithSpriteFrameName(char)
 --          
 -- @function [parent=#Scale9Sprite] createWithSpriteFrameName
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #rect_table rect
--- @return cc.Scale9Sprite#cc.Scale9Sprite ret
+-- @return Scale9Sprite#Scale9Sprite ret (retunr value: cc.Scale9Sprite)
 
 --------------------------------
 -- overload function: createWithSpriteFrame(cc.SpriteFrame, rect_table)
@@ -180,7 +180,7 @@
 -- @param self
 -- @param #cc.SpriteFrame spriteframe
 -- @param #rect_table rect
--- @return cc.Scale9Sprite#cc.Scale9Sprite ret
+-- @return Scale9Sprite#Scale9Sprite ret (retunr value: cc.Scale9Sprite)
 
 --------------------------------
 -- @function [parent=#Scale9Sprite] Scale9Sprite 

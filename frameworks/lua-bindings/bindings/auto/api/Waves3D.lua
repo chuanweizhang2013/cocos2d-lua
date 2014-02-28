@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#Waves3D] getAmplitudeRate 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Waves3D] setAmplitude 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#Waves3D] getAmplitude 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Waves3D] create 
@@ -28,6 +28,6 @@
 -- @param #size_table size
 -- @param #unsigned int int
 -- @param #float float
--- @return cc.Waves3D#cc.Waves3D ret
+-- @return Waves3D#Waves3D ret (return value: cc.Waves3D)
         
 return nil

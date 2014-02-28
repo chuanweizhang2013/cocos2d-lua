@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointMotor] getRate 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointMotor] construct 
@@ -17,6 +17,6 @@
 -- @param #cc.PhysicsBody physicsbody
 -- @param #cc.PhysicsBody physicsbody
 -- @param #float float
--- @return cc.PhysicsJointMotor#cc.PhysicsJointMotor ret
+-- @return PhysicsJointMotor#PhysicsJointMotor ret (return value: cc.PhysicsJointMotor)
         
 return nil

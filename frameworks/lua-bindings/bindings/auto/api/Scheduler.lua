@@ -9,14 +9,14 @@
 --------------------------------
 -- @function [parent=#Scheduler] isScheduled 
 -- @param self
--- @param #void* void
+-- @param #void void
 -- @param #long long
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Scheduler] getTimeScale 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Scheduler] performFunctionInCocosThread 

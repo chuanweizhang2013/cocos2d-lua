@@ -13,6 +13,6 @@
 -- @param #float float
 -- @param #float float
 -- @param #float float
--- @return cc.RotateBy#cc.RotateBy ret
+-- @return RotateBy#RotateBy ret (retunr value: cc.RotateBy)
 
 return nil

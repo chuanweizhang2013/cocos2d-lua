@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#ActionEase] getInnerAction 
 -- @param self
--- @return cc.ActionInterval#cc.ActionInterval ret
+-- @return ActionInterval#ActionInterval ret (return value: cc.ActionInterval)
         
 return nil

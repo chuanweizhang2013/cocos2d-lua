@@ -10,7 +10,7 @@
 -- @function [parent=#TMXTiledMap] getProperty 
 -- @param self
 -- @param #string str
--- @return cc.Value#cc.Value ret
+-- @return Value#Value ret (return value: cc.Value)
         
 --------------------------------
 -- @function [parent=#TMXTiledMap] setMapSize 
@@ -21,7 +21,7 @@
 -- @function [parent=#TMXTiledMap] getObjectGroup 
 -- @param self
 -- @param #string str
--- @return cc.TMXObjectGroup#cc.TMXObjectGroup ret
+-- @return TMXObjectGroup#TMXObjectGroup ret (return value: cc.TMXObjectGroup)
         
 --------------------------------
 -- overload function: getObjectGroups()
@@ -30,22 +30,22 @@
 --          
 -- @function [parent=#TMXTiledMap] getObjectGroups
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (retunr value: array_table)
 
 --------------------------------
 -- @function [parent=#TMXTiledMap] getTileSize 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#TMXTiledMap] getMapSize 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#TMXTiledMap] getProperties 
 -- @param self
--- @return map_table#map_table ret
+-- @return map_table#map_table ret (return value: map_table)
         
 --------------------------------
 -- @function [parent=#TMXTiledMap] setTileSize 
@@ -61,12 +61,12 @@
 -- @function [parent=#TMXTiledMap] getLayer 
 -- @param self
 -- @param #string str
--- @return cc.TMXLayer#cc.TMXLayer ret
+-- @return TMXLayer#TMXLayer ret (return value: cc.TMXLayer)
         
 --------------------------------
 -- @function [parent=#TMXTiledMap] getMapOrientation 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#TMXTiledMap] setMapOrientation 
@@ -77,13 +77,13 @@
 -- @function [parent=#TMXTiledMap] create 
 -- @param self
 -- @param #string str
--- @return cc.TMXTiledMap#cc.TMXTiledMap ret
+-- @return TMXTiledMap#TMXTiledMap ret (return value: cc.TMXTiledMap)
         
 --------------------------------
 -- @function [parent=#TMXTiledMap] createWithXML 
 -- @param self
 -- @param #string str
 -- @param #string str
--- @return cc.TMXTiledMap#cc.TMXTiledMap ret
+-- @return TMXTiledMap#TMXTiledMap ret (return value: cc.TMXTiledMap)
         
 return nil

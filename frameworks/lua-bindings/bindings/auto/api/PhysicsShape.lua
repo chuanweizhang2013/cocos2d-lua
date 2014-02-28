@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#PhysicsShape] getFriction 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] setGroup 
@@ -19,22 +19,22 @@
 --------------------------------
 -- @function [parent=#PhysicsShape] getMass 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getMaterial 
 -- @param self
--- @return cc.PhysicsMaterial#cc.PhysicsMaterial ret
+-- @return PhysicsMaterial#PhysicsMaterial ret (return value: cc.PhysicsMaterial)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getCollisionBitmask 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getArea 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] setCategoryBitmask 
@@ -44,7 +44,7 @@
 --------------------------------
 -- @function [parent=#PhysicsShape] getGroup 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] setMoment 
@@ -55,32 +55,32 @@
 -- @function [parent=#PhysicsShape] containsPoint 
 -- @param self
 -- @param #point_table point
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getCategoryBitmask 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getType 
 -- @param self
--- @return cc.PhysicsShape::Type#cc.PhysicsShape::Type ret
+-- @return PhysicsShape::Type#PhysicsShape::Type ret (return value: cc.PhysicsShape::Type)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getContactTestBitmask 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getCenter 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getDensity 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] setMass 
@@ -90,12 +90,12 @@
 --------------------------------
 -- @function [parent=#PhysicsShape] getTag 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] calculateDefaultMoment 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] setCollisionBitmask 
@@ -105,17 +105,17 @@
 --------------------------------
 -- @function [parent=#PhysicsShape] getMoment 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getOffset 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] getRestitution 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsShape] setFriction 
@@ -145,6 +145,6 @@
 --------------------------------
 -- @function [parent=#PhysicsShape] getBody 
 -- @param self
--- @return cc.PhysicsBody#cc.PhysicsBody ret
+-- @return PhysicsBody#PhysicsBody ret (return value: cc.PhysicsBody)
         
 return nil

@@ -6,7 +6,7 @@
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return cc.TransitionProgress#cc.TransitionProgress ret
+-- @return TransitionProgress#TransitionProgress ret (return value: cc.TransitionProgress)
         
 --------------------------------
 -- @function [parent=#TransitionProgress] TransitionProgress 

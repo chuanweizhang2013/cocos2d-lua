@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#JumpTiles3D] getAmplitudeRate 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#JumpTiles3D] setAmplitude 
@@ -19,7 +19,7 @@
 --------------------------------
 -- @function [parent=#JumpTiles3D] getAmplitude 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#JumpTiles3D] create 
@@ -28,6 +28,6 @@
 -- @param #size_table size
 -- @param #unsigned int int
 -- @param #float float
--- @return cc.JumpTiles3D#cc.JumpTiles3D ret
+-- @return JumpTiles3D#JumpTiles3D ret (return value: cc.JumpTiles3D)
         
 return nil

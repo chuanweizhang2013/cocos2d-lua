@@ -9,17 +9,17 @@
 --------------------------------
 -- @function [parent=#TextField] getStringValue 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#TextField] setPasswordStyleText 
 -- @param self
--- @param #char* char
+-- @param #char char
         
 --------------------------------
 -- @function [parent=#TextField] getAttachWithIME 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] setFontName 
@@ -29,7 +29,7 @@
 --------------------------------
 -- @function [parent=#TextField] getInsertText 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] setInsertText 
@@ -39,7 +39,7 @@
 --------------------------------
 -- @function [parent=#TextField] getDetachWithIME 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] didNotSelectSelf 
@@ -62,7 +62,7 @@
 --------------------------------
 -- @function [parent=#TextField] getDeleteBackward 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] setFontSize 
@@ -77,17 +77,17 @@
 --------------------------------
 -- @function [parent=#TextField] isPasswordEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] getMaxLength 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#TextField] isMaxLengthEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] setDetachWithIME 
@@ -117,7 +117,7 @@
 --------------------------------
 -- @function [parent=#TextField] create 
 -- @param self
--- @return ccui.TextField#ccui.TextField ret
+-- @return TextField#TextField ret (return value: ccui.TextField)
         
 --------------------------------
 -- @function [parent=#TextField] TextField 

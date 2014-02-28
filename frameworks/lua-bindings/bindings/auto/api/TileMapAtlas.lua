@@ -8,7 +8,7 @@
 -- @param #string str
 -- @param #int int
 -- @param #int int
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TileMapAtlas] releaseMap 
@@ -17,18 +17,18 @@
 --------------------------------
 -- @function [parent=#TileMapAtlas] getTGAInfo 
 -- @param self
--- @return cc.sImageTGA#cc.sImageTGA ret
+-- @return sImageTGA#sImageTGA ret (return value: cc.sImageTGA)
         
 --------------------------------
 -- @function [parent=#TileMapAtlas] getTileAt 
 -- @param self
 -- @param #point_table point
--- @return color3B_object#color3B_object ret
+-- @return color3B_table#color3B_table ret (return value: color3B_table)
         
 --------------------------------
 -- @function [parent=#TileMapAtlas] setTile 
 -- @param self
--- @param #color3B_object color3b
+-- @param #color3B_table color3b
 -- @param #point_table point
         
 --------------------------------
@@ -43,7 +43,7 @@
 -- @param #string str
 -- @param #int int
 -- @param #int int
--- @return cc.TileMapAtlas#cc.TileMapAtlas ret
+-- @return TileMapAtlas#TileMapAtlas ret (return value: cc.TileMapAtlas)
         
 --------------------------------
 -- @function [parent=#TileMapAtlas] TileMapAtlas 

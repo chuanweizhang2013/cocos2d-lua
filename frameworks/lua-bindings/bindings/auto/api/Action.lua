@@ -14,12 +14,12 @@
 --------------------------------
 -- @function [parent=#Action] clone 
 -- @param self
--- @return cc.Action#cc.Action ret
+-- @return Action#Action ret (return value: cc.Action)
         
 --------------------------------
 -- @function [parent=#Action] getOriginalTarget 
 -- @param self
--- @return cc.Node#cc.Node ret
+-- @return Node#Node ret (return value: cc.Node)
         
 --------------------------------
 -- @function [parent=#Action] stop 
@@ -33,7 +33,7 @@
 --------------------------------
 -- @function [parent=#Action] getTarget 
 -- @param self
--- @return cc.Node#cc.Node ret
+-- @return Node#Node ret (return value: cc.Node)
         
 --------------------------------
 -- @function [parent=#Action] step 
@@ -48,7 +48,7 @@
 --------------------------------
 -- @function [parent=#Action] getTag 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#Action] setTarget 
@@ -58,11 +58,11 @@
 --------------------------------
 -- @function [parent=#Action] isDone 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Action] reverse 
 -- @param self
--- @return cc.Action#cc.Action ret
+-- @return Action#Action ret (return value: cc.Action)
         
 return nil

@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#LayoutParameter] getLayoutType 
 -- @param self
--- @return ccui.LayoutParameterType#ccui.LayoutParameterType ret
+-- @return LayoutParameterType#LayoutParameterType ret (return value: ccui.LayoutParameterType)
         
 --------------------------------
 -- @function [parent=#LayoutParameter] create 
 -- @param self
--- @return ccui.LayoutParameter#ccui.LayoutParameter ret
+-- @return LayoutParameter#LayoutParameter ret (return value: ccui.LayoutParameter)
         
 --------------------------------
 -- @function [parent=#LayoutParameter] LayoutParameter 

@@ -15,7 +15,7 @@
 -- @function [parent=#ShaderCache] getProgram 
 -- @param self
 -- @param #string str
--- @return cc.GLProgram#cc.GLProgram ret
+-- @return GLProgram#GLProgram ret (return value: cc.GLProgram)
         
 --------------------------------
 -- @function [parent=#ShaderCache] loadDefaultShaders 
@@ -28,7 +28,7 @@
 --------------------------------
 -- @function [parent=#ShaderCache] getInstance 
 -- @param self
--- @return cc.ShaderCache#cc.ShaderCache ret
+-- @return ShaderCache#ShaderCache ret (return value: cc.ShaderCache)
         
 --------------------------------
 -- @function [parent=#ShaderCache] ShaderCache 

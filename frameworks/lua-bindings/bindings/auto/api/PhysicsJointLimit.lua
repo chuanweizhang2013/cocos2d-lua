@@ -19,22 +19,22 @@
 --------------------------------
 -- @function [parent=#PhysicsJointLimit] getAnchr2 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsJointLimit] getAnchr1 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsJointLimit] getMin 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointLimit] getMax 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointLimit] setMin 
@@ -54,6 +54,6 @@
 -- @param #point_table point
 -- @param #float float
 -- @param #float float
--- @return cc.PhysicsJointLimit#cc.PhysicsJointLimit ret
+-- @return PhysicsJointLimit#PhysicsJointLimit ret (retunr value: cc.PhysicsJointLimit)
 
 return nil

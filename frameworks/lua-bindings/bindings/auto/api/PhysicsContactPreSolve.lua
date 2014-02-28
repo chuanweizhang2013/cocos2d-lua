@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#PhysicsContactPreSolve] getFriction 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsContactPreSolve] getRestitution 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsContactPreSolve] setFriction 
@@ -23,7 +23,7 @@
 --------------------------------
 -- @function [parent=#PhysicsContactPreSolve] getSurfaceVelocity 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsContactPreSolve] setSurfaceVelocity 

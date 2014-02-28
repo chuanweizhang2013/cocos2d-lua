@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#Application] getTargetPlatform 
 -- @param self
--- @return cc.ApplicationProtocol::Platform#cc.ApplicationProtocol::Platform ret
+-- @return ApplicationProtocol::Platform#ApplicationProtocol::Platform ret (return value: cc.ApplicationProtocol::Platform)
         
 --------------------------------
 -- @function [parent=#Application] setAnimationInterval 
@@ -14,11 +14,11 @@
 --------------------------------
 -- @function [parent=#Application] getCurrentLanguage 
 -- @param self
--- @return cc.LanguageType#cc.LanguageType ret
+-- @return LanguageType#LanguageType ret (return value: cc.LanguageType)
         
 --------------------------------
 -- @function [parent=#Application] getInstance 
 -- @param self
--- @return cc.Application#cc.Application ret
+-- @return Application#Application ret (return value: cc.Application)
         
 return nil

@@ -13,7 +13,7 @@
 --------------------------------
 -- @function [parent=#Menu] isEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Menu] alignItemsHorizontallyWithPadding 

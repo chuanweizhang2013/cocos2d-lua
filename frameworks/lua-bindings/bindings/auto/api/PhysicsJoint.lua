@@ -4,17 +4,17 @@
 --------------------------------
 -- @function [parent=#PhysicsJoint] getBodyA 
 -- @param self
--- @return cc.PhysicsBody#cc.PhysicsBody ret
+-- @return PhysicsBody#PhysicsBody ret (return value: cc.PhysicsBody)
         
 --------------------------------
 -- @function [parent=#PhysicsJoint] getBodyB 
 -- @param self
--- @return cc.PhysicsBody#cc.PhysicsBody ret
+-- @return PhysicsBody#PhysicsBody ret (return value: cc.PhysicsBody)
         
 --------------------------------
 -- @function [parent=#PhysicsJoint] getMaxForce 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJoint] setMaxForce 
@@ -24,7 +24,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJoint] isEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#PhysicsJoint] setEnable 
@@ -39,7 +39,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJoint] getWorld 
 -- @param self
--- @return cc.PhysicsWorld#cc.PhysicsWorld ret
+-- @return PhysicsWorld#PhysicsWorld ret (return value: cc.PhysicsWorld)
         
 --------------------------------
 -- @function [parent=#PhysicsJoint] setTag 
@@ -53,12 +53,12 @@
 --------------------------------
 -- @function [parent=#PhysicsJoint] isCollisionEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#PhysicsJoint] getTag 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#PhysicsJoint] destroy 
