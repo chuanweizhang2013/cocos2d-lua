@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return cc.TransitionCrossFade#cc.TransitionCrossFade ret
+-- @return TransitionCrossFade#TransitionCrossFade ret (return value: cc.TransitionCrossFade)
         
 return nil

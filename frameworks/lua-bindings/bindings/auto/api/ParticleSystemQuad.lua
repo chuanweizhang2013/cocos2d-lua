@@ -20,12 +20,12 @@
 -- @function [parent=#ParticleSystemQuad] create
 -- @param self
 -- @param #string str
--- @return cc.ParticleSystemQuad#cc.ParticleSystemQuad ret
+-- @return ParticleSystemQuad#ParticleSystemQuad ret (retunr value: cc.ParticleSystemQuad)
 
 --------------------------------
 -- @function [parent=#ParticleSystemQuad] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return cc.ParticleSystemQuad#cc.ParticleSystemQuad ret
+-- @return ParticleSystemQuad#ParticleSystemQuad ret (return value: cc.ParticleSystemQuad)
         
 return nil

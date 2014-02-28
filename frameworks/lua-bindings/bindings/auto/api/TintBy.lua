@@ -8,6 +8,6 @@
 -- @param #short short
 -- @param #short short
 -- @param #short short
--- @return cc.TintBy#cc.TintBy ret
+-- @return TintBy#TintBy ret (return value: cc.TintBy)
         
 return nil

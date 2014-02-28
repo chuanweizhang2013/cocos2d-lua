@@ -5,6 +5,6 @@
 -- @function [parent=#FlipX3D] create 
 -- @param self
 -- @param #float float
--- @return cc.FlipX3D#cc.FlipX3D ret
+-- @return FlipX3D#FlipX3D ret (return value: cc.FlipX3D)
         
 return nil

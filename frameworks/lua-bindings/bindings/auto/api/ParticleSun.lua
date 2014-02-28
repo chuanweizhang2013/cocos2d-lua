@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#ParticleSun] create 
 -- @param self
--- @return cc.ParticleSun#cc.ParticleSun ret
+-- @return ParticleSun#ParticleSun ret (return value: cc.ParticleSun)
         
 --------------------------------
 -- @function [parent=#ParticleSun] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return cc.ParticleSun#cc.ParticleSun ret
+-- @return ParticleSun#ParticleSun ret (return value: cc.ParticleSun)
         
 return nil

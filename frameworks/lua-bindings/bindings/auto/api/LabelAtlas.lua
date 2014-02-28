@@ -20,7 +20,7 @@
 -- @param #int int
 -- @param #int int
 -- @param #int int
--- @return bool#bool ret
+-- @return bool#bool ret (retunr value: bool)
 
 --------------------------------
 -- @function [parent=#LabelAtlas] updateAtlasValues 
@@ -29,7 +29,7 @@
 --------------------------------
 -- @function [parent=#LabelAtlas] getString 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- overload function: create(string, string, int, int, int)
@@ -45,6 +45,6 @@
 -- @param #int int
 -- @param #int int
 -- @param #int int
--- @return cc.LabelAtlas#cc.LabelAtlas ret
+-- @return LabelAtlas#LabelAtlas ret (retunr value: cc.LabelAtlas)
 
 return nil

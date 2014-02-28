@@ -9,12 +9,12 @@
 --------------------------------
 -- @function [parent=#ControlColourPicker] getHuePicker 
 -- @param self
--- @return cc.ControlHuePicker#cc.ControlHuePicker ret
+-- @return ControlHuePicker#ControlHuePicker ret (return value: cc.ControlHuePicker)
         
 --------------------------------
 -- @function [parent=#ControlColourPicker] setColor 
 -- @param self
--- @param #color3B_object color3b
+-- @param #color3B_table color3b
         
 --------------------------------
 -- @function [parent=#ControlColourPicker] hueSliderValueChanged 
@@ -25,7 +25,7 @@
 --------------------------------
 -- @function [parent=#ControlColourPicker] getcolourPicker 
 -- @param self
--- @return cc.ControlSaturationBrightnessPicker#cc.ControlSaturationBrightnessPicker ret
+-- @return ControlSaturationBrightnessPicker#ControlSaturationBrightnessPicker ret (return value: cc.ControlSaturationBrightnessPicker)
         
 --------------------------------
 -- @function [parent=#ControlColourPicker] setBackground 
@@ -35,7 +35,7 @@
 --------------------------------
 -- @function [parent=#ControlColourPicker] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ControlColourPicker] setcolourPicker 
@@ -56,12 +56,12 @@
 --------------------------------
 -- @function [parent=#ControlColourPicker] getBackground 
 -- @param self
--- @return cc.Sprite#cc.Sprite ret
+-- @return Sprite#Sprite ret (return value: cc.Sprite)
         
 --------------------------------
 -- @function [parent=#ControlColourPicker] create 
 -- @param self
--- @return cc.ControlColourPicker#cc.ControlColourPicker ret
+-- @return ControlColourPicker#ControlColourPicker ret (return value: cc.ControlColourPicker)
         
 --------------------------------
 -- @function [parent=#ControlColourPicker] ControlColourPicker 

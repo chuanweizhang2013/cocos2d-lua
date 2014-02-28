@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#SpriteDisplayData] create 
 -- @param self
--- @return ccs.SpriteDisplayData#ccs.SpriteDisplayData ret
+-- @return SpriteDisplayData#SpriteDisplayData ret (return value: ccs.SpriteDisplayData)
         
 --------------------------------
 -- @function [parent=#SpriteDisplayData] SpriteDisplayData 

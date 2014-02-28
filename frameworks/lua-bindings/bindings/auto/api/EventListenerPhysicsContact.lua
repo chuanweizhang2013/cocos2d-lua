@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#EventListenerPhysicsContact] create 
 -- @param self
--- @return cc.EventListenerPhysicsContact#cc.EventListenerPhysicsContact ret
+-- @return EventListenerPhysicsContact#EventListenerPhysicsContact ret (return value: cc.EventListenerPhysicsContact)
         
 return nil

@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return cc.TransitionFadeBL#cc.TransitionFadeBL ret
+-- @return TransitionFadeBL#TransitionFadeBL ret (return value: cc.TransitionFadeBL)
         
 return nil

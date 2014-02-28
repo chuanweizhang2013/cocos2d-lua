@@ -9,18 +9,18 @@
 --------------------------------
 -- @function [parent=#ArmatureData] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ArmatureData] getBoneData 
 -- @param self
 -- @param #string str
--- @return ccs.BoneData#ccs.BoneData ret
+-- @return BoneData#BoneData ret (return value: ccs.BoneData)
         
 --------------------------------
 -- @function [parent=#ArmatureData] create 
 -- @param self
--- @return ccs.ArmatureData#ccs.ArmatureData ret
+-- @return ArmatureData#ArmatureData ret (return value: ccs.ArmatureData)
         
 --------------------------------
 -- @function [parent=#ArmatureData] ArmatureData 

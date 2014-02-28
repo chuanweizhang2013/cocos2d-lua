@@ -17,7 +17,7 @@
 --------------------------------
 -- @function [parent=#ScrollView] isInertiaScrollEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ScrollView] scrollToPercentBothDirection 
@@ -29,7 +29,7 @@
 --------------------------------
 -- @function [parent=#ScrollView] getDirection 
 -- @param self
--- @return ccui.SCROLLVIEW_DIR#ccui.SCROLLVIEW_DIR ret
+-- @return SCROLLVIEW_DIR#SCROLLVIEW_DIR ret (return value: ccui.SCROLLVIEW_DIR)
         
 --------------------------------
 -- @function [parent=#ScrollView] scrollToBottomLeft 
@@ -40,7 +40,7 @@
 --------------------------------
 -- @function [parent=#ScrollView] getInnerContainer 
 -- @param self
--- @return ccui.Layout#ccui.Layout ret
+-- @return Layout#Layout ret (return value: ccui.Layout)
         
 --------------------------------
 -- @function [parent=#ScrollView] jumpToBottom 
@@ -73,12 +73,12 @@
 --------------------------------
 -- @function [parent=#ScrollView] getInnerContainerSize 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#ScrollView] isBounceEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ScrollView] jumpToPercentVertical 
@@ -165,7 +165,7 @@
 --------------------------------
 -- @function [parent=#ScrollView] create 
 -- @param self
--- @return ccui.ScrollView#ccui.ScrollView ret
+-- @return ScrollView#ScrollView ret (return value: ccui.ScrollView)
         
 --------------------------------
 -- @function [parent=#ScrollView] ScrollView 

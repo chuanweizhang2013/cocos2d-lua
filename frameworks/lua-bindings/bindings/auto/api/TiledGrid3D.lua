@@ -11,7 +11,7 @@
 -- @param #size_table size
 -- @param #cc.Texture2D texture2d
 -- @param #bool bool
--- @return cc.TiledGrid3D#cc.TiledGrid3D ret
+-- @return TiledGrid3D#TiledGrid3D ret (retunr value: cc.TiledGrid3D)
 
 --------------------------------
 -- @function [parent=#TiledGrid3D] TiledGrid3D 

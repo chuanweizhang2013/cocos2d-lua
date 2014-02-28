@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#RemoveSelf] create 
 -- @param self
--- @return cc.RemoveSelf#cc.RemoveSelf ret
+-- @return RemoveSelf#RemoveSelf ret (return value: cc.RemoveSelf)
         
 return nil

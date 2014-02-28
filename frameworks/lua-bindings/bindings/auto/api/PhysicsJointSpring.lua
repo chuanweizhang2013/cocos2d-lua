@@ -14,7 +14,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointSpring] getDamping 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointSpring] setStiffness 
@@ -24,22 +24,22 @@
 --------------------------------
 -- @function [parent=#PhysicsJointSpring] getRestLength 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointSpring] getAnchr2 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsJointSpring] getAnchr1 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsJointSpring] getStiffness 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointSpring] setRestLength 
@@ -60,6 +60,6 @@
 -- @param #point_table point
 -- @param #float float
 -- @param #float float
--- @return cc.PhysicsJointSpring#cc.PhysicsJointSpring ret
+-- @return PhysicsJointSpring#PhysicsJointSpring ret (return value: cc.PhysicsJointSpring)
         
 return nil

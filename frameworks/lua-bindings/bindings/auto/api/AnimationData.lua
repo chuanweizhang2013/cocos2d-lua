@@ -5,12 +5,12 @@
 -- @function [parent=#AnimationData] getMovement 
 -- @param self
 -- @param #string str
--- @return ccs.MovementData#ccs.MovementData ret
+-- @return MovementData#MovementData ret (return value: ccs.MovementData)
         
 --------------------------------
 -- @function [parent=#AnimationData] getMovementCount 
 -- @param self
--- @return long#long ret
+-- @return long#long ret (return value: long)
         
 --------------------------------
 -- @function [parent=#AnimationData] addMovement 
@@ -20,7 +20,7 @@
 --------------------------------
 -- @function [parent=#AnimationData] create 
 -- @param self
--- @return ccs.AnimationData#ccs.AnimationData ret
+-- @return AnimationData#AnimationData ret (return value: ccs.AnimationData)
         
 --------------------------------
 -- @function [parent=#AnimationData] AnimationData 

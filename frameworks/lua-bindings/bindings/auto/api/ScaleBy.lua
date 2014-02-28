@@ -11,6 +11,6 @@
 -- @param #float float
 -- @param #float float
 -- @param #float float
--- @return cc.ScaleBy#cc.ScaleBy ret
+-- @return ScaleBy#ScaleBy ret (retunr value: cc.ScaleBy)
 
 return nil

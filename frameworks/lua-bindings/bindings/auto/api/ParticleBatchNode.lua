@@ -14,7 +14,7 @@
 --------------------------------
 -- @function [parent=#ParticleBatchNode] getTexture 
 -- @param self
--- @return cc.Texture2D#cc.Texture2D ret
+-- @return Texture2D#Texture2D ret (return value: cc.Texture2D)
         
 --------------------------------
 -- @function [parent=#ParticleBatchNode] setTextureAtlas 
@@ -29,7 +29,7 @@
 --------------------------------
 -- @function [parent=#ParticleBatchNode] getTextureAtlas 
 -- @param self
--- @return cc.TextureAtlas#cc.TextureAtlas ret
+-- @return TextureAtlas#TextureAtlas ret (return value: cc.TextureAtlas)
         
 --------------------------------
 -- @function [parent=#ParticleBatchNode] insertChild 
@@ -52,13 +52,13 @@
 -- @param self
 -- @param #string str
 -- @param #int int
--- @return cc.ParticleBatchNode#cc.ParticleBatchNode ret
+-- @return ParticleBatchNode#ParticleBatchNode ret (return value: cc.ParticleBatchNode)
         
 --------------------------------
 -- @function [parent=#ParticleBatchNode] createWithTexture 
 -- @param self
 -- @param #cc.Texture2D texture2d
 -- @param #int int
--- @return cc.ParticleBatchNode#cc.ParticleBatchNode ret
+-- @return ParticleBatchNode#ParticleBatchNode ret (return value: cc.ParticleBatchNode)
         
 return nil

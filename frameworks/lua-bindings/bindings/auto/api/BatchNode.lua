@@ -4,11 +4,11 @@
 --------------------------------
 -- @function [parent=#BatchNode] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#BatchNode] create 
 -- @param self
--- @return ccs.BatchNode#ccs.BatchNode ret
+-- @return BatchNode#BatchNode ret (return value: ccs.BatchNode)
         
 return nil

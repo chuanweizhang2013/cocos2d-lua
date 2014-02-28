@@ -13,7 +13,7 @@
 --------------------------------
 -- @function [parent=#MenuItem] isEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#MenuItem] selected 
@@ -22,7 +22,7 @@
 --------------------------------
 -- @function [parent=#MenuItem] isSelected 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#MenuItem] unselected 
@@ -31,6 +31,6 @@
 --------------------------------
 -- @function [parent=#MenuItem] rect 
 -- @param self
--- @return rect_table#rect_table ret
+-- @return rect_table#rect_table ret (return value: rect_table)
         
 return nil

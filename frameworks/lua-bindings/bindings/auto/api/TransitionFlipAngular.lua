@@ -11,6 +11,6 @@
 -- @param #float float
 -- @param #cc.Scene scene
 -- @param #cc.TransitionScene::Orientation orientation
--- @return cc.TransitionFlipAngular#cc.TransitionFlipAngular ret
+-- @return TransitionFlipAngular#TransitionFlipAngular ret (retunr value: cc.TransitionFlipAngular)
 
 return nil

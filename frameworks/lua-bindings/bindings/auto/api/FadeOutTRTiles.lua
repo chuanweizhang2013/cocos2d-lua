@@ -22,13 +22,13 @@
 -- @param self
 -- @param #size_table size
 -- @param #float float
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#FadeOutTRTiles] create 
 -- @param self
 -- @param #float float
 -- @param #size_table size
--- @return cc.FadeOutTRTiles#cc.FadeOutTRTiles ret
+-- @return FadeOutTRTiles#FadeOutTRTiles ret (return value: cc.FadeOutTRTiles)
         
 return nil

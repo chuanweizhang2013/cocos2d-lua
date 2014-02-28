@@ -27,7 +27,7 @@
 -- @function [parent=#SpriteFrameCache] getSpriteFrameByName 
 -- @param self
 -- @param #string str
--- @return cc.SpriteFrame#cc.SpriteFrame ret
+-- @return SpriteFrame#SpriteFrame ret (return value: cc.SpriteFrame)
         
 --------------------------------
 -- @function [parent=#SpriteFrameCache] removeSpriteFramesFromFile 
@@ -37,7 +37,7 @@
 --------------------------------
 -- @function [parent=#SpriteFrameCache] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#SpriteFrameCache] removeSpriteFrames 
@@ -60,6 +60,6 @@
 --------------------------------
 -- @function [parent=#SpriteFrameCache] getInstance 
 -- @param self
--- @return cc.SpriteFrameCache#cc.SpriteFrameCache ret
+-- @return SpriteFrameCache#SpriteFrameCache ret (return value: cc.SpriteFrameCache)
         
 return nil

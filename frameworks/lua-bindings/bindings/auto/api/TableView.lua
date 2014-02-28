@@ -23,7 +23,7 @@
 --------------------------------
 -- @function [parent=#TableView] getVerticalFillOrder 
 -- @param self
--- @return cc.TableView::VerticalFillOrder#cc.TableView::VerticalFillOrder ret
+-- @return TableView::VerticalFillOrder#TableView::VerticalFillOrder ret (return value: cc.TableView::VerticalFillOrder)
         
 --------------------------------
 -- @function [parent=#TableView] removeCellAtIndex 
@@ -35,7 +35,7 @@
 -- @param self
 -- @param #size_table size
 -- @param #cc.Node node
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TableView] scrollViewDidScroll 
@@ -55,12 +55,12 @@
 -- @function [parent=#TableView] cellAtIndex 
 -- @param self
 -- @param #long long
--- @return cc.TableViewCell#cc.TableViewCell ret
+-- @return TableViewCell#TableViewCell ret (return value: cc.TableViewCell)
         
 --------------------------------
 -- @function [parent=#TableView] dequeueCell 
 -- @param self
--- @return cc.TableViewCell#cc.TableViewCell ret
+-- @return TableViewCell#TableViewCell ret (return value: cc.TableViewCell)
         
 --------------------------------
 -- @function [parent=#TableView] TableView 

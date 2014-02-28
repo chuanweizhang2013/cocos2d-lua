@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#ParticleGalaxy] create 
 -- @param self
--- @return cc.ParticleGalaxy#cc.ParticleGalaxy ret
+-- @return ParticleGalaxy#ParticleGalaxy ret (return value: cc.ParticleGalaxy)
         
 --------------------------------
 -- @function [parent=#ParticleGalaxy] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return cc.ParticleGalaxy#cc.ParticleGalaxy ret
+-- @return ParticleGalaxy#ParticleGalaxy ret (return value: cc.ParticleGalaxy)
         
 return nil

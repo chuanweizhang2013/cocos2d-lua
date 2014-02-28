@@ -32,7 +32,7 @@
 -- @function [parent=#EventDispatcher] dispatchCustomEvent 
 -- @param self
 -- @param #string str
--- @param #void* void
+-- @param #void void
         
 --------------------------------
 -- @function [parent=#EventDispatcher] setPriority 
@@ -45,7 +45,7 @@
 -- @param self
 -- @param #string str
 -- @param #function func
--- @return cc.EventListenerCustom#cc.EventListenerCustom ret
+-- @return EventListenerCustom#EventListenerCustom ret (return value: cc.EventListenerCustom)
         
 --------------------------------
 -- @function [parent=#EventDispatcher] dispatchEvent 
@@ -64,7 +64,7 @@
 --------------------------------
 -- @function [parent=#EventDispatcher] isEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#EventDispatcher] EventDispatcher 

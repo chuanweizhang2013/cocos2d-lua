@@ -8,7 +8,7 @@
 --          
 -- @function [parent=#TargetedAction] getForcedTarget
 -- @param self
--- @return cc.Node#cc.Node ret
+-- @return Node#Node ret (retunr value: cc.Node)
 
 --------------------------------
 -- @function [parent=#TargetedAction] setForcedTarget 
@@ -20,6 +20,6 @@
 -- @param self
 -- @param #cc.Node node
 -- @param #cc.FiniteTimeAction finitetimeaction
--- @return cc.TargetedAction#cc.TargetedAction ret
+-- @return TargetedAction#TargetedAction ret (return value: cc.TargetedAction)
         
 return nil

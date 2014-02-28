@@ -9,6 +9,6 @@
 --------------------------------
 -- @function [parent=#EaseElastic] getPeriod 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 return nil

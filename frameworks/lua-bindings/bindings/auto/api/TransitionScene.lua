@@ -14,6 +14,6 @@
 -- @param self
 -- @param #float float
 -- @param #cc.Scene scene
--- @return cc.TransitionScene#cc.TransitionScene ret
+-- @return TransitionScene#TransitionScene ret (return value: cc.TransitionScene)
         
 return nil

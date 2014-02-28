@@ -6,6 +6,6 @@
 -- @param self
 -- @param #float float
 -- @param #unsigned char char
--- @return cc.FadeTo#cc.FadeTo ret
+-- @return FadeTo#FadeTo ret (return value: cc.FadeTo)
         
 return nil
