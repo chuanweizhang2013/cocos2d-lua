@@ -1297,7 +1297,7 @@ local function PhysicsPositionRotationTest()
       eventDispatcher:addEventListenerWithSceneGraphPriority(touchListener, layer)
       
       local wall = cc.Node:create();
-      wall:setPhysicsBody(cc.PhysicsBody:createEdgeBox(VisibleRect:getVisibleRect().size));
+      wall:setPhysicsBody(cc.PhysicsBody:createEdgeBox(cc.size(VisibleRect:getVisibleRect().width, VisibleRect:getVisibleRect().height)));
       wall:setPosition(VisibleRect:center());
       layer:addChild(wall);
       
