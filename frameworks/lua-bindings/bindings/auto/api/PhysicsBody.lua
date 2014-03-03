@@ -31,14 +31,20 @@
 -- @return int#int ret (return value: int)
         
 --------------------------------
+-- @function [parent=#PhysicsBody] getRotationOffset 
+-- @param self
+-- @return float#float ret (return value: float)
+        
+--------------------------------
 -- @function [parent=#PhysicsBody] getRotation 
 -- @param self
 -- @return float#float ret (return value: float)
         
 --------------------------------
--- @function [parent=#PhysicsBody] isResting 
+-- @function [parent=#PhysicsBody] getMoment 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @param #float float
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- overload function: applyImpulse(point_table, point_table)
@@ -50,6 +56,11 @@
 -- @param #point_table point
 -- @param #point_table point
 
+--------------------------------
+-- @function [parent=#PhysicsBody] setRotationOffset 
+-- @param self
+-- @param #float float
+        
 --------------------------------
 -- overload function: applyForce(point_table, point_table)
 --          
@@ -109,6 +120,12 @@
 --------------------------------
 -- @function [parent=#PhysicsBody] setResting 
 -- @param self
+-- @param #bool bool
+        
+--------------------------------
+-- @function [parent=#PhysicsBody] getPositionOffset 
+-- @param self
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#PhysicsBody] setCategoryBitmask 
@@ -167,10 +184,9 @@
 -- @return int#int ret (return value: int)
         
 --------------------------------
--- @function [parent=#PhysicsBody] getMoment 
+-- @function [parent=#PhysicsBody] setDynamic 
 -- @param self
--- @param #float float
--- @return float#float ret (return value: float)
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getFirstShape 
@@ -239,14 +255,19 @@
 -- @param #int int
         
 --------------------------------
--- @function [parent=#PhysicsBody] setDynamic 
+-- @function [parent=#PhysicsBody] setPositionOffset 
 -- @param self
--- @param #bool bool
+-- @param #point_table point
         
 --------------------------------
 -- @function [parent=#PhysicsBody] setRotationEnable 
 -- @param self
 -- @param #bool bool
+        
+--------------------------------
+-- @function [parent=#PhysicsBody] isRotationEnabled 
+-- @param self
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#PhysicsBody] getAngularDamping 
@@ -260,7 +281,7 @@
 -- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
--- @function [parent=#PhysicsBody] isRotationEnabled 
+-- @function [parent=#PhysicsBody] isResting 
 -- @param self
 -- @return bool#bool ret (return value: bool)
         
