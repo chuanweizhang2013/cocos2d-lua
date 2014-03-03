@@ -204,7 +204,7 @@ local function makeBall(layer, point, radius, material)
 end
 
 local function makeBox(point, size, color, material)
-    material = material or DEFAULT_MATERIAL
+    material = material or MATERIAL_DEFAULT
 
     local yellow = false;
     if color == 0 then
@@ -709,12 +709,14 @@ local function PhysicsDemoOneWayPlatform()
     
       local platform = makeBox(VisibleRect:center(), cc.size(200, 50));
       platform:getPhysicsBody():setDynamic(false);
+      platform:getPhysicsBody():setContactTestBitmask(1);
       layer:addChild(platform);
     
       local ball = makeBall(layer, cc.p(VisibleRect:center().x, VisibleRect:center().y - 50), 20);
       ball:getPhysicsBody():setVelocity(cc.p(0, 150));
       ball:getPhysicsBody():setTag(DRAG_BODYS_TAG);
       ball:getPhysicsBody():setMass(1.0);
+      ball:getPhysicsBody():setContactTestBitmask(1);
       layer:addChild(ball);
 
       local function onContactBegin(contact)
@@ -1284,11 +1286,57 @@ local function PhysicsPositionRotationTest()
     local layer = cc.Layer:create()
     local function onEnter()
       layer:toggleDebug()
+
+      cc.Director:getInstance():getRunningScene():getPhysicsWorld():setGravity(cc.p(0, 0));
+        
+      local touchListener = cc.EventListenerTouchOneByOne:create()
+      touchListener:registerScriptHandler(onTouchBegan, cc.Handler.EVENT_TOUCH_BEGAN) 
+      touchListener:registerScriptHandler(onTouchMoved, cc.Handler.EVENT_TOUCH_MOVED) 
+      touchListener:registerScriptHandler(onTouchEnded, cc.Handler.EVENT_TOUCH_ENDED)
+      local eventDispatcher = layer:getEventDispatcher()
+      eventDispatcher:addEventListenerWithSceneGraphPriority(touchListener, layer)
+      
+      local wall = cc.Node:create();
+      wall:setPhysicsBody(cc.PhysicsBody:createEdgeBox(VisibleRect:getVisibleRect().size));
+      wall:setPosition(VisibleRect:center());
+      layer:addChild(wall);
+      
+      -- anchor test
+      local anchorNode = cc.Sprite:create("Images/YellowSquare.png");
+      anchorNode:setAnchorPoint(cc.p(0.1, 0.9));
+      anchorNode:setPosition(100, 100);
+      anchorNode:setScale(0.25);
+      anchorNode:setPhysicsBody(cc.PhysicsBody:createBox(cc.size(anchorNode:getContentSize().width*anchorNode:getScale(), anchorNode:getContentSize().height*anchorNode:getScale())));
+      anchorNode:getPhysicsBody():setTag(DRAG_BODYS_TAG);
+      layer:addChild(anchorNode);
+      
+      --parent test
+      local parent = cc.Sprite:create("Images/YellowSquare.png");
+      parent:setPosition(200, 100);
+      parent:setScale(0.25);
+      parent:setPhysicsBody(cc.PhysicsBody:createBox(cc.size(anchorNode:getContentSize().width*anchorNode:getScale(), anchorNode:getContentSize().height*anchorNode:getScale())));
+      parent:getPhysicsBody():setTag(DRAG_BODYS_TAG);
+      layer:addChild(parent);
+      
+      local leftBall = cc.Sprite:create("Images/ball.png");
+      leftBall:setPosition(-30, 0);
+      leftBall:setScale(2);
+      leftBall:setPhysicsBody(cc.PhysicsBody:createCircle(leftBall:getContentSize().width/4));
+      leftBall:getPhysicsBody():setTag(DRAG_BODYS_TAG);
+      parent:addChild(leftBall);
+      
+      -- offset position rotation test
+      local offsetPosNode = cc.Sprite:create("Images/YellowSquare.png");
+      offsetPosNode:setPosition(100, 200);
+      offsetPosNode:setPhysicsBody(cc.PhysicsBody:createBox(cc.size(offsetPosNode:getContentSize().width/2, offsetPosNode:getContentSize().height/2)));
+      offsetPosNode:getPhysicsBody():setPositionOffset(cc.p(-offsetPosNode:getContentSize().width/2, -offsetPosNode:getContentSize().height/2));
+      offsetPosNode:getPhysicsBody():setRotationOffset(45);
+      offsetPosNode:getPhysicsBody():setTag(DRAG_BODYS_TAG);
+      layer:addChild(offsetPosNode);
     end
   
   initWithLayer(layer, onEnter)
-  Helper.titleLabel:setString("Bug3988")
-  Helper.subtitleLabel:setString("All the Rectangles should have same rotation angle")
+  Helper.titleLabel:setString("Position/Rotation Test")
 
   return layer
 end
@@ -1311,6 +1359,7 @@ function PhysicsTest()
       PhysicsDemoSlice,
       PhysicsDemoBug3988,
       PhysicsContactTest,
+      PhysicsPositionRotationTest,
    }
 
    scene:addChild(Helper.createFunctionTable[1]())
