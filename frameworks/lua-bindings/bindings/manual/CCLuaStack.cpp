@@ -669,14 +669,14 @@ int LuaStack::reload(const char* moduleFileName)
     }
 
     lua_getglobal(_state, "package");                         /* L: package */
-    lua_getfield(_state, -1, "loaded");                       /* get loaded, L: package loaded */
+    lua_getfield(_state, -1, "loaded");                       /* L: package loaded */
     lua_pushstring(_state, moduleFileName);
-    lua_gettable(_state, -2);                                 /* package loader module*/
+    lua_gettable(_state, -2);                                 /* L:package loaded module */
     if (!lua_isnil(_state, -1))
     {
-        lua_pushstring(_state, moduleFileName);               /*package loader module name*/
-        lua_pushnil(_state);                                  /**package loader module name nil*/
-        lua_settable(_state, -4);                             /**package loader module*/
+        lua_pushstring(_state, moduleFileName);               /* L:package loaded module name */
+        lua_pushnil(_state);                                  /* L:package loaded module name nil*/
+        lua_settable(_state, -4);                             /* L:package loaded module */
     }
     lua_pop(_state, 3);
     
