@@ -1906,159 +1906,6 @@ int lua_cocos2dx_physics_PhysicsShapePolygon_getPoint(lua_State* tolua_S)
 
     return 0;
 }
-int lua_cocos2dx_physics_PhysicsShapePolygon_create(lua_State* tolua_S)
-{
-    int argc = 0;
-    bool ok  = true;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertable(tolua_S,1,"cc.PhysicsShapePolygon",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    argc = lua_gettop(tolua_S) - 1;
-
-    if (argc == 2)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        if(!ok)
-            return 0;
-        cocos2d::PhysicsShapePolygon* ret = cocos2d::PhysicsShapePolygon::create(arg0, arg1);
-        object_to_luaval<cocos2d::PhysicsShapePolygon>(tolua_S, "cc.PhysicsShapePolygon",(cocos2d::PhysicsShapePolygon*)ret);
-        return 1;
-    }
-    if (argc == 3)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        cocos2d::PhysicsMaterial arg2;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        ok &= luaval_to_physics_material(tolua_S, 4, &arg2);
-        if(!ok)
-            return 0;
-        cocos2d::PhysicsShapePolygon* ret = cocos2d::PhysicsShapePolygon::create(arg0, arg1, arg2);
-        object_to_luaval<cocos2d::PhysicsShapePolygon>(tolua_S, "cc.PhysicsShapePolygon",(cocos2d::PhysicsShapePolygon*)ret);
-        return 1;
-    }
-    if (argc == 4)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        cocos2d::PhysicsMaterial arg2;
-        cocos2d::Point arg3;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        ok &= luaval_to_physics_material(tolua_S, 4, &arg2);
-        ok &= luaval_to_point(tolua_S, 5, &arg3);
-        if(!ok)
-            return 0;
-        cocos2d::PhysicsShapePolygon* ret = cocos2d::PhysicsShapePolygon::create(arg0, arg1, arg2, arg3);
-        object_to_luaval<cocos2d::PhysicsShapePolygon>(tolua_S, "cc.PhysicsShapePolygon",(cocos2d::PhysicsShapePolygon*)ret);
-        return 1;
-    }
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d\n ", "create",argc, 2);
-    return 0;
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_physics_PhysicsShapePolygon_create'.",&tolua_err);
-#endif
-    return 0;
-}
-int lua_cocos2dx_physics_PhysicsShapePolygon_calculateArea(lua_State* tolua_S)
-{
-    int argc = 0;
-    bool ok  = true;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertable(tolua_S,1,"cc.PhysicsShapePolygon",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    argc = lua_gettop(tolua_S) - 1;
-
-    if (argc == 2)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        if(!ok)
-            return 0;
-        double ret = cocos2d::PhysicsShapePolygon::calculateArea(arg0, arg1);
-        tolua_pushnumber(tolua_S,(lua_Number)ret);
-        return 1;
-    }
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d\n ", "calculateArea",argc, 2);
-    return 0;
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_physics_PhysicsShapePolygon_calculateArea'.",&tolua_err);
-#endif
-    return 0;
-}
-int lua_cocos2dx_physics_PhysicsShapePolygon_calculateMoment(lua_State* tolua_S)
-{
-    int argc = 0;
-    bool ok  = true;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertable(tolua_S,1,"cc.PhysicsShapePolygon",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    argc = lua_gettop(tolua_S) - 1;
-
-    if (argc == 3)
-    {
-        double arg0;
-        const cocos2d::Point* arg1;
-        int arg2;
-        ok &= luaval_to_number(tolua_S, 2,&arg0);
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 3, "cc.Point",&arg1);
-        ok &= luaval_to_int32(tolua_S, 4,(int *)&arg2);
-        if(!ok)
-            return 0;
-        double ret = cocos2d::PhysicsShapePolygon::calculateMoment(arg0, arg1, arg2);
-        tolua_pushnumber(tolua_S,(lua_Number)ret);
-        return 1;
-    }
-    if (argc == 4)
-    {
-        double arg0;
-        const cocos2d::Point* arg1;
-        int arg2;
-        cocos2d::Point arg3;
-        ok &= luaval_to_number(tolua_S, 2,&arg0);
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 3, "cc.Point",&arg1);
-        ok &= luaval_to_int32(tolua_S, 4,(int *)&arg2);
-        ok &= luaval_to_point(tolua_S, 5, &arg3);
-        if(!ok)
-            return 0;
-        double ret = cocos2d::PhysicsShapePolygon::calculateMoment(arg0, arg1, arg2, arg3);
-        tolua_pushnumber(tolua_S,(lua_Number)ret);
-        return 1;
-    }
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d\n ", "calculateMoment",argc, 3);
-    return 0;
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_physics_PhysicsShapePolygon_calculateMoment'.",&tolua_err);
-#endif
-    return 0;
-}
 static int lua_cocos2dx_physics_PhysicsShapePolygon_finalize(lua_State* tolua_S)
 {
     printf("luabindings: finalizing LUA object (PhysicsShapePolygon)");
@@ -2073,9 +1920,6 @@ int lua_register_cocos2dx_physics_PhysicsShapePolygon(lua_State* tolua_S)
     tolua_beginmodule(tolua_S,"PhysicsShapePolygon");
         tolua_function(tolua_S,"getPointsCount",lua_cocos2dx_physics_PhysicsShapePolygon_getPointsCount);
         tolua_function(tolua_S,"getPoint",lua_cocos2dx_physics_PhysicsShapePolygon_getPoint);
-        tolua_function(tolua_S,"create", lua_cocos2dx_physics_PhysicsShapePolygon_create);
-        tolua_function(tolua_S,"calculateArea", lua_cocos2dx_physics_PhysicsShapePolygon_calculateArea);
-        tolua_function(tolua_S,"calculateMoment", lua_cocos2dx_physics_PhysicsShapePolygon_calculateMoment);
     tolua_endmodule(tolua_S);
     std::string typeName = typeid(cocos2d::PhysicsShapePolygon).name();
     g_luaType[typeName] = "cc.PhysicsShapePolygon";
@@ -2442,71 +2286,6 @@ int lua_cocos2dx_physics_PhysicsShapeEdgePolygon_getPointsCount(lua_State* tolua
 
     return 0;
 }
-int lua_cocos2dx_physics_PhysicsShapeEdgePolygon_create(lua_State* tolua_S)
-{
-    int argc = 0;
-    bool ok  = true;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertable(tolua_S,1,"cc.PhysicsShapeEdgePolygon",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    argc = lua_gettop(tolua_S) - 1;
-
-    if (argc == 2)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        if(!ok)
-            return 0;
-        cocos2d::PhysicsShapeEdgePolygon* ret = cocos2d::PhysicsShapeEdgePolygon::create(arg0, arg1);
-        object_to_luaval<cocos2d::PhysicsShapeEdgePolygon>(tolua_S, "cc.PhysicsShapeEdgePolygon",(cocos2d::PhysicsShapeEdgePolygon*)ret);
-        return 1;
-    }
-    if (argc == 3)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        cocos2d::PhysicsMaterial arg2;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        ok &= luaval_to_physics_material(tolua_S, 4, &arg2);
-        if(!ok)
-            return 0;
-        cocos2d::PhysicsShapeEdgePolygon* ret = cocos2d::PhysicsShapeEdgePolygon::create(arg0, arg1, arg2);
-        object_to_luaval<cocos2d::PhysicsShapeEdgePolygon>(tolua_S, "cc.PhysicsShapeEdgePolygon",(cocos2d::PhysicsShapeEdgePolygon*)ret);
-        return 1;
-    }
-    if (argc == 4)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        cocos2d::PhysicsMaterial arg2;
-        double arg3;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        ok &= luaval_to_physics_material(tolua_S, 4, &arg2);
-        ok &= luaval_to_number(tolua_S, 5,&arg3);
-        if(!ok)
-            return 0;
-        cocos2d::PhysicsShapeEdgePolygon* ret = cocos2d::PhysicsShapeEdgePolygon::create(arg0, arg1, arg2, arg3);
-        object_to_luaval<cocos2d::PhysicsShapeEdgePolygon>(tolua_S, "cc.PhysicsShapeEdgePolygon",(cocos2d::PhysicsShapeEdgePolygon*)ret);
-        return 1;
-    }
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d\n ", "create",argc, 2);
-    return 0;
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_physics_PhysicsShapeEdgePolygon_create'.",&tolua_err);
-#endif
-    return 0;
-}
 static int lua_cocos2dx_physics_PhysicsShapeEdgePolygon_finalize(lua_State* tolua_S)
 {
     printf("luabindings: finalizing LUA object (PhysicsShapeEdgePolygon)");
@@ -2520,7 +2299,6 @@ int lua_register_cocos2dx_physics_PhysicsShapeEdgePolygon(lua_State* tolua_S)
 
     tolua_beginmodule(tolua_S,"PhysicsShapeEdgePolygon");
         tolua_function(tolua_S,"getPointsCount",lua_cocos2dx_physics_PhysicsShapeEdgePolygon_getPointsCount);
-        tolua_function(tolua_S,"create", lua_cocos2dx_physics_PhysicsShapeEdgePolygon_create);
     tolua_endmodule(tolua_S);
     std::string typeName = typeid(cocos2d::PhysicsShapeEdgePolygon).name();
     g_luaType[typeName] = "cc.PhysicsShapeEdgePolygon";
@@ -2572,71 +2350,6 @@ int lua_cocos2dx_physics_PhysicsShapeEdgeChain_getPointsCount(lua_State* tolua_S
 
     return 0;
 }
-int lua_cocos2dx_physics_PhysicsShapeEdgeChain_create(lua_State* tolua_S)
-{
-    int argc = 0;
-    bool ok  = true;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertable(tolua_S,1,"cc.PhysicsShapeEdgeChain",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    argc = lua_gettop(tolua_S) - 1;
-
-    if (argc == 2)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        if(!ok)
-            return 0;
-        cocos2d::PhysicsShapeEdgeChain* ret = cocos2d::PhysicsShapeEdgeChain::create(arg0, arg1);
-        object_to_luaval<cocos2d::PhysicsShapeEdgeChain>(tolua_S, "cc.PhysicsShapeEdgeChain",(cocos2d::PhysicsShapeEdgeChain*)ret);
-        return 1;
-    }
-    if (argc == 3)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        cocos2d::PhysicsMaterial arg2;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        ok &= luaval_to_physics_material(tolua_S, 4, &arg2);
-        if(!ok)
-            return 0;
-        cocos2d::PhysicsShapeEdgeChain* ret = cocos2d::PhysicsShapeEdgeChain::create(arg0, arg1, arg2);
-        object_to_luaval<cocos2d::PhysicsShapeEdgeChain>(tolua_S, "cc.PhysicsShapeEdgeChain",(cocos2d::PhysicsShapeEdgeChain*)ret);
-        return 1;
-    }
-    if (argc == 4)
-    {
-        const cocos2d::Point* arg0;
-        int arg1;
-        cocos2d::PhysicsMaterial arg2;
-        double arg3;
-        ok &= luaval_to_object<const cocos2d::Point>(tolua_S, 2, "cc.Point",&arg0);
-        ok &= luaval_to_int32(tolua_S, 3,(int *)&arg1);
-        ok &= luaval_to_physics_material(tolua_S, 4, &arg2);
-        ok &= luaval_to_number(tolua_S, 5,&arg3);
-        if(!ok)
-            return 0;
-        cocos2d::PhysicsShapeEdgeChain* ret = cocos2d::PhysicsShapeEdgeChain::create(arg0, arg1, arg2, arg3);
-        object_to_luaval<cocos2d::PhysicsShapeEdgeChain>(tolua_S, "cc.PhysicsShapeEdgeChain",(cocos2d::PhysicsShapeEdgeChain*)ret);
-        return 1;
-    }
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d\n ", "create",argc, 2);
-    return 0;
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_physics_PhysicsShapeEdgeChain_create'.",&tolua_err);
-#endif
-    return 0;
-}
 static int lua_cocos2dx_physics_PhysicsShapeEdgeChain_finalize(lua_State* tolua_S)
 {
     printf("luabindings: finalizing LUA object (PhysicsShapeEdgeChain)");
@@ -2650,7 +2363,6 @@ int lua_register_cocos2dx_physics_PhysicsShapeEdgeChain(lua_State* tolua_S)
 
     tolua_beginmodule(tolua_S,"PhysicsShapeEdgeChain");
         tolua_function(tolua_S,"getPointsCount",lua_cocos2dx_physics_PhysicsShapeEdgeChain_getPointsCount);
-        tolua_function(tolua_S,"create", lua_cocos2dx_physics_PhysicsShapeEdgeChain_create);
     tolua_endmodule(tolua_S);
     std::string typeName = typeid(cocos2d::PhysicsShapeEdgeChain).name();
     g_luaType[typeName] = "cc.PhysicsShapeEdgeChain";
