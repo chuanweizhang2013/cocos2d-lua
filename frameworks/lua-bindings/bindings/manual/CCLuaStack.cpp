@@ -660,4 +660,29 @@ int LuaStack::executeFunction(int handler, int numArgs, int numResults, const st
     return 1;
 }
 
+int LuaStack::reload(const char* moduleFileName)
+{
+    if (nullptr == moduleFileName || strlen(moduleFileName) == 0)
+    {
+        CCLOG("moudulFileName is null");
+        return 1;
+    }
+
+    lua_getglobal(_state, "package");                         /* L: package */
+    lua_getfield(_state, -1, "loaded");                       /* L: package loaded */
+    lua_pushstring(_state, moduleFileName);
+    lua_gettable(_state, -2);                                 /* L:package loaded module */
+    if (!lua_isnil(_state, -1))
+    {
+        lua_pushstring(_state, moduleFileName);               /* L:package loaded module name */
+        lua_pushnil(_state);                                  /* L:package loaded module name nil*/
+        lua_settable(_state, -4);                             /* L:package loaded module */
+    }
+    lua_pop(_state, 3);
+    
+    std::string name = moduleFileName;
+    std::string require = "require \'" + name + "\'";
+    return executeString(require.c_str());
+}
+
 NS_CC_END
