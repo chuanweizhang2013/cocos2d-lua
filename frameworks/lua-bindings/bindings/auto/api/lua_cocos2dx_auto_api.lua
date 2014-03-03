@@ -177,6 +177,11 @@
 
 
 --------------------------------------------------------
+-- the cc FadeTo
+-- @field [parent=#cc] FadeTo#FadeTo FadeTo preloaded module
+
+
+--------------------------------------------------------
 -- the cc FadeIn
 -- @field [parent=#cc] FadeIn#FadeIn FadeIn preloaded module
 
@@ -184,11 +189,6 @@
 --------------------------------------------------------
 -- the cc FadeOut
 -- @field [parent=#cc] FadeOut#FadeOut FadeOut preloaded module
-
-
---------------------------------------------------------
--- the cc FadeTo
--- @field [parent=#cc] FadeTo#FadeTo FadeTo preloaded module
 
 
 --------------------------------------------------------

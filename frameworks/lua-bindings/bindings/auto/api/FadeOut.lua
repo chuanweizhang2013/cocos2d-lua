@@ -2,6 +2,11 @@
 --------------------------------
 -- @module FadeOut
 --------------------------------
+-- @function [parent=#FadeOut] setReverseAction 
+-- @param self
+-- @param #cc.FadeTo fadeto
+        
+--------------------------------
 -- @function [parent=#FadeOut] create 
 -- @param self
 -- @param #float float

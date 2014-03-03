@@ -7,27 +7,16 @@
 -- @return float#float ret (return value: float)
         
 --------------------------------
--- @function [parent=#Timer] setInterval 
+-- @function [parent=#Timer] setupTimerWithInterval 
 -- @param self
--- @param #float float
-        
---------------------------------
--- @function [parent=#Timer] initWithTarget 
--- @param self
--- @param #function func
--- @param #void void
--- @param #long long
 -- @param #float float
 -- @param #unsigned int int
 -- @param #float float
--- @return bool#bool ret (return value: bool)
         
 --------------------------------
--- @function [parent=#Timer] initWithScriptHandler 
+-- @function [parent=#Timer] setInterval 
 -- @param self
--- @param #int int
 -- @param #float float
--- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Timer] update 
@@ -35,31 +24,11 @@
 -- @param #float float
         
 --------------------------------
--- @function [parent=#Timer] getKey 
+-- @function [parent=#Timer] trigger 
 -- @param self
--- @return long#long ret (return value: long)
         
 --------------------------------
--- @function [parent=#Timer] getCallback 
--- @param self
--- @return function#function ret (return value: function)
-        
---------------------------------
--- @function [parent=#Timer] getScriptHandler 
--- @param self
--- @return int#int ret (return value: int)
-        
---------------------------------
--- @function [parent=#Timer] create 
--- @param self
--- @param #function func
--- @param #void void
--- @param #long long
--- @param #float float
--- @return Timer#Timer ret (return value: cc.Timer)
-        
---------------------------------
--- @function [parent=#Timer] Timer 
+-- @function [parent=#Timer] cancel 
 -- @param self
         
 return nil
