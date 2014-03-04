@@ -38,7 +38,7 @@ using namespace cocos2d::extension;
 
 
     
-void GLNode::draw()
+void GLNode::draw(Renderer *renderer, const kmMat4& transform, bool transformUpdated)
 {
     int handler = ScriptHandlerMgr::getInstance()->getObjectHandler((void*)this, ScriptHandlerMgr::HandlerType::GL_NODE_DRAW);
     if (0 != handler)

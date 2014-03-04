@@ -7,14 +7,24 @@
 -- @param #bool bool
         
 --------------------------------
+-- @function [parent=#TextField] getFontSize 
+-- @param self
+-- @return int#int ret (return value: int)
+        
+--------------------------------
 -- @function [parent=#TextField] getStringValue 
 -- @param self
 -- @return string#string ret (return value: string)
         
 --------------------------------
--- @function [parent=#TextField] setPasswordStyleText 
+-- @function [parent=#TextField] getDeleteBackward 
 -- @param self
--- @param #char char
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
+-- @function [parent=#TextField] getPlaceHolder 
+-- @param self
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#TextField] getAttachWithIME 
@@ -46,6 +56,11 @@
 -- @param self
         
 --------------------------------
+-- @function [parent=#TextField] getFontName 
+-- @param self
+-- @return string#string ret (return value: string)
+        
+--------------------------------
 -- @function [parent=#TextField] attachWithIME 
 -- @param self
         
@@ -55,14 +70,24 @@
 -- @param #bool bool
         
 --------------------------------
+-- @function [parent=#TextField] getPasswordStyleText 
+-- @param self
+-- @return char#char ret (return value: char)
+        
+--------------------------------
 -- @function [parent=#TextField] setMaxLengthEnabled 
 -- @param self
 -- @param #bool bool
         
 --------------------------------
--- @function [parent=#TextField] getDeleteBackward 
+-- @function [parent=#TextField] setPasswordStyleText 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @param #char char
+        
+--------------------------------
+-- @function [parent=#TextField] setDeleteBackward 
+-- @param self
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#TextField] setFontSize 
@@ -110,9 +135,9 @@
 -- @param #size_table size
         
 --------------------------------
--- @function [parent=#TextField] setDeleteBackward 
+-- @function [parent=#TextField] getTouchSize 
 -- @param self
--- @param #bool bool
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#TextField] create 

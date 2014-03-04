@@ -33,6 +33,16 @@
 -- @return int#int ret (return value: int)
         
 --------------------------------
+-- @function [parent=#LoadingBar] getCapInsets 
+-- @param self
+-- @return rect_table#rect_table ret (return value: rect_table)
+        
+--------------------------------
+-- @function [parent=#LoadingBar] isScale9Enabled 
+-- @param self
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
 -- @function [parent=#LoadingBar] getPercent 
 -- @param self
 -- @return int#int ret (return value: int)
