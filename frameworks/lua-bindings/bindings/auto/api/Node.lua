@@ -175,11 +175,6 @@
 -- @return unsigned char#unsigned char ret (return value: unsigned char)
         
 --------------------------------
--- @function [parent=#Node] setNormalizedPosition 
--- @param self
--- @param #point_table point
-        
---------------------------------
 -- @function [parent=#Node] convertTouchToNodeSpace 
 -- @param self
 -- @param #cc.Touch touch
@@ -323,9 +318,16 @@
 -- @return bool#bool ret (return value: bool)
         
 --------------------------------
--- @function [parent=#Node] visit 
+-- overload function: visit()
+--          
+-- overload function: visit(cc.Renderer, kmMat4, bool)
+--          
+-- @function [parent=#Node] visit
 -- @param self
-        
+-- @param #cc.Renderer renderer
+-- @param #kmMat4 kmmat4
+-- @param #bool bool
+
 --------------------------------
 -- @function [parent=#Node] setShaderProgram 
 -- @param self
@@ -346,10 +348,6 @@
 -- @param self
 -- @param #cc.Action action
 -- @return Action#Action ret (return value: cc.Action)
-        
---------------------------------
--- @function [parent=#Node] transform 
--- @param self
         
 --------------------------------
 -- @function [parent=#Node] setScheduler 
@@ -382,13 +380,13 @@
 -- @return Action#Action ret (return value: cc.Action)
         
 --------------------------------
--- overload function: setAdditionalTransform(kmMat4)
---          
 -- overload function: setAdditionalTransform(cc.AffineTransform)
+--          
+-- overload function: setAdditionalTransform(kmMat4)
 --          
 -- @function [parent=#Node] setAdditionalTransform
 -- @param self
--- @param #cc.AffineTransform affinetransform
+-- @param #kmMat4 kmmat4
 
 --------------------------------
 -- @function [parent=#Node] getDisplayedOpacity 
@@ -581,13 +579,16 @@
 -- @return float#float ret (return value: float)
         
 --------------------------------
--- @function [parent=#Node] draw 
+-- overload function: draw()
+--          
+-- overload function: draw(cc.Renderer, kmMat4, bool)
+--          
+-- @function [parent=#Node] draw
 -- @param self
-        
---------------------------------
--- @function [parent=#Node] transformAncestors 
--- @param self
-        
+-- @param #cc.Renderer renderer
+-- @param #kmMat4 kmmat4
+-- @param #bool bool
+
 --------------------------------
 -- @function [parent=#Node] setUserObject 
 -- @param self
@@ -625,11 +626,6 @@
 -- @function [parent=#Node] getScale 
 -- @param self
 -- @return float#float ret (return value: float)
-        
---------------------------------
--- @function [parent=#Node] getNormalizedPosition 
--- @param self
--- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#Node] getRotationSkewX 
