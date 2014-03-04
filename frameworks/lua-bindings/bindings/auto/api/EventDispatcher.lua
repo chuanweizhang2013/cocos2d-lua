@@ -2,8 +2,9 @@
 --------------------------------
 -- @module EventDispatcher
 --------------------------------
--- @function [parent=#EventDispatcher] setEnabled 
+-- @function [parent=#EventDispatcher] pauseEventListenersForTarget 
 -- @param self
+-- @param #cc.Node node
 -- @param #bool bool
         
 --------------------------------
@@ -11,6 +12,11 @@
 -- @param self
 -- @param #cc.EventListener eventlistener
 -- @param #cc.Node node
+        
+--------------------------------
+-- @function [parent=#EventDispatcher] setEnabled 
+-- @param self
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#EventDispatcher] addEventListenerWithFixedPriority 
@@ -24,15 +30,22 @@
 -- @param #cc.EventListener eventlistener
         
 --------------------------------
--- @function [parent=#EventDispatcher] removeEventListeners 
--- @param self
--- @param #cc.EventListener::Type type
-        
---------------------------------
 -- @function [parent=#EventDispatcher] dispatchCustomEvent 
 -- @param self
 -- @param #string str
 -- @param #void void
+        
+--------------------------------
+-- @function [parent=#EventDispatcher] resumeEventListenersForTarget 
+-- @param self
+-- @param #cc.Node node
+-- @param #bool bool
+        
+--------------------------------
+-- @function [parent=#EventDispatcher] removeEventListenersForTarget 
+-- @param self
+-- @param #cc.Node node
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#EventDispatcher] setPriority 
@@ -65,6 +78,11 @@
 -- @function [parent=#EventDispatcher] isEnabled 
 -- @param self
 -- @return bool#bool ret (return value: bool)
+        
+--------------------------------
+-- @function [parent=#EventDispatcher] removeEventListenersForType 
+-- @param self
+-- @param #cc.EventListener::Type type
         
 --------------------------------
 -- @function [parent=#EventDispatcher] EventDispatcher 

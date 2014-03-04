@@ -2,6 +2,17 @@
 --------------------------------
 -- @module ImageView
 --------------------------------
+-- @function [parent=#ImageView] loadTexture 
+-- @param self
+-- @param #char char
+-- @param #ccui.TextureResType texturerestype
+        
+--------------------------------
+-- @function [parent=#ImageView] setScale9Enabled 
+-- @param self
+-- @param #bool bool
+        
+--------------------------------
 -- @function [parent=#ImageView] setTextureRect 
 -- @param self
 -- @param #rect_table rect
@@ -12,15 +23,14 @@
 -- @param #rect_table rect
         
 --------------------------------
--- @function [parent=#ImageView] setScale9Enabled 
+-- @function [parent=#ImageView] getCapInsets 
 -- @param self
--- @param #bool bool
+-- @return rect_table#rect_table ret (return value: rect_table)
         
 --------------------------------
--- @function [parent=#ImageView] loadTexture 
+-- @function [parent=#ImageView] isScale9Enabled 
 -- @param self
--- @param #char char
--- @param #ccui.TextureResType texturerestype
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ImageView] create 
