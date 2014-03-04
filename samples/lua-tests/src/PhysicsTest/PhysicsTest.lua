@@ -203,23 +203,38 @@ local function makeBall(layer, point, radius, material)
     return ball
 end
 
-local function makeBox(point, size, material)
-    material = material or DEFAULT_MATERIAL
-    local box = math.random() > 0.5 and cc.Sprite:create("Images/YellowSquare.png") or cc.Sprite:create("Images/CyanSquare.png");
+local function makeBox(point, size, color, material)
+    material = material or MATERIAL_DEFAULT
+
+    local yellow = false;
+    if color == 0 then
+        yellow = math.random() > 0.5;
+    else
+        yellow = color == 1;
+    end
+
+    local box = yellow and cc.Sprite:create("Images/YellowSquare.png") or cc.Sprite:create("Images/CyanSquare.png");
     
     box:setScaleX(size.width/100.0);
     box:setScaleY(size.height/100.0);
     
-    local body = cc.PhysicsBody:createBox(size);
+    local body = cc.PhysicsBody:createBox(size, material);
     box:setPhysicsBody(body);
     box:setPosition(cc.p(point.x, point.y));
     
     return box;
 end
 
-local function makeTriangle(point, size, material)
+local function makeTriangle(point, size, color, material)
     material = material or DEFAULT_MATERIAL
-    local triangle = math.random() > 0.5 and cc.Sprite:create("Images/YellowTriangle.png") or cc.Sprite:create("Images/CyanTriangle.png");
+
+    local yellow = false;
+    if color == 0 then
+        yellow = math.random() > 0.5;
+    else
+        yellow = color == 1;
+    end
+    local triangle = yellow and cc.Sprite:create("Images/YellowTriangle.png") or cc.Sprite:create("Images/CyanTriangle.png");
     
     if size.height == 0 then
         triangle:setScale(size.width/100.0);
@@ -230,7 +245,7 @@ local function makeTriangle(point, size, material)
     
      vers = { cc.p(0, size.height/2), cc.p(size.width/2, -size.height/2), cc.p(-size.width/2, -size.height/2)};
     
-    local body = cc.PhysicsBody:createPolygon(vers);
+    local body = cc.PhysicsBody:createPolygon(vers, material);
     triangle:setPhysicsBody(body);
     triangle:setPosition(point);
     
@@ -694,12 +709,14 @@ local function PhysicsDemoOneWayPlatform()
     
       local platform = makeBox(VisibleRect:center(), cc.size(200, 50));
       platform:getPhysicsBody():setDynamic(false);
+      platform:getPhysicsBody():setContactTestBitmask(1);
       layer:addChild(platform);
     
       local ball = makeBall(layer, cc.p(VisibleRect:center().x, VisibleRect:center().y - 50), 20);
       ball:getPhysicsBody():setVelocity(cc.p(0, 150));
       ball:getPhysicsBody():setTag(DRAG_BODYS_TAG);
       ball:getPhysicsBody():setMass(1.0);
+      ball:getPhysicsBody():setContactTestBitmask(1);
       layer:addChild(ball);
 
       local function onContactBegin(contact)
@@ -1006,6 +1023,324 @@ local function PhysicsDemoSlice()
   return layer
 end
 
+
+local function PhysicsDemoBug3988()
+    local layer = cc.Layer:create()
+    local function onEnter()
+      layer:toggleDebug();
+      cc.Director:getInstance():getRunningScene():getPhysicsWorld():setGravity(cc.p(0, 0));
+
+      local ball  = cc.Sprite:create("Images/YellowSquare.png");
+      ball:setPosition(cc.p(VisibleRect:center().x-100, VisibleRect:center().y));
+      ball:setRotation(30.0);
+      layer:addChild(ball);
+
+      local physicsBall = makeBox(cc.p(VisibleRect:center().x+100, VisibleRect:center().y), cc.size(100, 100));
+      physicsBall:setRotation(30.0);
+      layer:addChild(physicsBall);
+    end
+  
+  initWithLayer(layer, onEnter)
+  Helper.titleLabel:setString("Bug3988")
+  Helper.subtitleLabel:setString("All the Rectangles should have same rotation angle")
+
+  return layer
+end
+
+local function PhysicsContactTest()
+    local layer = cc.Layer:create()
+    local function onEnter()
+      cc.Director:getInstance():getRunningScene():getPhysicsWorld():setGravity(cc.p(0, 0));
+      local s = cc.size(VisibleRect:getVisibleRect().width, VisibleRect:getVisibleRect().height);
+      
+      layer.yellowBoxNum = 50;
+      layer.blueBoxNum = 50;
+      layer.yellowTriangleNum = 50;
+      layer.blueTriangleNum = 50;
+
+      local function onContactBegin(contact)
+        local a = contact:getShapeA():getBody();
+        local b = contact:getShapeB():getBody();
+        local body = (a:getCategoryBitmask() == 4 or a:getCategoryBitmask() == 8) and a or b;
+        
+        assert(body:getCategoryBitmask() == 4 or body:getCategoryBitmask() == 8, "physics contact fail");
+        
+        return true;
+      end
+      
+      local function resetTest()
+        layer:removeChildByTag(10);
+        local root = cc.Node:create();
+        root:setTag(10);
+        layer:addChild(root);
+        
+        local s = cc.size(VisibleRect:getVisibleRect().width, VisibleRect:getVisibleRect().height);
+        
+        local label = cc.LabelTTF:create(tostring(layer.yellowBoxNum), "Arial", 32);
+        root:addChild(label, 1);
+        label:setPosition(cc.p(s.width/2, s.height-50));
+        
+        label = cc.LabelTTF:create(tostring(layer.blueBoxNum), "Arial", 32);
+        root:addChild(label, 1);
+        label:setPosition(cc.p(s.width/2, s.height-90));
+        
+        label = cc.LabelTTF:create(tostring(layer.yellowTriangleNum), "Arial", 32);
+        root:addChild(label, 1);
+        label:setPosition(cc.p(s.width/2, s.height-130));
+        
+        label = cc.LabelTTF:create(tostring(layer.blueTriangleNum), "Arial", 32);
+        root:addChild(label, 1);
+        label:setPosition(cc.p(s.width/2, s.height-170));
+        
+        local wall = cc.Node:create();
+        wall:setPhysicsBody(cc.PhysicsBody:createEdgeBox(s, cc.PhysicsMaterial(0.1, 1, 0.0)));
+        wall:setPosition(VisibleRect:center());
+        root:addChild(wall);
+        
+        -- yellow box, will collide with itself and blue box.
+        for i = 1, layer.yellowBoxNum do
+            local size = cc.size(10 + math.random()*10, 10 + math.random()*10);
+            local winSize = cc.size(VisibleRect:getVisibleRect().width, VisibleRect:getVisibleRect().height);
+            local position = cc.p(winSize.width - size.width, winSize.height - size.height);
+            position.x = position.x * math.random();
+            position.y = position.y * math.random();
+            position = cc.p(VisibleRect:leftBottom().x + position.x + size.width/2, VisibleRect:leftBottom().y + position.y + size.height/2);
+            local velocity = cc.p((math.random() - 0.5)*200, (math.random() - 0.5)*200);
+            local box = makeBox(position, size, 1, cc.PhysicsMaterial(0.1, 1, 0.0));
+            box:getPhysicsBody():setVelocity(velocity);
+            box:getPhysicsBody():setCategoryBitmask(1);    -- 0001
+            box:getPhysicsBody():setContactTestBitmask(4); -- 0100
+            box:getPhysicsBody():setCollisionBitmask(3);   -- 0011
+            root:addChild(box);
+        end
+        
+        -- blue box, will collide with blue box.
+        for i = 1, layer.blueBoxNum do
+            local size = cc.size(10 + math.random()*10, 10 + math.random()*10);
+            local winSize = cc.size(VisibleRect:getVisibleRect().width, VisibleRect:getVisibleRect().height);
+            local position = cc.p(winSize.width - size.width, winSize.height - size.height);
+            position.x = position.x * math.random();
+            position.y = position.y * math.random();
+            position = cc.p(VisibleRect:leftBottom().x + position.x + size.width/2, VisibleRect:leftBottom().y + position.y + size.height/2);
+            local velocity = cc.p((math.random() - 0.5)*200, (math.random() - 0.5)*200);
+            local box = makeBox(position, size, 2, cc.PhysicsMaterial(0.1, 1, 0.0));
+            box:getPhysicsBody():setVelocity(velocity);
+            box:getPhysicsBody():setCategoryBitmask(2);    -- 0010
+            box:getPhysicsBody():setContactTestBitmask(8); -- 1000
+            box:getPhysicsBody():setCollisionBitmask(1);   -- 0001
+            root:addChild(box);
+        end
+        
+        -- yellow triangle, will collide with itself and blue box.
+        for i = 1, layer.yellowTriangleNum do
+            local size = cc.size(10 + math.random()*10, 10 + math.random()*10);
+            local winSize = cc.size(VisibleRect:getVisibleRect().width, VisibleRect:getVisibleRect().height);
+            local position = cc.p(winSize.width - size.width, winSize.height - size.height);
+            position.x = position.x * math.random();
+            position.y = position.y * math.random();
+            position = cc.p(VisibleRect:leftBottom().x + position.x + size.width/2, VisibleRect:leftBottom().y + position.y + size.height/2);
+            local velocity = cc.p((math.random() - 0.5)*200, (math.random() - 0.5)*200);
+            local triangle = makeTriangle(position, size, 1, cc.PhysicsMaterial(0.1, 1, 0.0));
+            triangle:getPhysicsBody():setVelocity(velocity);
+            triangle:getPhysicsBody():setCategoryBitmask(4);    -- 0100
+            triangle:getPhysicsBody():setContactTestBitmask(1); -- 0001
+            triangle:getPhysicsBody():setCollisionBitmask(6);   -- 0110
+            root:addChild(triangle);
+        end
+        
+        -- blue triangle, will collide with yellow box.
+        for i = 1, layer.blueTriangleNum do
+            local size = cc.size(10 + math.random()*10, 10 + math.random()*10);
+            local winSize = cc.size(VisibleRect:getVisibleRect().width, VisibleRect:getVisibleRect().height);
+            local position = cc.p(winSize.width - size.width, winSize.height - size.height);
+            position.x = position.x * math.random();
+            position.y = position.y * math.random();
+            position = cc.p(VisibleRect:leftBottom().x + position.x + size.width/2, VisibleRect:leftBottom().y + position.y + size.height/2);
+            local velocity = cc.p((math.random() - 0.5)*200, (math.random() - 0.5)*200);
+            local triangle = makeTriangle(position, size, 2, cc.PhysicsMaterial(0.1, 1, 0.0));
+            triangle:getPhysicsBody():setVelocity(velocity);
+            triangle:getPhysicsBody():setCategoryBitmask(8);    -- 1000
+            triangle:getPhysicsBody():setContactTestBitmask(2); -- 0010
+            triangle:getPhysicsBody():setCollisionBitmask(1);   -- 0001
+            root:addChild(triangle);
+        end
+      end
+
+      local function onDecrease(tag, sender)
+        if tag == 1 then
+          if layer.yellowBoxNum > 0 then layer.yellowBoxNum = layer.yellowBoxNum - 50 end
+        elseif tag == 2 then
+          if layer.blueBoxNum > 0 then layer.blueBoxNum = layer.blueBoxNum - 50 end
+        elseif tag == 3 then
+          if layer.yellowTriangleNum > 0 then layer.yellowTriangleNum = layer.yellowTriangleNum - 50 end
+        elseif tag == 4 then
+          if layer.blueTriangleNum > 0 then layer.blueTriangleNum = layer.blueTriangleNum - 50 end
+        end
+
+        resetTest()
+      end
+
+      local function onIncrease(tag, sender)
+        if tag == 1 then
+          layer.yellowBoxNum = layer.yellowBoxNum + 50
+        elseif tag == 2 then
+          layer.blueBoxNum = layer.blueBoxNum + 50
+        elseif tag == 3 then
+          layer.yellowTriangleNum = layer.yellowTriangleNum + 50
+        elseif tag == 4 then
+          layer.blueTriangleNum = layer.blueTriangleNum + 50
+        end
+
+        resetTest();
+      end
+      
+      cc.MenuItemFont:setFontSize(65);
+      local decrease1 = cc.MenuItemFont:create(" - ");
+      decrease1:setColor(cc.c3b(0,200,20));
+      local increase1 = cc.MenuItemFont:create(" + ");
+      increase1:setColor(cc.c3b(0,200,20));
+      decrease1:setTag(1);
+      increase1:setTag(1);
+      decrease1:registerScriptTapHandler(onDecrease);
+      increase1:registerScriptTapHandler(onIncrease);
+      
+      local menu1 = cc.Menu:create(decrease1, increase1);
+      menu1:alignItemsHorizontally();
+      menu1:setPosition(cc.p(s.width/2, s.height-50));
+      layer:addChild(menu1, 1);
+      
+      local label = cc.LabelTTF:create("yellow box", "Arial", 32);
+      layer:addChild(label, 1);
+      label:setPosition(cc.p(s.width/2 - 150, s.height-50));
+      
+      local decrease2 = cc.MenuItemFont:create(" - ");
+      decrease2:setColor(cc.c3b(0,200,20));
+      local increase2 = cc.MenuItemFont:create(" + ");
+      increase2:setColor(cc.c3b(0,200,20));
+      decrease2:setTag(2);
+      increase2:setTag(2);
+      decrease2:registerScriptTapHandler(onDecrease);
+      increase2:registerScriptTapHandler(onIncrease);
+      
+      local menu2 = cc.Menu:create(decrease2, increase2);
+      menu2:alignItemsHorizontally();
+      menu2:setPosition(cc.p(s.width/2, s.height-90));
+      layer:addChild(menu2, 1);
+      
+      label = cc.LabelTTF:create("blue box", "Arial", 32);
+      layer:addChild(label, 1);
+      label:setPosition(cc.p(s.width/2 - 150, s.height-90));
+      
+      local decrease3 = cc.MenuItemFont:create(" - ");
+      decrease3:setColor(cc.c3b(0,200,20));
+      local increase3 = cc.MenuItemFont:create(" + ");
+      increase3:setColor(cc.c3b(0,200,20));
+      decrease3:setTag(3);
+      increase3:setTag(3);
+      decrease3:registerScriptTapHandler(onDecrease);
+      increase3:registerScriptTapHandler(onIncrease);
+      
+      local menu3 = cc.Menu:create(decrease3, increase3);
+      menu3:alignItemsHorizontally();
+      menu3:setPosition(cc.p(s.width/2, s.height-130));
+      layer:addChild(menu3, 1);
+      
+      label = cc.LabelTTF:create("yellow triangle", "Arial", 32);
+      layer:addChild(label, 1);
+      label:setPosition(cc.p(s.width/2 - 150, s.height-130));
+      
+      local decrease4 = cc.MenuItemFont:create(" - ");
+      decrease4:setColor(cc.c3b(0,200,20));
+      local increase4 = cc.MenuItemFont:create(" + ");
+      increase4:setColor(cc.c3b(0,200,20));
+      decrease4:setTag(4);
+      increase4:setTag(4);
+      decrease4:registerScriptTapHandler(onDecrease);
+      increase4:registerScriptTapHandler(onIncrease);
+      
+      local menu4 = cc.Menu:create(decrease4, increase4);
+      menu4:alignItemsHorizontally();
+      menu4:setPosition(cc.p(s.width/2, s.height-170));
+      layer:addChild(menu4, 1);
+      
+      label = cc.LabelTTF:create("blue triangle", "Arial", 32);
+      layer:addChild(label, 1);
+      label:setPosition(cc.p(s.width/2 - 150, s.height-170));
+
+
+      local contactListener = cc.EventListenerPhysicsContact:create();
+      contactListener:registerScriptHandler(onContactBegin, cc.Handler.EVENT_PHYSICS_CONTACT_BEGIN);
+      local eventDispatcher = layer:getEventDispatcher()
+      eventDispatcher:addEventListenerWithSceneGraphPriority(contactListener, layer);
+    
+      resetTest();
+    end
+  
+  initWithLayer(layer, onEnter)
+  Helper.titleLabel:setString("Contact Test")
+
+  return layer
+end
+
+local function PhysicsPositionRotationTest()
+    local layer = cc.Layer:create()
+    local function onEnter()
+      layer:toggleDebug()
+
+      cc.Director:getInstance():getRunningScene():getPhysicsWorld():setGravity(cc.p(0, 0));
+        
+      local touchListener = cc.EventListenerTouchOneByOne:create()
+      touchListener:registerScriptHandler(onTouchBegan, cc.Handler.EVENT_TOUCH_BEGAN) 
+      touchListener:registerScriptHandler(onTouchMoved, cc.Handler.EVENT_TOUCH_MOVED) 
+      touchListener:registerScriptHandler(onTouchEnded, cc.Handler.EVENT_TOUCH_ENDED)
+      local eventDispatcher = layer:getEventDispatcher()
+      eventDispatcher:addEventListenerWithSceneGraphPriority(touchListener, layer)
+      
+      local wall = cc.Node:create();
+      wall:setPhysicsBody(cc.PhysicsBody:createEdgeBox(cc.size(VisibleRect:getVisibleRect().width, VisibleRect:getVisibleRect().height)));
+      wall:setPosition(VisibleRect:center());
+      layer:addChild(wall);
+      
+      -- anchor test
+      local anchorNode = cc.Sprite:create("Images/YellowSquare.png");
+      anchorNode:setAnchorPoint(cc.p(0.1, 0.9));
+      anchorNode:setPosition(100, 100);
+      anchorNode:setScale(0.25);
+      anchorNode:setPhysicsBody(cc.PhysicsBody:createBox(cc.size(anchorNode:getContentSize().width*anchorNode:getScale(), anchorNode:getContentSize().height*anchorNode:getScale())));
+      anchorNode:getPhysicsBody():setTag(DRAG_BODYS_TAG);
+      layer:addChild(anchorNode);
+      
+      --parent test
+      local parent = cc.Sprite:create("Images/YellowSquare.png");
+      parent:setPosition(200, 100);
+      parent:setScale(0.25);
+      parent:setPhysicsBody(cc.PhysicsBody:createBox(cc.size(anchorNode:getContentSize().width*anchorNode:getScale(), anchorNode:getContentSize().height*anchorNode:getScale())));
+      parent:getPhysicsBody():setTag(DRAG_BODYS_TAG);
+      layer:addChild(parent);
+      
+      local leftBall = cc.Sprite:create("Images/ball.png");
+      leftBall:setPosition(-30, 0);
+      leftBall:setScale(2);
+      leftBall:setPhysicsBody(cc.PhysicsBody:createCircle(leftBall:getContentSize().width/4));
+      leftBall:getPhysicsBody():setTag(DRAG_BODYS_TAG);
+      parent:addChild(leftBall);
+      
+      -- offset position rotation test
+      local offsetPosNode = cc.Sprite:create("Images/YellowSquare.png");
+      offsetPosNode:setPosition(100, 200);
+      offsetPosNode:setPhysicsBody(cc.PhysicsBody:createBox(cc.size(offsetPosNode:getContentSize().width/2, offsetPosNode:getContentSize().height/2)));
+      offsetPosNode:getPhysicsBody():setPositionOffset(cc.p(-offsetPosNode:getContentSize().width/2, -offsetPosNode:getContentSize().height/2));
+      offsetPosNode:getPhysicsBody():setRotationOffset(45);
+      offsetPosNode:getPhysicsBody():setTag(DRAG_BODYS_TAG);
+      layer:addChild(offsetPosNode);
+    end
+  
+  initWithLayer(layer, onEnter)
+  Helper.titleLabel:setString("Position/Rotation Test")
+
+  return layer
+end
+
 function PhysicsTest()
   cclog("PhysicsTest")
   local scene = cc.Scene:createWithPhysics()
@@ -1022,6 +1357,9 @@ function PhysicsTest()
       PhysicsDemoPump,
       PhysicsDemoOneWayPlatform,
       PhysicsDemoSlice,
+      PhysicsDemoBug3988,
+      PhysicsContactTest,
+      PhysicsPositionRotationTest,
    }
 
    scene:addChild(Helper.createFunctionTable[1]())
