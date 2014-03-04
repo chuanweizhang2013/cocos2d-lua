@@ -56,7 +56,7 @@ void startScript(string strDebugArg)
 
 void reloadScript()
 {
-    
+    LuaEngine::getInstance()->reload("src/main.lua");
 }
 
 
