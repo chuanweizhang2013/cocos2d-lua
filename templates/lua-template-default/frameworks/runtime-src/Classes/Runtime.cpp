@@ -372,7 +372,7 @@ bool FileServer::recv_file(int fd)
 	sprintf(fullfilename, "%s", file.c_str());
 	cocos2d::log("recv fullfilename = %s",fullfilename);
     CreateDir(file.substr(0,file.find_last_of("/")).c_str());
-	FILE *fp =fopen(fullfilename, "w");
+	FILE *fp =fopen(fullfilename, "wb");
 	int length =0;
 	while ((length=recv(fd, fullfilename, sizeof(fullfilename),0)) > 0) {
 		fwrite(fullfilename, sizeof(char), length,fp);
