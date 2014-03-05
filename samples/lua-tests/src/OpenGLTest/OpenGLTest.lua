@@ -159,8 +159,8 @@ local function OpenGLTestMainLayer()
         local RetroEffectlayer = cc.Layer:create()
         InitTitle(RetroEffectlayer)
         local program = cc.GLProgram:create("Shaders/example_ColorBars.vsh", "Shaders/example_ColorBars.fsh")
-        program:addAttribute(cc.ATTRIBUTE_NAME_POSITION, cc.VERTEX_ATTRIB_POSITION)
-        program:addAttribute(cc.ATTRIBUTE_NAME_TEX_COORD, cc.VERTEX_ATTRIB_TEX_COORDS)
+        program:bindAttribLocation(cc.ATTRIBUTE_NAME_POSITION, cc.VERTEX_ATTRIB_POSITION) 
+        program:bindAttribLocation(cc.ATTRIBUTE_NAME_TEX_COORD, cc.VERTEX_ATTRIB_TEX_COORDS)
         program:link()
         program:updateUniforms()
 
@@ -185,7 +185,7 @@ local function OpenGLTestMainLayer()
         --loadShaderVertex
         local shader = cc.GLProgram:create("Shaders/example_Monjori.vsh", "Shaders/example_Monjori.fsh")
 
-        shader:addAttribute("aVertex", cc.VERTEX_ATTRIB_POSITION)
+        shader:bindAttribLocation("aVertex", cc.VERTEX_ATTRIB_POSITION)
         shader:link()
         shader:updateUniforms()
 
@@ -247,7 +247,7 @@ local function OpenGLTestMainLayer()
         --loadShaderVertex
         local shader = cc.GLProgram:create("Shaders/example_Mandelbrot.vsh", "Shaders/example_Mandelbrot.fsh")
 
-        shader:addAttribute("aVertex", 0)
+        shader:bindAttribLocation("aVertex", 0)
         shader:link()
         shader:updateUniforms()
 
@@ -309,7 +309,7 @@ local function OpenGLTestMainLayer()
         --loadShaderVertex
         local shader = cc.GLProgram:create("Shaders/example_Heart.vsh", "Shaders/example_Heart.fsh")
 
-        shader:addAttribute("aVertex", 0)
+        shader:bindAttribLocation("aVertex", 0)
         shader:link()
         shader:updateUniforms()
 
@@ -371,7 +371,7 @@ local function OpenGLTestMainLayer()
         --loadShaderVertex
         local shader = cc.GLProgram:create("Shaders/example_Plasma.vsh", "Shaders/example_Plasma.fsh")
 
-        shader:addAttribute("aVertex", 0)
+        shader:bindAttribLocation("aVertex", 0)
         shader:link()
         shader:updateUniforms()
 
@@ -433,7 +433,7 @@ local function OpenGLTestMainLayer()
         --loadShaderVertex
         local shader = cc.GLProgram:create("Shaders/example_Flower.vsh", "Shaders/example_Flower.fsh")
 
-        shader:addAttribute("aVertex", 0)
+        shader:bindAttribLocation("aVertex", 0)
         shader:link()
         shader:updateUniforms()
 
@@ -495,7 +495,7 @@ local function OpenGLTestMainLayer()
         --loadShaderVertex
         local shader = cc.GLProgram:create("Shaders/example_Julia.vsh", "Shaders/example_Julia.fsh")
 
-        shader:addAttribute("aVertex", 0)
+        shader:bindAttribLocation("aVertex", 0)
         shader:link()
         shader:updateUniforms()
 

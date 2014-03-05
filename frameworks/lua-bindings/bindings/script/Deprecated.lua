@@ -1126,4 +1126,25 @@ end
 rawset(cc.Node, "getVertexZ", NodeDeprecated.getVertexZ)
 --functions of cc.Node will be deprecated end
 
+--functions of cc.GLProgram will be deprecated begin
+local GLProgram = { }
+function GLProgram.initWithVertexShaderByteArray(self,vShaderByteArray, fShaderByteArray)
+    deprecatedTip("cc.GLProgram:initWithVertexShaderByteArray","cc.GLProgram:initWithByteArrays")
+    return self:initWithByteArrays(vShaderByteArray, fShaderByteArray)
+end
+rawset(cc.GLProgram,"initWithVertexShaderByteArray", GLProgram.initWithVertexShaderByteArray)
+
+function GLProgram.initWithVertexShaderFilename(self,vShaderByteArray, fShaderByteArray)
+    deprecatedTip("cc.GLProgram:initWithVertexShaderFilename","cc.GLProgram:initWithFilenames")
+    return self:initWithFilenames(vShaderByteArray, fShaderByteArray)
+end
+rawset(cc.GLProgram,"initWithVertexShaderFilename", GLProgram.initWithVertexShaderFilename)
+
+function GLProgram.addAttribute(self, attributeName, index)
+    deprecatedTip("cc.GLProgram:addAttribute","cc.GLProgram:bindAttribLocation")
+    return self:bindAttribLocation(attributeName, index)
+end
+rawset(cc.GLProgram,"addAttribute", GLProgram.addAttribute)
+--functions of cc.GLProgram will be deprecated end
+
 
