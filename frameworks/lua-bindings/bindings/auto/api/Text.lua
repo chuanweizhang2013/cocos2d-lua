@@ -17,6 +17,16 @@
 -- @param #bool bool
         
 --------------------------------
+-- @function [parent=#Text] getFontSize 
+-- @param self
+-- @return int#int ret (return value: int)
+        
+--------------------------------
+-- @function [parent=#Text] getTextVerticalAlignment 
+-- @param self
+-- @return TextVAlignment#TextVAlignment ret (return value: cc.TextVAlignment)
+        
+--------------------------------
 -- @function [parent=#Text] getStringValue 
 -- @param self
 -- @return string#string ret (return value: string)
@@ -25,6 +35,16 @@
 -- @function [parent=#Text] setText 
 -- @param self
 -- @param #string str
+        
+--------------------------------
+-- @function [parent=#Text] getTextHorizontalAlignment 
+-- @param self
+-- @return TextHAlignment#TextHAlignment ret (return value: cc.TextHAlignment)
+        
+--------------------------------
+-- @function [parent=#Text] getTextAreaSize 
+-- @param self
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#Text] setTextVerticalAlignment 
@@ -45,6 +65,11 @@
 -- @function [parent=#Text] setTextHorizontalAlignment 
 -- @param self
 -- @param #cc.TextHAlignment texthalignment
+        
+--------------------------------
+-- @function [parent=#Text] getFontName 
+-- @param self
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#Text] setTextAreaSize 

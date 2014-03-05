@@ -38,10 +38,6 @@
 -- @param #int int
         
 --------------------------------
--- @function [parent=#ParticleBatchNode] visit 
--- @param self
-        
---------------------------------
 -- @function [parent=#ParticleBatchNode] removeChildAtIndex 
 -- @param self
 -- @param #int int

@@ -7,6 +7,12 @@
 -- @param #int int
         
 --------------------------------
+-- @function [parent=#Slider] loadSlidBallTextureDisabled 
+-- @param self
+-- @param #char char
+-- @param #ccui.TextureResType texturerestype
+        
+--------------------------------
 -- @function [parent=#Slider] loadSlidBallTextureNormal 
 -- @param self
 -- @param #char char
@@ -43,6 +49,11 @@
 -- @param #rect_table rect
         
 --------------------------------
+-- @function [parent=#Slider] getCapInsetsProgressBarRebderer 
+-- @param self
+-- @return rect_table#rect_table ret (return value: rect_table)
+        
+--------------------------------
 -- @function [parent=#Slider] setScale9Enabled 
 -- @param self
 -- @param #bool bool
@@ -59,10 +70,14 @@
 -- @param #ccui.TextureResType texturerestype
         
 --------------------------------
--- @function [parent=#Slider] loadSlidBallTextureDisabled 
+-- @function [parent=#Slider] isScale9Enabled 
 -- @param self
--- @param #char char
--- @param #ccui.TextureResType texturerestype
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
+-- @function [parent=#Slider] getCapInsetsBarRenderer 
+-- @param self
+-- @return rect_table#rect_table ret (return value: rect_table)
         
 --------------------------------
 -- @function [parent=#Slider] getPercent 
