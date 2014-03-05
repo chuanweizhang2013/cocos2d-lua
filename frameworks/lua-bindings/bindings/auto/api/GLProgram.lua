@@ -7,10 +7,11 @@
 -- @return string#string ret (return value: string)
         
 --------------------------------
--- @function [parent=#GLProgram] addAttribute 
+-- @function [parent=#GLProgram] initWithByteArrays 
 -- @param self
 -- @param #char char
--- @param #unsigned int int
+-- @param #char char
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#GLProgram] setUniformLocationWithMatrix4fv 
@@ -18,6 +19,13 @@
 -- @param #int int
 -- @param #float float
 -- @param #unsigned int int
+        
+--------------------------------
+-- @function [parent=#GLProgram] initWithFilenames 
+-- @param self
+-- @param #string str
+-- @param #string str
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#GLProgram] getUniformLocationForName 
@@ -33,20 +41,6 @@
 -- @function [parent=#GLProgram] getVertexShaderLog 
 -- @param self
 -- @return string#string ret (return value: string)
-        
---------------------------------
--- @function [parent=#GLProgram] initWithVertexShaderByteArray 
--- @param self
--- @param #char char
--- @param #char char
--- @return bool#bool ret (return value: bool)
-        
---------------------------------
--- @function [parent=#GLProgram] initWithVertexShaderFilename 
--- @param self
--- @param #char char
--- @param #char char
--- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- overload function: setUniformsForBuiltins(kmMat4)
@@ -84,16 +78,16 @@
 -- @param #unsigned int int
         
 --------------------------------
--- @function [parent=#GLProgram] setUniformLocationWithMatrix2fv 
+-- @function [parent=#GLProgram] getUniformLocation 
 -- @param self
--- @param #int int
--- @param #float float
--- @param #unsigned int int
+-- @param #char char
+-- @return int#int ret (return value: int)
         
 --------------------------------
--- @function [parent=#GLProgram] link 
+-- @function [parent=#GLProgram] setUniformLocationWith1i 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @param #int int
+-- @param #int int
         
 --------------------------------
 -- @function [parent=#GLProgram] setUniformLocationWith2iv 
@@ -114,6 +108,25 @@
 -- @param self
         
 --------------------------------
+-- @function [parent=#GLProgram] bindAttribLocation 
+-- @param self
+-- @param #char char
+-- @param #unsigned int int
+        
+--------------------------------
+-- @function [parent=#GLProgram] getAttribLocation 
+-- @param self
+-- @param #char char
+-- @return int#int ret (return value: int)
+        
+--------------------------------
+-- @function [parent=#GLProgram] setUniformLocationWithMatrix2fv 
+-- @param self
+-- @param #int int
+-- @param #float float
+-- @param #unsigned int int
+        
+--------------------------------
 -- @function [parent=#GLProgram] setUniformLocationWith4i 
 -- @param self
 -- @param #int int
@@ -123,10 +136,9 @@
 -- @param #int int
         
 --------------------------------
--- @function [parent=#GLProgram] setUniformLocationWith1i 
+-- @function [parent=#GLProgram] link 
 -- @param self
--- @param #int int
--- @param #int int
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#GLProgram] setUniformLocationWith2i 
