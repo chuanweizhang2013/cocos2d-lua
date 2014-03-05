@@ -720,7 +720,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "";
 			};
-			buildConfigurationList = 1551A339158F2AB200E66CFE /* Build configuration list for PBXProject "cocos2d_lua_libs" */;
+			buildConfigurationList = 1551A339158F2AB200E66CFE /* Build configuration list for PBXProject "cocos2d_lua_bindings" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -890,7 +890,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../cocos2d-x $(SRCROOT)/../../cocos2d-x/cocos $(SRCROOT)/../../cocos2d-x/cocos/base $(SRCROOT)/../../cocos2d-x/cocos/2d $(SRCROOT)/../../cocos2d-x/cocos/physics $(SRCROOT)/../../cocos2d-x/cocos/math/kazmath/include $(SRCROOT)/../../cocos2d-x/cocos/2d/platform $(SRCROOT)/../../cocos2d-x/cocos/audio/include $(SRCROOT)/../../cocos2d-x/cocos/editor-support $(SRCROOT)/../../cocos2d-x/cocos/editor-support/spine $(SRCROOT)/../../cocos2d-x/cocos/editor-support/cocostudio $(SRCROOT)/../../cocos2d-x/cocos/editor-support/cocosbuilder $(SRCROOT)/../../cocos2d-x/cocos/gui $(SRCROOT)/../../cocos2d-x/cocos/storage $(SRCROOT)/../../cocos2d-x/extensions $(SRCROOT)/../../cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../cocos2d-x/external $(SRCROOT)/../../external/luajit/include $(SRCROOT)/../../external/tolua $(SRCROOT)/../../external";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../cocos2d-x $(SRCROOT)/../../cocos2d-x/cocos $(SRCROOT)/../../cocos2d-x/cocos/base $(SRCROOT)/../../cocos2d-x/cocos/2d $(SRCROOT)/../../cocos2d-x/cocos/physics $(SRCROOT)/../../cocos2d-x/cocos/math/kazmath $(SRCROOT)/../../cocos2d-x/cocos/2d/platform $(SRCROOT)/../../cocos2d-x/cocos/audio/include $(SRCROOT)/../../cocos2d-x/cocos/editor-support $(SRCROOT)/../../cocos2d-x/cocos/editor-support/spine $(SRCROOT)/../../cocos2d-x/cocos/editor-support/cocostudio $(SRCROOT)/../../cocos2d-x/cocos/editor-support/cocosbuilder $(SRCROOT)/../../cocos2d-x/cocos/gui $(SRCROOT)/../../cocos2d-x/cocos/storage $(SRCROOT)/../../cocos2d-x/extensions $(SRCROOT)/../../cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../cocos2d-x/external $(SRCROOT)/../../external/luajit/include $(SRCROOT)/../../external/tolua $(SRCROOT)/../../external";
 			};
 			name = Debug;
 		};
@@ -923,7 +923,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../cocos2d-x $(SRCROOT)/../../cocos2d-x/cocos $(SRCROOT)/../../cocos2d-x/cocos/base $(SRCROOT)/../../cocos2d-x/cocos/2d $(SRCROOT)/../../cocos2d-x/cocos/physics $(SRCROOT)/../../cocos2d-x/cocos/math/kazmath/include $(SRCROOT)/../../cocos2d-x/cocos/2d/platform $(SRCROOT)/../../cocos2d-x/cocos/audio/include $(SRCROOT)/../../cocos2d-x/cocos/editor-support $(SRCROOT)/../../cocos2d-x/cocos/editor-support/spine $(SRCROOT)/../../cocos2d-x/cocos/editor-support/cocostudio $(SRCROOT)/../../cocos2d-x/cocos/editor-support/cocosbuilder $(SRCROOT)/../../cocos2d-x/cocos/gui $(SRCROOT)/../../cocos2d-x/cocos/storage $(SRCROOT)/../../cocos2d-x/extensions $(SRCROOT)/../../cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../cocos2d-x/external $(SRCROOT)/../../external/luajit/include $(SRCROOT)/../../external/tolua $(SRCROOT)/../../external";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../cocos2d-x $(SRCROOT)/../../cocos2d-x/cocos $(SRCROOT)/../../cocos2d-x/cocos/base $(SRCROOT)/../../cocos2d-x/cocos/2d $(SRCROOT)/../../cocos2d-x/cocos/physics $(SRCROOT)/../../cocos2d-x/cocos/math/kazmath $(SRCROOT)/../../cocos2d-x/cocos/2d/platform $(SRCROOT)/../../cocos2d-x/cocos/audio/include $(SRCROOT)/../../cocos2d-x/cocos/editor-support $(SRCROOT)/../../cocos2d-x/cocos/editor-support/spine $(SRCROOT)/../../cocos2d-x/cocos/editor-support/cocostudio $(SRCROOT)/../../cocos2d-x/cocos/editor-support/cocosbuilder $(SRCROOT)/../../cocos2d-x/cocos/gui $(SRCROOT)/../../cocos2d-x/cocos/storage $(SRCROOT)/../../cocos2d-x/extensions $(SRCROOT)/../../cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../cocos2d-x/external $(SRCROOT)/../../external/luajit/include $(SRCROOT)/../../external/tolua $(SRCROOT)/../../external";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1011,7 +1011,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1551A339158F2AB200E66CFE /* Build configuration list for PBXProject "cocos2d_lua_libs" */ = {
+		1551A339158F2AB200E66CFE /* Build configuration list for PBXProject "cocos2d_lua_bindings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1551A34A158F2AB200E66CFE /* Debug */,

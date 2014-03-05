@@ -51,6 +51,11 @@
 -- @param self
         
 --------------------------------
+-- @function [parent=#ListView] getItemsMargin 
+-- @param self
+-- @return float#float ret (return value: float)
+        
+--------------------------------
 -- @function [parent=#ListView] getItem 
 -- @param self
 -- @param #long long
