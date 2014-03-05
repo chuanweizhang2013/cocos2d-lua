@@ -239,7 +239,7 @@ function TouchableSpriteTest:onEnter()
 
     local function removeAllTouchItem(tag, sender)
         sender:setString("Only Next item could be clicked")
-        eventDispatcher:removeEventListeners(cc.EVENT_TOUCH_ONE_BY_ONE)
+        eventDispatcher:removeEventListenersForType(cc.EVENT_TOUCH_ONE_BY_ONE)
 
         local nextMenuItem = cc.MenuItemFont:create("Next")
         nextMenuItem:setFontSizeObj(16)

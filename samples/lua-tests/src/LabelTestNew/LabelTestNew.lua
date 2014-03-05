@@ -694,7 +694,7 @@ function LabelFNTMultiLineAlignment.create()
 
         local labelWidth = math.abs(LabelFNTMultiLineAlignment._pArrowsShouldRetain:getPositionX() - LabelFNTMultiLineAlignment._pLabelShouldRetain:getPositionX()) * 2
 
-        LabelFNTMultiLineAlignment._pLabelShouldRetain:setWidth(labelWidth)
+        LabelFNTMultiLineAlignment._pLabelShouldRetain:setMaxLineWidth(labelWidth)
     end
 
     local  function onTouchesEnded(touch, event)
