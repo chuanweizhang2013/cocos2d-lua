@@ -12,20 +12,25 @@
 -- @param #point_table point
         
 --------------------------------
--- @function [parent=#Widget] setActionTag 
+-- @function [parent=#Widget] isFlippedX 
 -- @param self
--- @param #int int
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
+-- @function [parent=#Widget] setFlippedY 
+-- @param self
+-- @param #bool bool
+        
+--------------------------------
+-- @function [parent=#Widget] setFlippedX 
+-- @param self
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#Widget] getNodeByTag 
 -- @param self
 -- @param #int int
 -- @return Node#Node ret (return value: cc.Node)
-        
---------------------------------
--- @function [parent=#Widget] isFlipY 
--- @param self
--- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Widget] getTouchEndPos 
@@ -99,11 +104,6 @@
 -- @return bool#bool ret (return value: bool)
         
 --------------------------------
--- @function [parent=#Widget] isFlipX 
--- @param self
--- @return bool#bool ret (return value: bool)
-        
---------------------------------
 -- @function [parent=#Widget] removeNodeByTag 
 -- @param self
 -- @param #int int
@@ -119,7 +119,7 @@
 -- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
--- @function [parent=#Widget] getTouchStartPos 
+-- @function [parent=#Widget] getWorldPosition 
 -- @param self
 -- @return point_table#point_table ret (return value: point_table)
         
@@ -176,19 +176,24 @@
 -- @param #ccui.LayoutParameter layoutparameter
         
 --------------------------------
--- @function [parent=#Widget] setFlipY 
+-- @function [parent=#Widget] getSizePercent 
 -- @param self
--- @param #bool bool
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
--- @function [parent=#Widget] setFlipX 
+-- @function [parent=#Widget] getTouchStartPos 
 -- @param self
--- @param #bool bool
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#Widget] getLeftInParent 
 -- @param self
 -- @return float#float ret (return value: float)
+        
+--------------------------------
+-- @function [parent=#Widget] setActionTag 
+-- @param self
+-- @param #int int
         
 --------------------------------
 -- @function [parent=#Widget] ignoreContentAdaptWithSize 
@@ -205,11 +210,6 @@
 -- @param self
 -- @param #point_table point
 -- @return bool#bool ret (return value: bool)
-        
---------------------------------
--- @function [parent=#Widget] getSizePercent 
--- @param self
--- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#Widget] getTopInParent 
@@ -246,11 +246,6 @@
 -- @param self
         
 --------------------------------
--- @function [parent=#Widget] getWorldPosition 
--- @param self
--- @return point_table#point_table ret (return value: point_table)
-        
---------------------------------
 -- @function [parent=#Widget] getPositionPercent 
 -- @param self
 -- @return point_table#point_table ret (return value: point_table)
@@ -263,6 +258,11 @@
         
 --------------------------------
 -- @function [parent=#Widget] isFocused 
+-- @param self
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
+-- @function [parent=#Widget] isFlippedY 
 -- @param self
 -- @return bool#bool ret (return value: bool)
         
