@@ -312,7 +312,7 @@ local function ParticleBatchHybrid_onEnterOrExit(tag)
 		ParticleBatchHybrid_entry = scheduler:scheduleScriptFunc(switchRender, 2.0, false)
 	elseif tag == "exit" then
 		scheduler:unscheduleScriptEntry(ParticleBatchHybrid_entry)
-		--emitter:release()
+		emitter:release()
 	end
 end
 
@@ -324,7 +324,7 @@ local function ParticleBatchHybrid()
     background = nil
 
     emitter = cc.ParticleSystemQuad:create("Particles/LavaFlow.plist")
-	---- emitter:retain()
+	emitter:retain()
     local batch = cc.ParticleBatchNode:createWithTexture(emitter:getTexture())
     batch:addChild(emitter)
     layer:addChild(batch, 10)

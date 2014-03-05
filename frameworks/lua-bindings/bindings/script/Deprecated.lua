@@ -1112,6 +1112,18 @@ function NodeDeprecated.getZOrder(self)
     return self:getLocalZOrder()
 end
 rawset(cc.Node,"getZOrder",NodeDeprecated.getZOrder)
+
+function NodeDeprecated.setVertexZ(self,vertexZ)
+    deprecatedTip("cc.Node:setVertexZ", "cc.Node:setPositionZ")
+    return self:setPositionZ(vertexZ)
+end
+rawset(cc.Node,"setVertexZ",NodeDeprecated.setVertexZ)
+
+function NodeDeprecated.getVertexZ(self)
+    deprecatedTip("cc.Node:getVertexZ", "cc.Node:getPositionZ")
+    return self:getPositionZ()
+end
+rawset(cc.Node, "getVertexZ", NodeDeprecated.getVertexZ)
 --functions of cc.Node will be deprecated end
 
 
