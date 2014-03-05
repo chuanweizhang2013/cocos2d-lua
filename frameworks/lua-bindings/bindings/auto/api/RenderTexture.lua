@@ -2,6 +2,13 @@
 --------------------------------
 -- @module RenderTexture
 --------------------------------
+-- @function [parent=#RenderTexture] setVirtualViewport 
+-- @param self
+-- @param #point_table point
+-- @param #rect_table rect
+-- @param #rect_table rect
+        
+--------------------------------
 -- @function [parent=#RenderTexture] clearStencil 
 -- @param self
 -- @param #int int
@@ -39,6 +46,11 @@
 -- @function [parent=#RenderTexture] isAutoDraw 
 -- @param self
 -- @return bool#bool ret (return value: bool)
+        
+--------------------------------
+-- @function [parent=#RenderTexture] setKeepMatrix 
+-- @param self
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#RenderTexture] setClearFlags 
