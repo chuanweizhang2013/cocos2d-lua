@@ -63,6 +63,14 @@ public:
     virtual void addLuaLoader(lua_CFunction func);
     
     /**
+     @brief reload script code contained in the given string.
+     @param moduleFileName String object holding the filename of the script file that is to be executed
+     @return 0 if the string is excuted correctly.
+     @return other if the string is excuted wrongly.
+     */
+    virtual int reload(const char* moduleFileName);
+    
+    /**
      @brief Remove Object from lua state
      @param object The object to be removed.
      */
