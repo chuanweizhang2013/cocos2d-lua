@@ -1004,6 +1004,8 @@ local function TMXOrthoVertexZ()
         end
     end
 
+    ret:registerScriptHandler(onNodeEvent)
+
     return ret
 end
 
