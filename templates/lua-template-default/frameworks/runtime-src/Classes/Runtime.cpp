@@ -474,7 +474,7 @@ class ConsoleCustomCommand
 public:
     ConsoleCustomCommand():_fileserver(nullptr)
     {
-        
+        _writepath = FileUtils::getInstance()->getWritablePath();
         cocos2d::Console *_console = Director::getInstance()->getConsole();
         static struct Console::Command commands[] = {
             {"shutdownapp","exit runtime app",std::bind(&ConsoleCustomCommand::onShutDownApp, this, std::placeholders::_1, std::placeholders::_2)},
@@ -500,9 +500,9 @@ public:
     
     void onRunLogicScript(int fd, const std::string &args)
     {
-		Director::getInstance()->getScheduler()->performFunctionInCocosThread([args](){
+		Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
 			char szDebugArg[1024]={0};
-			sprintf(szDebugArg, "require('debugger')(%s,'%s')",args.c_str(),FileUtils::getInstance()->getWritablePath().c_str());
+			sprintf(szDebugArg, "require('debugger')(%s,'%s')",args.c_str(),_writepath.c_str());
 			startScript(szDebugArg);
 		});
     }
@@ -522,6 +522,7 @@ public:
     }
 private:
     FileServer* _fileserver;
+	string _writepath;
     
 };
 
