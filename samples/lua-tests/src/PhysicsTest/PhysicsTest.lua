@@ -226,7 +226,7 @@ local function makeBox(point, size, color, material)
 end
 
 local function makeTriangle(point, size, color, material)
-    material = material or DEFAULT_MATERIAL
+    material = material or MATERIAL_DEFAULT
 
     local yellow = false;
     if color == 0 then
