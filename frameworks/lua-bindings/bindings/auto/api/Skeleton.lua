@@ -13,6 +13,8 @@
 --------------------------------
 -- @function [parent=#Skeleton] onDraw 
 -- @param self
+-- @param #kmMat4 kmmat4
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#Skeleton] setSlotsToSetupPose 

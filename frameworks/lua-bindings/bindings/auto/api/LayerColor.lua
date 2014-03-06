@@ -8,16 +8,12 @@
 -- @param #float float
         
 --------------------------------
--- @function [parent=#LayerColor] onDraw 
--- @param self
-        
---------------------------------
--- @function [parent=#LayerColor] changeWidth 
+-- @function [parent=#LayerColor] changeHeight 
 -- @param self
 -- @param #float float
         
 --------------------------------
--- @function [parent=#LayerColor] changeHeight 
+-- @function [parent=#LayerColor] changeWidth 
 -- @param self
 -- @param #float float
         
