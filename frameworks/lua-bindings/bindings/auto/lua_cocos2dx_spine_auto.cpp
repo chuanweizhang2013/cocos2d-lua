@@ -120,14 +120,20 @@ int lua_cocos2dx_spine_Skeleton_onDraw(lua_State* tolua_S)
 #endif
 
     argc = lua_gettop(tolua_S)-1;
-    if (argc == 0) 
+    if (argc == 2) 
     {
+        kmMat4 arg0;
+        bool arg1;
+
+        #pragma warning NO CONVERSION TO NATIVE FOR kmMat4;
+
+        ok &= luaval_to_boolean(tolua_S, 3,&arg1);
         if(!ok)
             return 0;
-        cobj->onDraw();
+        cobj->onDraw(arg0, arg1);
         return 0;
     }
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "onDraw",argc, 0);
+    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "onDraw",argc, 2);
     return 0;
 
 #if COCOS2D_DEBUG >= 1
