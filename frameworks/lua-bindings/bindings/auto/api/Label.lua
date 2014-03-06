@@ -78,10 +78,6 @@
 -- @return int#int ret (return value: int)
         
 --------------------------------
--- @function [parent=#Label] onDraw 
--- @param self
-        
---------------------------------
 -- overload function: setCharMap(cc.Texture2D, int, int, int)
 --          
 -- overload function: setCharMap(string, int, int, int)
