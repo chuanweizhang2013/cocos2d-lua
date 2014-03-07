@@ -168,6 +168,11 @@
 -- @return ScrollView#ScrollView ret (return value: ccui.ScrollView)
         
 --------------------------------
+-- @function [parent=#ScrollView] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#ScrollView] ScrollView 
 -- @param self
         

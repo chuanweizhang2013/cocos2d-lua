@@ -47,6 +47,10 @@
 -- @param #float float
         
 --------------------------------
+-- @function [parent=#ListView] refreshView 
+-- @param self
+        
+--------------------------------
 -- @function [parent=#ListView] removeLastItem 
 -- @param self
         
@@ -84,6 +88,11 @@
 -- @function [parent=#ListView] create 
 -- @param self
 -- @return ListView#ListView ret (return value: ccui.ListView)
+        
+--------------------------------
+-- @function [parent=#ListView] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
         
 --------------------------------
 -- @function [parent=#ListView] ListView 

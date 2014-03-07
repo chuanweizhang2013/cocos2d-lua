@@ -38,6 +38,11 @@
 -- @return ImageView#ImageView ret (return value: ccui.ImageView)
         
 --------------------------------
+-- @function [parent=#ImageView] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#ImageView] ImageView 
 -- @param self
         

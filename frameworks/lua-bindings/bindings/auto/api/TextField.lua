@@ -52,6 +52,11 @@
 -- @return bool#bool ret (return value: bool)
         
 --------------------------------
+-- @function [parent=#TextField] setTextVerticalAlignment 
+-- @param self
+-- @param #cc.TextVAlignment textvalignment
+        
+--------------------------------
 -- @function [parent=#TextField] didNotSelectSelf 
 -- @param self
         
@@ -59,6 +64,11 @@
 -- @function [parent=#TextField] getFontName 
 -- @param self
 -- @return string#string ret (return value: string)
+        
+--------------------------------
+-- @function [parent=#TextField] setTextAreaSize 
+-- @param self
+-- @param #size_table size
         
 --------------------------------
 -- @function [parent=#TextField] attachWithIME 
@@ -105,6 +115,11 @@
 -- @return bool#bool ret (return value: bool)
         
 --------------------------------
+-- @function [parent=#TextField] setTextHorizontalAlignment 
+-- @param self
+-- @param #cc.TextHAlignment texthalignment
+        
+--------------------------------
 -- @function [parent=#TextField] getMaxLength 
 -- @param self
 -- @return int#int ret (return value: int)
@@ -125,6 +140,17 @@
 -- @param #string str
         
 --------------------------------
+-- @function [parent=#TextField] setTouchAreaEnabled 
+-- @param self
+-- @param #bool bool
+        
+--------------------------------
+-- @function [parent=#TextField] hitTest 
+-- @param self
+-- @param #point_table point
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
 -- @function [parent=#TextField] setMaxLength 
 -- @param self
 -- @param #int int
@@ -143,6 +169,11 @@
 -- @function [parent=#TextField] create 
 -- @param self
 -- @return TextField#TextField ret (return value: ccui.TextField)
+        
+--------------------------------
+-- @function [parent=#TextField] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
         
 --------------------------------
 -- @function [parent=#TextField] TextField 

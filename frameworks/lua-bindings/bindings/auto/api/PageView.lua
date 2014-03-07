@@ -60,6 +60,11 @@
 -- @return PageView#PageView ret (return value: ccui.PageView)
         
 --------------------------------
+-- @function [parent=#PageView] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#PageView] PageView 
 -- @param self
         

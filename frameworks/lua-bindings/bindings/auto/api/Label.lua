@@ -6,6 +6,12 @@
 -- @param self
         
 --------------------------------
+-- @function [parent=#Label] setDimensions 
+-- @param self
+-- @param #unsigned int int
+-- @param #unsigned int int
+        
+--------------------------------
 -- @function [parent=#Label] getString 
 -- @param self
 -- @return string#string ret (return value: string)
@@ -15,34 +21,39 @@
 -- @param self
         
 --------------------------------
+-- @function [parent=#Label] getWidth 
+-- @param self
+-- @return unsigned int#unsigned int ret (return value: unsigned int)
+        
+--------------------------------
 -- @function [parent=#Label] getCommonLineHeight 
 -- @param self
 -- @return int#int ret (return value: int)
         
 --------------------------------
--- @function [parent=#Label] breakLineWithoutSpace 
+-- @function [parent=#Label] setWidth 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @param #unsigned int int
         
 --------------------------------
 -- @function [parent=#Label] getMaxLineWidth 
 -- @param self
--- @return float#float ret (return value: float)
+-- @return unsigned int#unsigned int ret (return value: unsigned int)
         
 --------------------------------
--- @function [parent=#Label] getScaleY 
+-- @function [parent=#Label] getHorizontalAlignment 
 -- @param self
--- @return float#float ret (return value: float)
-        
---------------------------------
--- @function [parent=#Label] getScaleX 
--- @param self
--- @return float#float ret (return value: float)
+-- @return TextHAlignment#TextHAlignment ret (return value: cc.TextHAlignment)
         
 --------------------------------
 -- @function [parent=#Label] setString 
 -- @param self
 -- @param #string str
+        
+--------------------------------
+-- @function [parent=#Label] getHeight 
+-- @param self
+-- @return unsigned int#unsigned int ret (return value: unsigned int)
         
 --------------------------------
 -- @function [parent=#Label] setBMFontFilePath 
@@ -52,9 +63,9 @@
 -- @return bool#bool ret (return value: bool)
         
 --------------------------------
--- @function [parent=#Label] getFontAtlas 
+-- @function [parent=#Label] getStringLength 
 -- @param self
--- @return FontAtlas#FontAtlas ret (return value: cc.FontAtlas)
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#Label] setLineBreakWithoutSpace 
@@ -71,11 +82,6 @@
 -- @param self
 -- @param #color4B_table color4b
 -- @param #int int
-        
---------------------------------
--- @function [parent=#Label] getStringLenght 
--- @param self
--- @return int#int ret (return value: int)
         
 --------------------------------
 -- overload function: setCharMap(cc.Texture2D, int, int, int)
@@ -95,7 +101,23 @@
 --------------------------------
 -- @function [parent=#Label] setMaxLineWidth 
 -- @param self
--- @param #float float
+-- @param #unsigned int int
+        
+--------------------------------
+-- @function [parent=#Label] setVerticalAlignment 
+-- @param self
+-- @param #cc.TextVAlignment textvalignment
+-- @param #bool bool
+        
+--------------------------------
+-- @function [parent=#Label] getVerticalAlignment 
+-- @param self
+-- @return TextVAlignment#TextVAlignment ret (return value: cc.TextVAlignment)
+        
+--------------------------------
+-- @function [parent=#Label] setHeight 
+-- @param self
+-- @param #unsigned int int
         
 --------------------------------
 -- @function [parent=#Label] enableGlow 
@@ -114,10 +136,22 @@
 -- @return TextHAlignment#TextHAlignment ret (return value: cc.TextHAlignment)
         
 --------------------------------
--- @function [parent=#Label] setAlignment 
+-- @function [parent=#Label] setHorizontalAlignment 
 -- @param self
 -- @param #cc.TextHAlignment texthalignment
+-- @param #bool bool
         
+--------------------------------
+-- overload function: setAlignment(cc.TextHAlignment, cc.TextVAlignment, bool)
+--          
+-- overload function: setAlignment(cc.TextHAlignment, bool)
+--          
+-- @function [parent=#Label] setAlignment
+-- @param self
+-- @param #cc.TextHAlignment texthalignment
+-- @param #cc.TextVAlignment textvalignment
+-- @param #bool bool
+
 --------------------------------
 -- @function [parent=#Label] createWithBMFont 
 -- @param self

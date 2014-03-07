@@ -30,12 +30,6 @@
 -- @param #cc.EventListener eventlistener
         
 --------------------------------
--- @function [parent=#EventDispatcher] dispatchCustomEvent 
--- @param self
--- @param #string str
--- @param #void void
-        
---------------------------------
 -- @function [parent=#EventDispatcher] resumeEventListenersForTarget 
 -- @param self
 -- @param #cc.Node node

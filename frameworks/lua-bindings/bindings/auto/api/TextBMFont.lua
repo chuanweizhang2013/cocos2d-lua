@@ -22,6 +22,11 @@
 -- @return TextBMFont#TextBMFont ret (return value: ccui.TextBMFont)
         
 --------------------------------
+-- @function [parent=#TextBMFont] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#TextBMFont] TextBMFont 
 -- @param self
         

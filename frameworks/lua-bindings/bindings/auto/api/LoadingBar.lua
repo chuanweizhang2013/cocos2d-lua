@@ -53,6 +53,11 @@
 -- @return LoadingBar#LoadingBar ret (return value: ccui.LoadingBar)
         
 --------------------------------
+-- @function [parent=#LoadingBar] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#LoadingBar] LoadingBar 
 -- @param self
         
