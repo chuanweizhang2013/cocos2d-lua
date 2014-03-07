@@ -13,13 +13,13 @@ function __G__TRACKBACK__(msg)
 end
 
 local function main()
-
+    collectgarbage("collect")
     -- avoid memory leak
     collectgarbage("setpause", 100)
     collectgarbage("setstepmul", 5000)
 	cc.FileUtils:getInstance():addSearchResolutionsOrder("src");
 	cc.FileUtils:getInstance():addSearchResolutionsOrder("res");
-	
+	local schedulerID = 0
     --support debug
     local targetPlatform = cc.Application:getInstance():getTargetPlatform()
     if (cc.PLATFORM_OS_IPHONE == targetPlatform) or (cc.PLATFORM_OS_IPAD == targetPlatform) or 
@@ -76,7 +76,7 @@ local function main()
             spriteDog:setPositionX(x)
         end
 
-        cc.Director:getInstance():getScheduler():scheduleScriptFunc(tick, 0, false)
+        schedulerID = cc.Director:getInstance():getScheduler():scheduleScriptFunc(tick, 0, false)
 
         return spriteDog
     end
@@ -148,6 +148,13 @@ local function main()
         listener:registerScriptHandler(onTouchEnded,cc.Handler.EVENT_TOUCH_ENDED )
         local eventDispatcher = layerFarm:getEventDispatcher()
         eventDispatcher:addEventListenerWithSceneGraphPriority(listener, layerFarm)
+        
+        local function onNodeEvent(event)
+           if "exit" == event then
+               cc.Director:getInstance():getScheduler():unscheduleScriptEntry(schedulerID)
+           end
+        end
+        layerFarm:registerScriptHandler(onNodeEvent)
 
         return layerFarm
     end
