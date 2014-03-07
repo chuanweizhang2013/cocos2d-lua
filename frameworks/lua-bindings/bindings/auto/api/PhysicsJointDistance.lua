@@ -9,7 +9,7 @@
 --------------------------------
 -- @function [parent=#PhysicsJointDistance] getDistance 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#PhysicsJointDistance] construct 
@@ -18,6 +18,6 @@
 -- @param #cc.PhysicsBody physicsbody
 -- @param #point_table point
 -- @param #point_table point
--- @return cc.PhysicsJointDistance#cc.PhysicsJointDistance ret
+-- @return PhysicsJointDistance#PhysicsJointDistance ret (return value: cc.PhysicsJointDistance)
         
 return nil

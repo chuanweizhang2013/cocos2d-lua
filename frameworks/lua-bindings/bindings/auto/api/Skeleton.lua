@@ -13,6 +13,8 @@
 --------------------------------
 -- @function [parent=#Skeleton] onDraw 
 -- @param self
+-- @param #kmMat4 kmmat4
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#Skeleton] setSlotsToSetupPose 
@@ -21,13 +23,13 @@
 --------------------------------
 -- @function [parent=#Skeleton] getBlendFunc 
 -- @param self
--- @return cc.BlendFunc#cc.BlendFunc ret
+-- @return BlendFunc#BlendFunc ret (return value: cc.BlendFunc)
         
 --------------------------------
 -- @function [parent=#Skeleton] setSkin 
 -- @param self
--- @param #char* char
--- @return bool#bool ret
+-- @param #char char
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#Skeleton] setBonesToSetupPose 

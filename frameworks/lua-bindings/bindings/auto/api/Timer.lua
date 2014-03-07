@@ -4,7 +4,14 @@
 --------------------------------
 -- @function [parent=#Timer] getInterval 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
+        
+--------------------------------
+-- @function [parent=#Timer] setupTimerWithInterval 
+-- @param self
+-- @param #float float
+-- @param #unsigned int int
+-- @param #float float
         
 --------------------------------
 -- @function [parent=#Timer] setInterval 
@@ -12,54 +19,16 @@
 -- @param #float float
         
 --------------------------------
--- @function [parent=#Timer] initWithTarget 
--- @param self
--- @param #function func
--- @param #void* void
--- @param #long long
--- @param #float float
--- @param #unsigned int int
--- @param #float float
--- @return bool#bool ret
-        
---------------------------------
--- @function [parent=#Timer] initWithScriptHandler 
--- @param self
--- @param #int int
--- @param #float float
--- @return bool#bool ret
-        
---------------------------------
 -- @function [parent=#Timer] update 
 -- @param self
 -- @param #float float
         
 --------------------------------
--- @function [parent=#Timer] getKey 
+-- @function [parent=#Timer] trigger 
 -- @param self
--- @return long#long ret
         
 --------------------------------
--- @function [parent=#Timer] getCallback 
--- @param self
--- @return function#function ret
-        
---------------------------------
--- @function [parent=#Timer] getScriptHandler 
--- @param self
--- @return int#int ret
-        
---------------------------------
--- @function [parent=#Timer] create 
--- @param self
--- @param #function func
--- @param #void* void
--- @param #long long
--- @param #float float
--- @return cc.Timer#cc.Timer ret
-        
---------------------------------
--- @function [parent=#Timer] Timer 
+-- @function [parent=#Timer] cancel 
 -- @param self
         
 return nil

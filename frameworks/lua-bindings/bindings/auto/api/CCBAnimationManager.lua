@@ -15,13 +15,13 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getDocumentCallbackNames 
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] actionForSoundChannel 
 -- @param self
 -- @param #cc.CCBSequenceProperty ccbsequenceproperty
--- @return cc.Sequence#cc.Sequence ret
+-- @return Sequence#Sequence ret (return value: cc.Sequence)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] setBaseValue 
@@ -33,12 +33,12 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getDocumentOutletNodes 
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getLastCompletedSequenceName 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] setRootNode 
@@ -48,7 +48,7 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] runAnimationsForSequenceNamedTweenDuration 
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #float float
         
 --------------------------------
@@ -59,12 +59,12 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getSequences 
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getRootContainerSize 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] setDocumentControllerName 
@@ -82,18 +82,18 @@
 -- @function [parent=#CCBAnimationManager] getContainerSize 
 -- @param self
 -- @param #cc.Node node
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] actionForCallbackChannel 
 -- @param self
 -- @param #cc.CCBSequenceProperty ccbsequenceproperty
--- @return cc.Sequence#cc.Sequence ret
+-- @return Sequence#Sequence ret (return value: cc.Sequence)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getDocumentOutletNames 
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] addDocumentCallbackControlEvents 
@@ -103,17 +103,17 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getKeyframeCallbacks 
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getDocumentCallbackControlEvents 
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] setRootContainerSize 
@@ -129,12 +129,12 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getRunningSequenceName 
 -- @param self
--- @return char*#char* ret
+-- @return char#char ret (return value: char)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getAutoPlaySequenceId 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] addDocumentCallbackName 
@@ -144,7 +144,7 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getRootNode 
 -- @param self
--- @return cc.Node#cc.Node ret
+-- @return Node#Node ret (return value: cc.Node)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] addDocumentOutletNode 
@@ -154,8 +154,8 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getSequenceDuration 
 -- @param self
--- @param #char* char
--- @return float#float ret
+-- @param #char char
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] addDocumentCallbackNode 
@@ -165,18 +165,18 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] runAnimationsForSequenceNamed 
 -- @param self
--- @param #char* char
+-- @param #char char
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getSequenceId 
 -- @param self
--- @param #char* char
--- @return int#int ret
+-- @param #char char
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getDocumentCallbackNodes 
 -- @param self
--- @return array_table#array_table ret
+-- @return array_table#array_table ret (return value: array_table)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] setSequences 
@@ -190,7 +190,7 @@
 --------------------------------
 -- @function [parent=#CCBAnimationManager] getDocumentControllerName 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#CCBAnimationManager] CCBAnimationManager 

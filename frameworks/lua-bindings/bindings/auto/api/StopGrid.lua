@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#StopGrid] create 
 -- @param self
--- @return cc.StopGrid#cc.StopGrid ret
+-- @return StopGrid#StopGrid ret (return value: cc.StopGrid)
         
 return nil

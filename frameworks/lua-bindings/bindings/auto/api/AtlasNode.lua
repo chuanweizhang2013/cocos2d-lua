@@ -8,7 +8,7 @@
 --------------------------------
 -- @function [parent=#AtlasNode] getTexture 
 -- @param self
--- @return cc.Texture2D#cc.Texture2D ret
+-- @return Texture2D#Texture2D ret (return value: cc.Texture2D)
         
 --------------------------------
 -- @function [parent=#AtlasNode] setTextureAtlas 
@@ -18,12 +18,12 @@
 --------------------------------
 -- @function [parent=#AtlasNode] getTextureAtlas 
 -- @param self
--- @return cc.TextureAtlas#cc.TextureAtlas ret
+-- @return TextureAtlas#TextureAtlas ret (return value: cc.TextureAtlas)
         
 --------------------------------
 -- @function [parent=#AtlasNode] getQuadsToDraw 
 -- @param self
--- @return long#long ret
+-- @return long#long ret (return value: long)
         
 --------------------------------
 -- @function [parent=#AtlasNode] setTexture 
@@ -42,6 +42,6 @@
 -- @param #int int
 -- @param #int int
 -- @param #int int
--- @return cc.AtlasNode#cc.AtlasNode ret
+-- @return AtlasNode#AtlasNode ret (return value: cc.AtlasNode)
         
 return nil

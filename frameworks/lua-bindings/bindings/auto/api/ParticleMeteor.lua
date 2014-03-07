@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#ParticleMeteor] create 
 -- @param self
--- @return cc.ParticleMeteor#cc.ParticleMeteor ret
+-- @return ParticleMeteor#ParticleMeteor ret (return value: cc.ParticleMeteor)
         
 --------------------------------
 -- @function [parent=#ParticleMeteor] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return cc.ParticleMeteor#cc.ParticleMeteor ret
+-- @return ParticleMeteor#ParticleMeteor ret (return value: cc.ParticleMeteor)
         
 return nil

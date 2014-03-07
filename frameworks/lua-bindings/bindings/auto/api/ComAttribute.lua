@@ -6,14 +6,14 @@
 -- @param self
 -- @param #string str
 -- @param #float float
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ComAttribute] getString 
 -- @param self
 -- @param #string str
 -- @param #string str
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#ComAttribute] setFloat 
@@ -32,7 +32,7 @@
 -- @param self
 -- @param #string str
 -- @param #bool bool
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ComAttribute] setInt 
@@ -44,14 +44,14 @@
 -- @function [parent=#ComAttribute] parse 
 -- @param self
 -- @param #string str
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ComAttribute] getInt 
 -- @param self
 -- @param #string str
 -- @param #int int
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#ComAttribute] setBool 
@@ -62,11 +62,11 @@
 --------------------------------
 -- @function [parent=#ComAttribute] create 
 -- @param self
--- @return ccs.ComAttribute#ccs.ComAttribute ret
+-- @return ComAttribute#ComAttribute ret (return value: ccs.ComAttribute)
         
 --------------------------------
 -- @function [parent=#ComAttribute] createInstance 
 -- @param self
--- @return cc.Ref#cc.Ref ret
+-- @return Ref#Ref ret (return value: cc.Ref)
         
 return nil

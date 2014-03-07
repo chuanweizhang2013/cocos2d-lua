@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#ArmatureAnimation] getSpeedScale 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ArmatureAnimation] pause 
@@ -19,7 +19,7 @@
 -- @function [parent=#ArmatureAnimation] init 
 -- @param self
 -- @param #ccs.Armature armature
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ArmatureAnimation] playWithIndexes 
@@ -56,7 +56,7 @@
 --------------------------------
 -- @function [parent=#ArmatureAnimation] getAnimationData 
 -- @param self
--- @return ccs.AnimationData#ccs.AnimationData ret
+-- @return AnimationData#AnimationData ret (return value: ccs.AnimationData)
         
 --------------------------------
 -- @function [parent=#ArmatureAnimation] playWithIndex 
@@ -68,7 +68,7 @@
 --------------------------------
 -- @function [parent=#ArmatureAnimation] getCurrentMovementID 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#ArmatureAnimation] setAnimationData 
@@ -90,13 +90,13 @@
 --------------------------------
 -- @function [parent=#ArmatureAnimation] getMovementCount 
 -- @param self
--- @return long#long ret
+-- @return long#long ret (return value: long)
         
 --------------------------------
 -- @function [parent=#ArmatureAnimation] create 
 -- @param self
 -- @param #ccs.Armature armature
--- @return ccs.ArmatureAnimation#ccs.ArmatureAnimation ret
+-- @return ArmatureAnimation#ArmatureAnimation ret (return value: ccs.ArmatureAnimation)
         
 --------------------------------
 -- @function [parent=#ArmatureAnimation] ArmatureAnimation 

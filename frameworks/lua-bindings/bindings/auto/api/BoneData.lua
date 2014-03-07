@@ -5,12 +5,12 @@
 -- @function [parent=#BoneData] getDisplayData 
 -- @param self
 -- @param #int int
--- @return ccs.DisplayData#ccs.DisplayData ret
+-- @return DisplayData#DisplayData ret (return value: ccs.DisplayData)
         
 --------------------------------
 -- @function [parent=#BoneData] init 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#BoneData] addDisplayData 
@@ -20,7 +20,7 @@
 --------------------------------
 -- @function [parent=#BoneData] create 
 -- @param self
--- @return ccs.BoneData#ccs.BoneData ret
+-- @return BoneData#BoneData ret (return value: ccs.BoneData)
         
 --------------------------------
 -- @function [parent=#BoneData] BoneData 

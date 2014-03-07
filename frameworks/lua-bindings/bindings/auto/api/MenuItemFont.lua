@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#MenuItemFont] getFontSizeObj 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#MenuItemFont] getFontNameObj 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#MenuItemFont] setFontSizeObj 
@@ -29,12 +29,12 @@
 --------------------------------
 -- @function [parent=#MenuItemFont] getFontSize 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#MenuItemFont] getFontName 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#MenuItemFont] setFontSize 

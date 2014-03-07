@@ -5,6 +5,6 @@
 -- @function [parent=#EaseExponentialIn] create 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
--- @return cc.EaseExponentialIn#cc.EaseExponentialIn ret
+-- @return EaseExponentialIn#EaseExponentialIn ret (return value: cc.EaseExponentialIn)
         
 return nil

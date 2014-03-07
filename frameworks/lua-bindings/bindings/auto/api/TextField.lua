@@ -7,19 +7,29 @@
 -- @param #bool bool
         
 --------------------------------
--- @function [parent=#TextField] getStringValue 
+-- @function [parent=#TextField] getFontSize 
 -- @param self
--- @return string#string ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
--- @function [parent=#TextField] setPasswordStyleText 
+-- @function [parent=#TextField] getStringValue 
 -- @param self
--- @param #char* char
+-- @return string#string ret (return value: string)
+        
+--------------------------------
+-- @function [parent=#TextField] getDeleteBackward 
+-- @param self
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
+-- @function [parent=#TextField] getPlaceHolder 
+-- @param self
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#TextField] getAttachWithIME 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] setFontName 
@@ -29,7 +39,7 @@
 --------------------------------
 -- @function [parent=#TextField] getInsertText 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] setInsertText 
@@ -39,11 +49,16 @@
 --------------------------------
 -- @function [parent=#TextField] getDetachWithIME 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] didNotSelectSelf 
 -- @param self
+        
+--------------------------------
+-- @function [parent=#TextField] getFontName 
+-- @param self
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#TextField] attachWithIME 
@@ -55,14 +70,24 @@
 -- @param #bool bool
         
 --------------------------------
+-- @function [parent=#TextField] getPasswordStyleText 
+-- @param self
+-- @return char#char ret (return value: char)
+        
+--------------------------------
 -- @function [parent=#TextField] setMaxLengthEnabled 
 -- @param self
 -- @param #bool bool
         
 --------------------------------
--- @function [parent=#TextField] getDeleteBackward 
+-- @function [parent=#TextField] setPasswordStyleText 
 -- @param self
--- @return bool#bool ret
+-- @param #char char
+        
+--------------------------------
+-- @function [parent=#TextField] setDeleteBackward 
+-- @param self
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#TextField] setFontSize 
@@ -77,17 +102,17 @@
 --------------------------------
 -- @function [parent=#TextField] isPasswordEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] getMaxLength 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#TextField] isMaxLengthEnabled 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TextField] setDetachWithIME 
@@ -110,14 +135,14 @@
 -- @param #size_table size
         
 --------------------------------
--- @function [parent=#TextField] setDeleteBackward 
+-- @function [parent=#TextField] getTouchSize 
 -- @param self
--- @param #bool bool
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#TextField] create 
 -- @param self
--- @return ccui.TextField#ccui.TextField ret
+-- @return TextField#TextField ret (return value: ccui.TextField)
         
 --------------------------------
 -- @function [parent=#TextField] TextField 

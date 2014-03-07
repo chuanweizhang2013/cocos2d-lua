@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] preloadBackgroundMusic 
 -- @param self
--- @param #char* char
+-- @param #char char
         
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] stopBackgroundMusic 
@@ -17,7 +17,7 @@
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] getBackgroundMusicVolume 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] resumeBackgroundMusic 
@@ -31,22 +31,22 @@
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] preloadEffect 
 -- @param self
--- @param #char* char
+-- @param #char char
         
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] isBackgroundMusicPlaying 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] getEffectsVolume 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] willPlayBackgroundMusic 
 -- @param self
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] pauseEffect 
@@ -56,12 +56,12 @@
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] playEffect 
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #bool bool
 -- @param #float float
 -- @param #float float
 -- @param #float float
--- @return unsigned int#unsigned int ret
+-- @return unsigned int#unsigned int ret (return value: unsigned int)
         
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] rewindBackgroundMusic 
@@ -70,7 +70,7 @@
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] playBackgroundMusic 
 -- @param self
--- @param #char* char
+-- @param #char char
 -- @param #bool bool
         
 --------------------------------
@@ -98,7 +98,7 @@
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] unloadEffect 
 -- @param self
--- @param #char* char
+-- @param #char char
         
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] resumeEffect 
@@ -112,6 +112,6 @@
 --------------------------------
 -- @function [parent=#SimpleAudioEngine] getInstance 
 -- @param self
--- @return cc.SimpleAudioEngine#cc.SimpleAudioEngine ret
+-- @return SimpleAudioEngine#SimpleAudioEngine ret (return value: cc.SimpleAudioEngine)
         
 return nil

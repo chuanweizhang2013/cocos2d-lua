@@ -10,13 +10,13 @@
 -- @function [parent=#SceneReader] createNodeWithSceneFile 
 -- @param self
 -- @param #string str
--- @return cc.Node#cc.Node ret
+-- @return Node#Node ret (return value: cc.Node)
         
 --------------------------------
 -- @function [parent=#SceneReader] getNodeByTag 
 -- @param self
 -- @param #int int
--- @return cc.Node#cc.Node ret
+-- @return Node#Node ret (return value: cc.Node)
         
 --------------------------------
 -- @function [parent=#SceneReader] destroyInstance 
@@ -25,11 +25,11 @@
 --------------------------------
 -- @function [parent=#SceneReader] sceneReaderVersion 
 -- @param self
--- @return char*#char* ret
+-- @return char#char ret (return value: char)
         
 --------------------------------
 -- @function [parent=#SceneReader] getInstance 
 -- @param self
--- @return ccs.SceneReader#ccs.SceneReader ret
+-- @return SceneReader#SceneReader ret (return value: ccs.SceneReader)
         
 return nil

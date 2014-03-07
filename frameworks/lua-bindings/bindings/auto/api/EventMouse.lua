@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#EventMouse] getMouseButton 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#EventMouse] setScrollData 
@@ -20,22 +20,22 @@
 --------------------------------
 -- @function [parent=#EventMouse] getScrollY 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#EventMouse] getScrollX 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#EventMouse] getCursorX 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#EventMouse] getCursorY 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#EventMouse] setCursorPosition 

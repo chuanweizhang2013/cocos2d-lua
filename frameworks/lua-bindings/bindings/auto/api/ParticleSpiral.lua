@@ -4,12 +4,12 @@
 --------------------------------
 -- @function [parent=#ParticleSpiral] create 
 -- @param self
--- @return cc.ParticleSpiral#cc.ParticleSpiral ret
+-- @return ParticleSpiral#ParticleSpiral ret (return value: cc.ParticleSpiral)
         
 --------------------------------
 -- @function [parent=#ParticleSpiral] createWithTotalParticles 
 -- @param self
 -- @param #int int
--- @return cc.ParticleSpiral#cc.ParticleSpiral ret
+-- @return ParticleSpiral#ParticleSpiral ret (return value: cc.ParticleSpiral)
         
 return nil

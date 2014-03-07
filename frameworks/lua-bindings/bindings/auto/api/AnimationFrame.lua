@@ -13,7 +13,7 @@
 --          
 -- @function [parent=#AnimationFrame] getUserInfo
 -- @param self
--- @return map_table#map_table ret
+-- @return map_table#map_table ret (retunr value: map_table)
 
 --------------------------------
 -- @function [parent=#AnimationFrame] setDelayUnits 
@@ -23,17 +23,17 @@
 --------------------------------
 -- @function [parent=#AnimationFrame] clone 
 -- @param self
--- @return cc.AnimationFrame#cc.AnimationFrame ret
+-- @return AnimationFrame#AnimationFrame ret (return value: cc.AnimationFrame)
         
 --------------------------------
 -- @function [parent=#AnimationFrame] getSpriteFrame 
 -- @param self
--- @return cc.SpriteFrame#cc.SpriteFrame ret
+-- @return SpriteFrame#SpriteFrame ret (return value: cc.SpriteFrame)
         
 --------------------------------
 -- @function [parent=#AnimationFrame] getDelayUnits 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#AnimationFrame] setUserInfo 
@@ -46,6 +46,6 @@
 -- @param #cc.SpriteFrame spriteframe
 -- @param #float float
 -- @param #map_table map
--- @return cc.AnimationFrame#cc.AnimationFrame ret
+-- @return AnimationFrame#AnimationFrame ret (return value: cc.AnimationFrame)
         
 return nil

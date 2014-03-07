@@ -4,6 +4,6 @@
 --------------------------------
 -- @function [parent=#TiledGrid3DAction] getGrid 
 -- @param self
--- @return cc.GridBase#cc.GridBase ret
+-- @return GridBase#GridBase ret (return value: cc.GridBase)
         
 return nil

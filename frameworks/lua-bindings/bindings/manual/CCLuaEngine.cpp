@@ -1076,4 +1076,9 @@ int LuaEngine::handleArmatureWrapper(ScriptHandlerMgr::HandlerType type,void* da
     return 0;
 }
 
+int LuaEngine::reload(const char* moduleFileName)
+{
+    return _stack->reload(moduleFileName);
+}
+
 NS_CC_END

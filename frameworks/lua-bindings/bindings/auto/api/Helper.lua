@@ -6,27 +6,27 @@
 -- @param self
 -- @param #ccui.Widget widget
 -- @param #int int
--- @return ccui.Widget#ccui.Widget ret
+-- @return Widget#Widget ret (return value: ccui.Widget)
         
 --------------------------------
 -- @function [parent=#Helper] seekWidgetByTag 
 -- @param self
 -- @param #ccui.Widget widget
 -- @param #int int
--- @return ccui.Widget#ccui.Widget ret
+-- @return Widget#Widget ret (return value: ccui.Widget)
         
 --------------------------------
 -- @function [parent=#Helper] seekWidgetByRelativeName 
 -- @param self
 -- @param #ccui.Widget widget
--- @param #char* char
--- @return ccui.Widget#ccui.Widget ret
+-- @param #char char
+-- @return Widget#Widget ret (return value: ccui.Widget)
         
 --------------------------------
 -- @function [parent=#Helper] seekWidgetByName 
 -- @param self
 -- @param #ccui.Widget widget
--- @param #char* char
--- @return ccui.Widget#ccui.Widget ret
+-- @param #char char
+-- @return Widget#Widget ret (return value: ccui.Widget)
         
 return nil

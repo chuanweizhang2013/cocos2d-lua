@@ -8,7 +8,7 @@
 --          
 -- @function [parent=#Animate] getAnimation
 -- @param self
--- @return cc.Animation#cc.Animation ret
+-- @return Animation#Animation ret (retunr value: cc.Animation)
 
 --------------------------------
 -- @function [parent=#Animate] setAnimation 
@@ -19,6 +19,6 @@
 -- @function [parent=#Animate] create 
 -- @param self
 -- @param #cc.Animation animation
--- @return cc.Animate#cc.Animate ret
+-- @return Animate#Animate ret (return value: cc.Animate)
         
 return nil

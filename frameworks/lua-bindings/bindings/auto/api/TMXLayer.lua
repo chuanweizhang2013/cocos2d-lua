@@ -6,13 +6,13 @@
 -- @param self
 -- @param #point_table point
 -- @param #cc.TMXTileFlags_ tmxtileflags_
--- @return unsigned int#unsigned int ret
+-- @return unsigned int#unsigned int ret (return value: unsigned int)
         
 --------------------------------
 -- @function [parent=#TMXLayer] getPositionAt 
 -- @param self
 -- @param #point_table point
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#TMXLayer] setLayerOrientation 
@@ -26,12 +26,12 @@
 --------------------------------
 -- @function [parent=#TMXLayer] setTiles 
 -- @param self
--- @param #unsigned int* int
+-- @param #unsigned int int
         
 --------------------------------
 -- @function [parent=#TMXLayer] getLayerSize 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#TMXLayer] setMapTileSize 
@@ -41,7 +41,7 @@
 --------------------------------
 -- @function [parent=#TMXLayer] getLayerOrientation 
 -- @param self
--- @return int#int ret
+-- @return int#int ret (return value: int)
         
 --------------------------------
 -- @function [parent=#TMXLayer] setProperties 
@@ -64,7 +64,7 @@
 -- @param #cc.TMXTilesetInfo tmxtilesetinfo
 -- @param #cc.TMXLayerInfo tmxlayerinfo
 -- @param #cc.TMXMapInfo map
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#TMXLayer] setupTiles 
@@ -84,13 +84,13 @@
 --------------------------------
 -- @function [parent=#TMXLayer] getMapTileSize 
 -- @param self
--- @return size_table#size_table ret
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#TMXLayer] getProperty 
 -- @param self
 -- @param #string str
--- @return cc.Value#cc.Value ret
+-- @return Value#Value ret (return value: cc.Value)
         
 --------------------------------
 -- @function [parent=#TMXLayer] setLayerSize 
@@ -100,7 +100,7 @@
 --------------------------------
 -- @function [parent=#TMXLayer] getLayerName 
 -- @param self
--- @return string#string ret
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#TMXLayer] setTileSet 
@@ -110,7 +110,7 @@
 --------------------------------
 -- @function [parent=#TMXLayer] getTileSet 
 -- @param self
--- @return cc.TMXTilesetInfo#cc.TMXTilesetInfo ret
+-- @return TMXTilesetInfo#TMXTilesetInfo ret (return value: cc.TMXTilesetInfo)
         
 --------------------------------
 -- overload function: getProperties()
@@ -119,13 +119,13 @@
 --          
 -- @function [parent=#TMXLayer] getProperties
 -- @param self
--- @return map_table#map_table ret
+-- @return map_table#map_table ret (retunr value: map_table)
 
 --------------------------------
 -- @function [parent=#TMXLayer] getTileAt 
 -- @param self
 -- @param #point_table point
--- @return cc.Sprite#cc.Sprite ret
+-- @return Sprite#Sprite ret (return value: cc.Sprite)
         
 --------------------------------
 -- @function [parent=#TMXLayer] create 
@@ -133,7 +133,7 @@
 -- @param #cc.TMXTilesetInfo tmxtilesetinfo
 -- @param #cc.TMXLayerInfo tmxlayerinfo
 -- @param #cc.TMXMapInfo map
--- @return cc.TMXLayer#cc.TMXLayer ret
+-- @return TMXLayer#TMXLayer ret (return value: cc.TMXLayer)
         
 --------------------------------
 -- @function [parent=#TMXLayer] TMXLayer 

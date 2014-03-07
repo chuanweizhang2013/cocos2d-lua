@@ -11,7 +11,7 @@
 -- @param self
 -- @param #cc.Node node
 -- @param #point_table point
--- @return bool#bool ret
+-- @return bool#bool ret (return value: bool)
         
 --------------------------------
 -- @function [parent=#ControlHuePicker] setHue 
@@ -21,17 +21,17 @@
 --------------------------------
 -- @function [parent=#ControlHuePicker] getStartPos 
 -- @param self
--- @return point_table#point_table ret
+-- @return point_table#point_table ret (return value: point_table)
         
 --------------------------------
 -- @function [parent=#ControlHuePicker] getHue 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ControlHuePicker] getSlider 
 -- @param self
--- @return cc.Sprite#cc.Sprite ret
+-- @return Sprite#Sprite ret (return value: cc.Sprite)
         
 --------------------------------
 -- @function [parent=#ControlHuePicker] setBackground 
@@ -46,12 +46,12 @@
 --------------------------------
 -- @function [parent=#ControlHuePicker] getBackground 
 -- @param self
--- @return cc.Sprite#cc.Sprite ret
+-- @return Sprite#Sprite ret (return value: cc.Sprite)
         
 --------------------------------
 -- @function [parent=#ControlHuePicker] getHuePercentage 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#ControlHuePicker] setSlider 
@@ -63,7 +63,7 @@
 -- @param self
 -- @param #cc.Node node
 -- @param #point_table point
--- @return cc.ControlHuePicker#cc.ControlHuePicker ret
+-- @return ControlHuePicker#ControlHuePicker ret (return value: cc.ControlHuePicker)
         
 --------------------------------
 -- @function [parent=#ControlHuePicker] ControlHuePicker 

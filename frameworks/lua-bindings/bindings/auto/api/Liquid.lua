@@ -4,7 +4,7 @@
 --------------------------------
 -- @function [parent=#Liquid] getAmplitudeRate 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Liquid] setAmplitude 
@@ -14,7 +14,7 @@
 --------------------------------
 -- @function [parent=#Liquid] getAmplitude 
 -- @param self
--- @return float#float ret
+-- @return float#float ret (return value: float)
         
 --------------------------------
 -- @function [parent=#Liquid] setAmplitudeRate 
@@ -28,7 +28,7 @@
 -- @param #size_table size
 -- @param #unsigned int int
 -- @param #float float
--- @return cc.Liquid#cc.Liquid ret
+-- @return Liquid#Liquid ret (return value: cc.Liquid)
         
 --------------------------------
 -- @function [parent=#Liquid] Liquid 

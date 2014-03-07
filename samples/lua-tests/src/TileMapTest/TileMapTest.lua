@@ -930,7 +930,7 @@ local function TMXIsoVertexZ()
         local p = cc.p(m_tamara:getPosition())
         p = CC_POINT_POINTS_TO_PIXELS(p)
         local newZ = -(p.y+32) /16
-        m_tamara:setVertexZ( newZ )
+        m_tamara:setPositionZ( newZ )
     end
 
     local schedulerEntry = nil
@@ -972,7 +972,7 @@ local function TMXOrthoVertexZ()
     -- can use any cc.Sprite and it will work OK.
     local  layer = map:getLayer("trees")
     m_tamara = layer:getTileAt(cc.p(0,11))
-    cclog("vertexZ:"..m_tamara:getVertexZ())
+    cclog("vertexZ:"..m_tamara:getPositionZ())
     m_tamara:retain()
 
     local  move = cc.MoveBy:create(10, cc.pMul( cc.p(400,450), 1/CC_CONTENT_SCALE_FACTOR()))
@@ -985,7 +985,7 @@ local function TMXOrthoVertexZ()
         -- map size: 12x12
         local p = cc.p(m_tamara:getPosition())
         p = CC_POINT_POINTS_TO_PIXELS(p)
-        m_tamara:setVertexZ( -( (p.y+81) /81) )
+        m_tamara:setPositionZ( -( (p.y+81) /81) )
     end
 
     local schedulerEntry = nil
@@ -1003,6 +1003,8 @@ local function TMXOrthoVertexZ()
             scheduler:unscheduleScriptEntry(schedulerEntry)
         end
     end
+
+    ret:registerScriptHandler(onNodeEvent)
 
     return ret
 end

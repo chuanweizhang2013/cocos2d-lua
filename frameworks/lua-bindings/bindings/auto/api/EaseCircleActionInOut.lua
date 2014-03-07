@@ -5,6 +5,6 @@
 -- @function [parent=#EaseCircleActionInOut] create 
 -- @param self
 -- @param #cc.ActionInterval actioninterval
--- @return cc.EaseCircleActionInOut#cc.EaseCircleActionInOut ret
+-- @return EaseCircleActionInOut#EaseCircleActionInOut ret (return value: cc.EaseCircleActionInOut)
         
 return nil
