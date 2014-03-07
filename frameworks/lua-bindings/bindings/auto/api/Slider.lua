@@ -90,6 +90,11 @@
 -- @return Slider#Slider ret (return value: ccui.Slider)
         
 --------------------------------
+-- @function [parent=#Slider] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#Slider] Slider 
 -- @param self
         

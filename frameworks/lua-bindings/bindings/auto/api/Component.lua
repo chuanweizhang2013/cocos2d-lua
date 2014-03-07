@@ -17,12 +17,6 @@
 -- @return bool#bool ret (return value: bool)
         
 --------------------------------
--- @function [parent=#Component] serialize 
--- @param self
--- @param #void void
--- @return bool#bool ret (return value: bool)
-        
---------------------------------
 -- @function [parent=#Component] update 
 -- @param self
 -- @param #float float

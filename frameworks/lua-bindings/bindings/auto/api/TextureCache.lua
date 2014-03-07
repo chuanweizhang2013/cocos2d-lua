@@ -2,6 +2,12 @@
 --------------------------------
 -- @module TextureCache
 --------------------------------
+-- @function [parent=#TextureCache] reloadTexture 
+-- @param self
+-- @param #string str
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
 -- @function [parent=#TextureCache] removeTextureForKey 
 -- @param self
 -- @param #string str

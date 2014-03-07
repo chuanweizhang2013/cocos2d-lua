@@ -17,14 +17,19 @@
 -- @param #ccui.LayoutBackGroundColorType layoutbackgroundcolortype
         
 --------------------------------
--- @function [parent=#Layout] getBackGroundColorType 
+-- @function [parent=#Layout] setBackGroundImageColor 
 -- @param self
--- @return LayoutBackGroundColorType#LayoutBackGroundColorType ret (return value: ccui.LayoutBackGroundColorType)
+-- @param #color3B_table color3b
         
 --------------------------------
 -- @function [parent=#Layout] getBackGroundColorVector 
 -- @param self
 -- @return point_table#point_table ret (return value: point_table)
+        
+--------------------------------
+-- @function [parent=#Layout] getClippingType 
+-- @param self
+-- @return LayoutClippingType#LayoutClippingType ret (return value: ccui.LayoutClippingType)
         
 --------------------------------
 -- @function [parent=#Layout] removeBackGroundImage 
@@ -33,12 +38,17 @@
 --------------------------------
 -- @function [parent=#Layout] getBackGroundColorOpacity 
 -- @param self
--- @return int#int ret (return value: int)
+-- @return unsigned char#unsigned char ret (return value: unsigned char)
         
 --------------------------------
--- @function [parent=#Layout] getBackGroundImageCapInsets 
+-- @function [parent=#Layout] isClippingEnabled 
 -- @param self
--- @return rect_table#rect_table ret (return value: rect_table)
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
+-- @function [parent=#Layout] setBackGroundImageOpacity 
+-- @param self
+-- @param #unsigned char char
         
 --------------------------------
 -- @function [parent=#Layout] setBackGroundImage 
@@ -61,14 +71,14 @@
 -- @param self
         
 --------------------------------
--- @function [parent=#Layout] isClippingEnabled 
+-- @function [parent=#Layout] getBackGroundImageCapInsets 
 -- @param self
--- @return bool#bool ret (return value: bool)
+-- @return rect_table#rect_table ret (return value: rect_table)
         
 --------------------------------
--- @function [parent=#Layout] setBackGroundColorOpacity 
+-- @function [parent=#Layout] getBackGroundColor 
 -- @param self
--- @param #int int
+-- @return color3B_table#color3B_table ret (return value: color3B_table)
         
 --------------------------------
 -- @function [parent=#Layout] setClippingEnabled 
@@ -76,14 +86,19 @@
 -- @param #bool bool
         
 --------------------------------
+-- @function [parent=#Layout] getBackGroundImageColor 
+-- @param self
+-- @return color3B_table#color3B_table ret (return value: color3B_table)
+        
+--------------------------------
 -- @function [parent=#Layout] isBackGroundImageScale9Enabled 
 -- @param self
 -- @return bool#bool ret (return value: bool)
         
 --------------------------------
--- @function [parent=#Layout] getLayoutType 
+-- @function [parent=#Layout] getBackGroundColorType 
 -- @param self
--- @return LayoutType#LayoutType ret (return value: ccui.LayoutType)
+-- @return LayoutBackGroundColorType#LayoutBackGroundColorType ret (return value: ccui.LayoutBackGroundColorType)
         
 --------------------------------
 -- @function [parent=#Layout] getBackGroundEndColor 
@@ -91,14 +106,14 @@
 -- @return color3B_table#color3B_table ret (return value: color3B_table)
         
 --------------------------------
--- @function [parent=#Layout] getClippingType 
+-- @function [parent=#Layout] setBackGroundColorOpacity 
 -- @param self
--- @return LayoutClippingType#LayoutClippingType ret (return value: ccui.LayoutClippingType)
+-- @param #unsigned char char
         
 --------------------------------
--- @function [parent=#Layout] getBackGroundColor 
+-- @function [parent=#Layout] getBackGroundImageOpacity 
 -- @param self
--- @return color3B_table#color3B_table ret (return value: color3B_table)
+-- @return unsigned char#unsigned char ret (return value: unsigned char)
         
 --------------------------------
 -- @function [parent=#Layout] setBackGroundImageCapInsets 
@@ -109,6 +124,11 @@
 -- @function [parent=#Layout] getBackGroundImageTextureSize 
 -- @param self
 -- @return size_table#size_table ret (return value: size_table)
+        
+--------------------------------
+-- @function [parent=#Layout] getLayoutType 
+-- @param self
+-- @return LayoutType#LayoutType ret (return value: ccui.LayoutType)
         
 --------------------------------
 -- @function [parent=#Layout] getBackGroundStartColor 
@@ -135,6 +155,11 @@
 -- @function [parent=#Layout] create 
 -- @param self
 -- @return Layout#Layout ret (return value: ccui.Layout)
+        
+--------------------------------
+-- @function [parent=#Layout] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
         
 --------------------------------
 -- @function [parent=#Layout] Layout 
