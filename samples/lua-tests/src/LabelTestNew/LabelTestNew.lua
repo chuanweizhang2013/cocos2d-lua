@@ -1166,14 +1166,14 @@ function LabelTTFDistanceField.create()
 end
 
 --------------------------------------------------------
------ LabelTTFDistanceFieldEffect
+----- LabelOutlineAndGlowTest
 --------------------------------------------------------
-local LabelTTFDistanceFieldEffect = {}
-function LabelTTFDistanceFieldEffect.create()
+local LabelOutlineAndGlowTest = {}
+function LabelOutlineAndGlowTest.create()
     local layer = cc.Layer:create()
     Helper.initWithLayer(layer)
     Helper.titleLabel:setString("New Label + .TTF")
-    Helper.subtitleLabel:setString("Testing effect base on DistanceField")
+    Helper.subtitleLabel:setString("Testing outline and glow of label")
 
     local s = cc.Director:getInstance():getWinSize()
 
@@ -1186,26 +1186,29 @@ function LabelTTFDistanceFieldEffect.create()
     ttfConfig.glyphs   = cc.GLYPHCOLLECTION_DYNAMIC
     ttfConfig.customGlyphs = nil
     ttfConfig.distanceFieldEnabled = true
+    ttfConfig.outlineSize = 0
     
     local label1 = cc.Label:createWithTTF(ttfConfig,"Glow",cc.TEXT_ALIGNMENT_CENTER,s.width)
     label1:setAnchorPoint(cc.p(0.5,0.5))
-    label1:setPosition(cc.p(s.width/2, s.height/2))
+    label1:setPosition(cc.p(s.width/2, s.height * 0.7))
     label1:setColor( cc.c3b(0, 255, 0) )
-    label1:setLabelEffect(cc.LabelEffect.GLOW, cc.c3b(255, 255, 0))
+    label1:enableGlow(cc.c3b(255, 255, 0))
     layer:addChild(label1)
 
+    ttfConfig.outlineSize = 1
     local label2 = cc.Label:createWithTTF(ttfConfig,"Outline",cc.TEXT_ALIGNMENT_CENTER,s.width)
-    label2:setPosition( cc.p(s.width/2, s.height * 0.375))
+    label2:setPosition( cc.p(s.width/2, s.height * 0.6))
     label2:setColor( cc.c3b(255, 0, 0))
     label2:setAnchorPoint(cc.p(0.5, 0.5))
-    label2:setLabelEffect(cc.LabelEffect.OUTLINE, cc.c3b(0, 0, 255))
+    label2:enableOutline(cc.c4b(0,0,255,255))
     layer:addChild(label2)
 
-    local label3 = cc.Label:createWithTTF(ttfConfig,"Shadow",cc.TEXT_ALIGNMENT_CENTER,s.width)
-    label3:setPosition( cc.p(s.width/2, s.height * 0.25))
+    ttfConfig.outlineSize = 2
+    local label3 = cc.Label:createWithTTF(ttfConfig,"Outline",cc.TEXT_ALIGNMENT_CENTER,s.width)
+    label3:setPosition( cc.p(s.width/2, s.height * 0.48))
     label3:setColor( cc.c3b(255, 0, 0))
     label3:setAnchorPoint(cc.p(0.5, 0.5))
-    label3:setLabelEffect(cc.LabelEffect.SHADOW, cc.c3b(0, 0, 0))
+    label3:enableOutline(cc.c4b(0,0,255,255))
     layer:addChild(label3)
 
     return layer
@@ -1324,7 +1327,7 @@ function LabelTestNew()
         LabelTTFFontsTestNew.create,
         LabelBMFontTestNew.create,
         LabelTTFDistanceField.create,
-        LabelTTFDistanceFieldEffect.create,
+        LabelOutlineAndGlowTest.create,
         LabelCharMapTest.create,
         LabelCrashTest.create,
     }

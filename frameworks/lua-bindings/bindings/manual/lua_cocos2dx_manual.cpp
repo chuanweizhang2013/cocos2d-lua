@@ -4523,6 +4523,11 @@ static bool luaval_to_TTFConfig(lua_State* L,int lo, TTFConfig* ret)
         ret->distanceFieldEnabled = lua_isboolean(L, -1)?lua_toboolean(L, -1) : false;
         lua_pop(L, 1);
         
+        lua_pushstring(L, "outlineSize");
+        lua_gettable(L, lo);
+        ret->outlineSize = lua_isnumber(L, -1)?(int)lua_tointeger(L, -1) : 0;
+        lua_pop(L, 1);
+        
         return true;
     }
     
