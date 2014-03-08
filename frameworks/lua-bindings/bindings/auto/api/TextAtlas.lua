@@ -26,6 +26,11 @@
 -- @return TextAtlas#TextAtlas ret (return value: ccui.TextAtlas)
         
 --------------------------------
+-- @function [parent=#TextAtlas] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#TextAtlas] TextAtlas 
 -- @param self
         

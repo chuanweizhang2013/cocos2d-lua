@@ -123,6 +123,11 @@
 -- @return Button#Button ret (return value: ccui.Button)
         
 --------------------------------
+-- @function [parent=#Button] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#Button] Button 
 -- @param self
         

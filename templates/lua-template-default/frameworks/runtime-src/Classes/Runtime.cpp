@@ -56,7 +56,7 @@ void startScript(string strDebugArg)
 
 void reloadScript()
 {
-    
+    LuaEngine::getInstance()->reload("src/main.lua");
 }
 
 
@@ -357,11 +357,11 @@ bool FileServer::recv_file(int fd)
 {
 	char buffer[1024]={0};
     char namelen[4]={0};
-	if (read(fd, namelen, 4)<=0) {
+	if (recv(fd, namelen, 4,0)<=0) {
 		return  false;
 	}
     
-	if (read(fd, buffer, atoi(namelen))<=0) {
+	if (recv(fd, buffer, atoi(namelen),0)<=0) {
 		return  false;
 	}
     
@@ -372,9 +372,9 @@ bool FileServer::recv_file(int fd)
 	sprintf(fullfilename, "%s", file.c_str());
 	cocos2d::log("recv fullfilename = %s",fullfilename);
     CreateDir(file.substr(0,file.find_last_of("/")).c_str());
-	FILE *fp =fopen(fullfilename, "w");
+	FILE *fp =fopen(fullfilename, "wb");
 	int length =0;
-	while ((length=read(fd, fullfilename, sizeof(fullfilename))) > 0) {
+	while ((length=recv(fd, fullfilename, sizeof(fullfilename),0)) > 0) {
 		fwrite(fullfilename, sizeof(char), length,fp);
 	}
 	fclose(fp);
@@ -474,7 +474,7 @@ class ConsoleCustomCommand
 public:
     ConsoleCustomCommand():_fileserver(nullptr)
     {
-        
+        _writepath = FileUtils::getInstance()->getWritablePath();
         cocos2d::Console *_console = Director::getInstance()->getConsole();
         static struct Console::Command commands[] = {
             {"shutdownapp","exit runtime app",std::bind(&ConsoleCustomCommand::onShutDownApp, this, std::placeholders::_1, std::placeholders::_2)},
@@ -500,9 +500,9 @@ public:
     
     void onRunLogicScript(int fd, const std::string &args)
     {
-		Director::getInstance()->getScheduler()->performFunctionInCocosThread([args](){
+		Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
 			char szDebugArg[1024]={0};
-			sprintf(szDebugArg, "require('debugger')(%s,'%s')",args.c_str(),FileUtils::getInstance()->getWritablePath().c_str());
+			sprintf(szDebugArg, "require('debugger')(%s,'%s')",args.c_str(),_writepath.c_str());
 			startScript(szDebugArg);
 		});
     }
@@ -522,6 +522,7 @@ public:
     }
 private:
     FileServer* _fileserver;
+	string _writepath;
     
 };
 

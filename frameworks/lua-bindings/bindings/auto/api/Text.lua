@@ -82,6 +82,11 @@
 -- @return Text#Text ret (return value: ccui.Text)
         
 --------------------------------
+-- @function [parent=#Text] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#Text] Text 
 -- @param self
         

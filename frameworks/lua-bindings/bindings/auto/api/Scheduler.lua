@@ -7,13 +7,6 @@
 -- @param #float float
         
 --------------------------------
--- @function [parent=#Scheduler] isScheduled 
--- @param self
--- @param #string str
--- @param #void void
--- @return bool#bool ret (return value: bool)
-        
---------------------------------
 -- @function [parent=#Scheduler] performFunctionInCocosThread 
 -- @param self
 -- @param #function func

@@ -93,7 +93,6 @@ using namespace cocos2d;
 	}
 
     window = glfwGetCocoaWindow(g_eglView->getWindow());
-    window.delegate = self;
     [NSApp setDelegate: self];
     
     [self createViewMenu];

@@ -8,6 +8,11 @@
 -- @return Widget#Widget ret (return value: ccui.Widget)
         
 --------------------------------
+-- @function [parent=#GUIReader] getFilePath 
+-- @param self
+-- @return string#string ret (return value: string)
+        
+--------------------------------
 -- @function [parent=#GUIReader] getVersionInteger 
 -- @param self
 -- @param #char char
