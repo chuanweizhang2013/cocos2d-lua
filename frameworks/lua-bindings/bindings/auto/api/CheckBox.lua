@@ -57,6 +57,11 @@
 -- @return CheckBox#CheckBox ret (return value: ccui.CheckBox)
         
 --------------------------------
+-- @function [parent=#CheckBox] createInstance 
+-- @param self
+-- @return Ref#Ref ret (return value: cc.Ref)
+        
+--------------------------------
 -- @function [parent=#CheckBox] CheckBox 
 -- @param self
         

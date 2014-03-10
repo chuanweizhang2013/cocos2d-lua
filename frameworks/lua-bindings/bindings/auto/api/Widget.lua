@@ -2,11 +2,6 @@
 --------------------------------
 -- @module Widget
 --------------------------------
--- @function [parent=#Widget] getVirtualRenderer 
--- @param self
--- @return Node#Node ret (return value: cc.Node)
-        
---------------------------------
 -- @function [parent=#Widget] setSizePercent 
 -- @param self
 -- @param #point_table point
@@ -15,6 +10,11 @@
 -- @function [parent=#Widget] isFlippedX 
 -- @param self
 -- @return bool#bool ret (return value: bool)
+        
+--------------------------------
+-- @function [parent=#Widget] getCustomSize 
+-- @param self
+-- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
 -- @function [parent=#Widget] setFlippedY 
@@ -151,6 +151,11 @@
 -- @function [parent=#Widget] setEnabled 
 -- @param self
 -- @param #bool bool
+        
+--------------------------------
+-- @function [parent=#Widget] getVirtualRenderer 
+-- @param self
+-- @return Node#Node ret (return value: cc.Node)
         
 --------------------------------
 -- @function [parent=#Widget] setBrightStyle 
