@@ -14,29 +14,37 @@
 
 /////////////////////////////////////////////////////////////////////////////
 // Chinese (Simplified, PRC) resources
+
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 #pragma code_page(936)
+
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
 // TEXTINCLUDE
 //
+
 2 TEXTINCLUDE 
 BEGIN
     "#include ""afxres.h""\r\n"
     "\0"
 END
+
 3 TEXTINCLUDE 
 BEGIN
     "\r\n"
     "\0"
 END
+
 #endif    // APSTUDIO_INVOKED
+
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // Menu
 //
+
 IDR_MENU_COCOS MENU
 BEGIN
     POPUP "&File"
@@ -50,7 +58,10 @@ BEGIN
         MENUITEM "&Portrait",                   ID_VIEW_PORTRAIT
         MENUITEM "&Landscape",                  ID_VIEW_LANDSCAPE
         MENUITEM SEPARATOR
-        MENUITEM "&Custom",                     ID_VIEW_CUSTOM
+        MENUITEM "&Actual(100%)",               ID_VIEW_ZOOMOUT100
+        MENUITEM "Zoom Out(75%)",               ID_VIEW_ZOOMOUT75
+        MENUITEM "Zoom Out(50%)",               ID_VIEW_ZOOMOUT50
+        MENUITEM "Zoom Out(25%)",               ID_VIEW_ZOOMOUT25
     END
     POPUP "&Control"
     BEGIN
@@ -61,10 +72,13 @@ BEGIN
         MENUITEM "&About ...",                  ID_HELP_ABOUT
     END
 END
+
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // Dialog
 //
+
 IDD_DIALOG_ABOUT DIALOGEX 0, 0, 243, 94
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About Simulator"
@@ -73,6 +87,7 @@ BEGIN
     DEFPUSHBUTTON   "OK",IDOK,173,69,63,18
     LTEXT           "Cocos2d-x-Simulator",IDC_STATIC,29,17,169,25
 END
+
 IDD_DIALOG_VIEWCUSTOM DIALOGEX 0, 0, 179, 98
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Custom"
@@ -85,10 +100,13 @@ BEGIN
     EDITTEXT        IDC_EDIT_WIDTH,60,15,89,14,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_HEIGHT,62,36,87,14,ES_AUTOHSCROLL
 END
+
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // DESIGNINFO
 //
+
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO
 BEGIN
@@ -99,6 +117,7 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 87
     END
+
     IDD_DIALOG_VIEWCUSTOM, DIALOG
     BEGIN
         LEFTMARGIN, 7
@@ -108,8 +127,11 @@ BEGIN
     END
 END
 #endif    // APSTUDIO_INVOKED
+
 #endif    // Chinese (Simplified, PRC) resources
 /////////////////////////////////////////////////////////////////////////////
+
+
 /////////////////////////////////////////////////////////////////////////////
 // English (United States) resources
 
@@ -130,6 +152,7 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // Icon
@@ -137,7 +160,7 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-GLFW_ICON           ICON                    "res\\game.ico"
+GLFW_ICON               ICON                    "res\\game.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -179,10 +202,15 @@ END
 #endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
+
+
 #ifndef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
+
+
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
+

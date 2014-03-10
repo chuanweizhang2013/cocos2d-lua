@@ -24,6 +24,7 @@
     <ClInclude Include="..\Classes\Runtime.h">
       <Filter>Classes</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
@@ -46,5 +47,8 @@
     <ResourceCompile Include="game.rc">
       <Filter>resource</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico" />
   </ItemGroup>
 </Project>

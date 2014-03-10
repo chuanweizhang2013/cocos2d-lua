@@ -168,7 +168,6 @@ xcopy "$(ProjectDir)..\..\..\src" "$(OutDir)\Resource\src" /e /Y
 xcopy "$(ProjectDir)..\..\..\res" "$(OutDir)\Resource\res" /e /Y</Command>
       <Message>copy files</Message>
     </PreBuildEvent>
-
     <PreLinkEvent>
       <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
 xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
@@ -178,6 +177,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\Runtime.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SimulatorWindow.h" />
   </ItemGroup>
   <ItemGroup>
@@ -224,6 +224,9 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ProjectReference Include="..\..\lua-bindings\cocos2d-x\external\chipmunk\proj.win32\chipmunk.vcxproj">
       <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
