@@ -65,7 +65,7 @@ using namespace cocos2d;
 {
 
     AppDelegate app;
-	[self createSimulator:[NSString stringWithUTF8String:"HelloJavascript"] viewWidth:960 viewHeight:640 factor:1.0];
+	[self createSimulator:[NSString stringWithUTF8String:"HelloLua"] viewWidth:960 viewHeight:640 factor:1.0];
     int ret = Application::getInstance()->run();
     
 }
