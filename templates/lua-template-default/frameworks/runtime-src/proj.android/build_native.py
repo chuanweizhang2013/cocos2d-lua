@@ -137,7 +137,7 @@ def copy_resources(app_android_root, build_mode, pure):
 
     if pure is None:
         assets_res_dir = assets_dir + "/res";
-        assets_scripts_dir = assets_dir + "/scripts";
+        assets_scripts_dir = assets_dir + "/src";
         os.mkdir(assets_res_dir);
         os.mkdir(assets_scripts_dir);
 
