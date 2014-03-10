@@ -138,7 +138,7 @@ using namespace cocos2d;
         [itemLandscape setState:NSOffState];
     }
 
-    int scale = 100;
+    int scale = g_eglView->getFrameZoomFactor()*100;
 
     NSMenuItem *itemZoom100 = [menuScreen itemWithTitle:@"Actual (100%)"];
     NSMenuItem *itemZoom75 = [menuScreen itemWithTitle:@"Zoom Out (75%)"];
@@ -283,6 +283,7 @@ using namespace cocos2d;
     if ([sender state] == NSOnState) return;
     float scale = (float)[sender tag] / 100.0f;
     g_eglView->setFrameZoomFactor(scale);
+    [self updateView];
 }
 
 
