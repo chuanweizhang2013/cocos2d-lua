@@ -54,9 +54,9 @@ void startScript(string strDebugArg)
     engine->executeScriptFile("src/main.lua");
 }
 
-void reloadScript()
+void reloadScript(string modulefile)
 {
-    LuaEngine::getInstance()->reload("src/main.lua");
+    LuaEngine::getInstance()->reload(modulefile.c_str());
 }
 
 
@@ -520,8 +520,8 @@ public:
     
     void onReloadScriptFile(int fd,const std::string &args)
     {
-        Director::getInstance()->getScheduler()->performFunctionInCocosThread([](){
-             reloadScript();
+        Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
+             reloadScript(args.c_str());
         });
     }
     
